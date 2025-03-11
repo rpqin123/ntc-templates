@@ -1,0 +1,30 @@
+# show post
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SWITCH (\d+)
+Value MBIST (\S+\s+[\S+]+)
+Value CRYPTO (\S+\s+[\S+]+)
+Value LOOPBACK (\S+\s+[\S+]+)
+Value INPOWER (\S+\s+[\S+]+)
+Value THERMALTEMP (\S+\s+[\S+]+)
+Value THERMALFAN (\S+\s+[\S+]+)
+Value SIF (\S+\s+[\S+]+)
+
+Start
+ ^Stored system POST messages: -> Switch
+
+Switch
+ ^Switch ${SWITCH}
+ ^POST: MBIST Tests : End,\s${MBIST}
+ ^POST: CRYPTO Tests : End,\s${CRYPTO}
+ ^POST: PHY Loopback: loopback Test : End,\s${LOOPBACK}
+ ^POST: Inline Power Controller Tests : End,\s${INPOWER}
+ ^POST: Thermal, Temperature Tests : End,\s${THERMALTEMP}
+ ^POST: Thermal, Fan Tests : End,\s${THERMALFAN}
+ ^POST: SIF Tests : End,\s${SIF} -> Record
+ ^
+ ^ -> Start
+
+
+
+

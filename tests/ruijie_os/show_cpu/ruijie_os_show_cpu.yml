@@ -1,0 +1,7 @@
+---
+parsed_sample:
+  - slot_id: ""
+    slot_name: ""
+    cpu_5_sec: "0.00"
+    cpu_1_min: "1.67"
+    cpu_5_min: "0.70"

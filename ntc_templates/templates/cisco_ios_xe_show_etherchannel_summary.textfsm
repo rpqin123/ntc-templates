@@ -1,0 +1,12 @@
+# show etherchannel summary
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value GROUP (\d+)
+Value PCHAN (\S+)
+Value FLAGS (\S+)
+Value PROTO (\w+)
+Value PORT1 (\S+)
+Value PORT2 (\S+)
+
+Start
+ ^${GROUP}\s+${PCHAN}\(${FLAGS}\)\s+${PROTO}\s+${PORT1}\s+${PORT2} -> Record

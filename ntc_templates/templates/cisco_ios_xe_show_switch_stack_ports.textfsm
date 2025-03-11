@@ -1,0 +1,9 @@
+# show switch stack-ports
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SWITCH (\d+)
+Value PORT1 (\w+)
+Value PORT2 (\w+)
+
+Start
+ ^${SWITCH}\s+${PORT1}\s+${PORT2}\s+ -> Record

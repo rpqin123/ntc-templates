@@ -1,0 +1,17 @@
+Codes: C - connected, S - static, R - RIP,  O - OSPF, OE-OSPF External, M - Management
+       D - Redirect, E - IRMP, EX - IRMP external, o - SNSP, B - BGP, i-ISIS 
+
+Gateway of last resort is 11.88.3.49 to network 0.0.0.0
+
+S   0.0.0.0/0 [160/10] via 11.88.3.49, 52w5d:18:26:46, gigabitethernet0
+S   6.0.20.0/24 [1/10] via 6.1.1.57, 3d:01:43:44, gigabitethernet2
+C   6.1.1.56/30 is directly connected, 52w5d:18:54:41, gigabitethernet2
+S   9.64.1.0/24 [1/10] via 9.64.49.222, 5d:11:49:32, gigabitethernet2/0
+C   9.64.49.220/30 is directly connected, 52w5d:18:54:27, gigabitethernet2/0
+S   10.116.66.0/24 [1/10] via 9.64.49.222, 5d:11:49:32, gigabitethernet2/0
+C   11.88.2.52/30 is directly connected, 52w5d:18:23:43, gigabitethernet1
+C   11.88.3.48/28 is directly connected, 52w5d:18:47:11, gigabitethernet0
+C   127.0.0.0/8 is directly connected, 52w5d:18:55:39, lo0
+C   11.88.0.31/32 is directly connected, 52w5d:18:54:47, loopback0
+O   11.88.0.32/32 [110/2] via 11.88.2.54, 6d:20:04:05, gigabitethernet1
+OE   9.64.47.101/32 [1/10] via 9.64.49.222, 5d:11:49:32, gigabitethernet2/0

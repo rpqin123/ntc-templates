@@ -1,0 +1,8 @@
+---
+parsed_sample:
+  - time: "10:11:01"
+    timezone: "UTC"
+    dayweek: "Monday"
+    year: "2022"
+    month: "03"
+    day: "14"

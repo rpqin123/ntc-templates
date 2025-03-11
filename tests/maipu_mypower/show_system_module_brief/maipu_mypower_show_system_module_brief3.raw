@@ -1,0 +1,13 @@
+
+module information display:
+
+Module          Online State       Name                  SN  
+--------------------------------------------------------------------------------
+Mpu 0           online Start Ok    SM89-MPUAH            B175161582400085                
+Mpu 1           online Start Ok    SM89-MPUAH            B175161582400084                
+Lpu 0           online Start Ok    SM89-24GET24GEF-EA(V1)B378161582600014                
+Power 0         online Normal      /                                                     
+Power 1         online Normal      /                                                     
+Fan 0           online Normal      /                     B287164671500100                
+Sfu 0           online Start Ok    SM89-SFUAH            A418164672300050                
+Sfu 1           online Start Ok    SM89-SFUAH            A418164672300047                

@@ -1,0 +1,19 @@
+# show switch stack-mode
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SWITCH (.\d+)
+Value ROLE (\w+)
+Value MAC (\w\w\w\w\.\w\w\w\w\.\w\w\w\w)
+Value VER (\S+)
+Value MODE (\S+)
+Value CONFIG (\w+)
+Value STATE (\w+)
+
+Start
+ ^Switch.* -> STACKRING
+
+STACKRING
+ ^${SWITCH}\s+${ROLE}\s+${MAC}\s+${VER}\s+${MODE}\s+${CONFIG}\s+${STATE} -> Record
+ # Capture time-stamp if vty line has command time-stamping turned on
+ ^Load\s+for\s+
+ ^Time\s+source\s+is

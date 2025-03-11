@@ -1,0 +1,17 @@
+Dev Slot Port Configured Module            Online Module                Software Status
+
+  --- ---- ---- ---------------------------- ---------------------------- ---------------
+
+  1   1    48   M8600E-48XS-DC               M8600E-48XS-DC               ok             
+
+  1   2    0    none                         none                         none           
+
+  1   3    0    none                         none                         none           
+
+  1   4    0    none                         none                         none           
+
+  1   5    0    none                         none                         none           
+
+  1   M1   0    N/A                          M8600E-CM                    master         
+
+  1   M2   0    N/A                          M8600E-CM                    backup

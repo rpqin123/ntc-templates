@@ -1,0 +1,18 @@
+# show switch stack-ports summary command
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SW (\S+)
+Value STATUS (\w+)
+Value NEIGHBOR (\d)
+Value LEN (\S+)
+Value LINKOK (\w+)
+Value LINKACT (\w+)
+Value SYNC (\w+)
+Value CHANGES (\d+)
+Value INLOOP (\w+)
+
+Start
+ ^${SW}\s+${STATUS}\s+${NEIGHBOR}\s+${LEN}\s+${LINKOK}\s+${LINKACT}\s+${SYNC}\s+${CHANGES}\s+${INLOOP}\s+ -> Record
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

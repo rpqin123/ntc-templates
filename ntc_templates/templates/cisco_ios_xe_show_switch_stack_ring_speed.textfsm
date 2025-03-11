@@ -1,0 +1,14 @@
+# show switch stack-ring speed
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value RINGSPEED (\w+)
+Value RINGCONF (\S+)
+Value RINGPROT (\S+)
+
+Start
+ ^.*Speed\s+:\s${RINGSPEED}
+ ^.*Configuration:\s${RINGCONF}
+ ^.*Protocol\s+:\s${RINGPROT}
+ # Capture time-stamp if vty line has command time-stamping turned on
+ ^Load\s+for\s+
+ ^Time\s+source\s+is

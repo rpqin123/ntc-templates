@@ -1,0 +1,14 @@
+---
+parsed_sample:
+  - ps: "PS1"
+    model: "PWR-C4KX-750AC-R"
+    type: "AC 750W"
+    status: "good"
+    fan_sensor: "good"
+    inline_status: "n.a."
+  - ps: "PS2"
+    model: "PWR-C4KX-750AC-R"
+    type: "AC 750W"
+    status: "good"
+    fan_sensor: "good"
+    inline_status: "n.a."

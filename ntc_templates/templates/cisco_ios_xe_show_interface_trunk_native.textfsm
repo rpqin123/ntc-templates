@@ -1,0 +1,12 @@
+# show interface trunk Modes
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value PORT (\w+[\d+\S+]+)
+Value MODE (\w+)
+Value ENCAP (\S+)
+Value STATUS (\w+)
+Value NATIVE (\d+)
+
+Start
+ ^${PORT}\s+${MODE}\s+${ENCAP}\s+${STATUS}\s+${NATIVE} -> Record
+

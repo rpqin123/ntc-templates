@@ -1,0 +1,43 @@
+System description      : Ruijie Router (RSR7708-X) by Ruijie Networks
+System start time       : 2021-05-06 17:54:50
+System uptime           : 311:15:57:32
+System hardware version : 1.14
+System software version : RGOS 10.4(3b134)p2 Release(232565)
+System BOOT version     : 10.4(3b96)p3 Release(227597)
+System CTRL version     : 10.4(3b134)p2 Release(232565)
+System serial number    : G1PB0G600007A
+Module information:
+  Slot-M1 : RSR7708-SRCMI-X
+    System start time       : 2021-5-6 17:54:50
+    System hardware version : 1.14
+    System software version : RGOS 10.4(3b134)p2 Release(232565)
+    Flash MAIN version      : 10.4(3b134)p2 Release(232565)
+    Flash CTRL version      : 10.4(3b134)p2 Release(232565)
+    Flash BOOT version      : 10.4(3b96)p3 Release(227597)
+    System serial number    : G1PB0G600007A
+  Slot-M2 : RSR7708-SRCMI-X
+    System start time       : 2021-5-7 2:2:57
+    System hardware version : 1.14
+    System software version : RGOS 10.4(3b134)p2 Release(232565)
+    Flash MAIN version      : 10.4(3b134)p2 Release(232565)
+    Flash CTRL version      : 10.4(3b134)p2 Release(232565)
+    Flash BOOT version      : 10.4(3b96)p3 Release(227597)
+    System serial number    : G1PB0G6000160
+  Slot-1/0 : DFNM-16GE
+    System start time       : 2021-5-7 1:58:42
+    Last reboot reason      : push line card
+    System hardware version : 2.21
+    System software version : RGOS 10.4(3b134)p2 Release(232565)
+    Flash MAIN version      : 10.4(3b134)p2 Release(232565)
+    Flash CTRL version      : 10.4(3b134)p2 Release(232565)
+    Flash BOOT version      : 10.4(3b96)p3 Release(227597)
+    System serial number    : G1PB0GT000100
+  Slot-3/0 : DFNM-16GE
+    System start time       : 2021-5-7 1:58:42
+    Last reboot reason      : push line card
+    System hardware version : 2.21
+    System software version : RGOS 10.4(3b134)p2 Release(232565)
+    Flash MAIN version      : 10.4(3b134)p2 Release(232565)
+    Flash CTRL version      : 10.4(3b134)p2 Release(232565)
+    Flash BOOT version      : 10.4(3b96)p3 Release(227597)
+    System serial number    : G1PB0GT000024

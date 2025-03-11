@@ -1,0 +1,18 @@
+# show stack power neighbor
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SWITCH (\d+)
+Value PSTACK (\w+.\d+)
+Value PORT1STATUS (\w+)
+Value PORT1NEI (.)
+Value PORT1MAC (..............)
+Value PORT2STATUS (\w+)
+Value PORT2NEI (.)
+Value PORT2MAC (..............)
+
+
+Start
+  ^${SWITCH}\s+${PSTACK}\s+${PORT1STATUS}\s+${PORT1NEI}\W+${PORT1MAC}\s+${PORT2STATUS}\s+${PORT2NEI}\W+${PORT2MAC} -> Record
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

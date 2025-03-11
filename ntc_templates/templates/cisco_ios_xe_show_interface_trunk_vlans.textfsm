@@ -1,0 +1,28 @@
+# show interface trunk VLANS and Interfaces
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value PORT (\w+[\d+\S+]+)
+Value ALLOWED (\S+)
+Value ACTIVE (\S+)
+Value FORWARD (\S+)
+
+Start
+ ^Port        Vlans allowed on trunk -> VLANS
+ ^Port        Vlans allowed and active in management domain -> ALLOWED
+ ^Port        Vlans in spanning tree forwarding state and not pruned -> PLUM
+
+VLANS
+ ^${PORT}\s+${ALLOWED} -> Record
+ ^ -> Start
+
+ALLOWED
+ ^${PORT}\s+${ACTIVE} -> Record
+ ^ -> Start
+
+PLUM
+ ^${PORT}\s+${FORWARD} -> Record
+ ^ -> Start
+
+
+
+

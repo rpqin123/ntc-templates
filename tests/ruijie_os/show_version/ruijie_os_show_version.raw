@@ -1,0 +1,38 @@
+System description      : Ruijie High-density IPv6 100G Core Routing Switch(S8607E) By Ruijie Networks
+System start time       : 2019-11-18 16:57:54
+System uptime           : 846:16:52:08
+System hardware version : 1.30
+System software version : S8600E_RGOS 11.0(4)B8
+System patch number     : NA
+System serial number    : G1M70XXX00079
+System boot version     : 1.2.25
+Module information:
+  Slot M1 : M8600E-CM
+
+    Hardware version    : 1.30
+
+    Boot version        : 1.2.25
+
+    Software version    : S8600E_RGOS 11.0(4)B8
+
+    Serial number       : G1M70XXX00079
+
+  Slot 1 : M8600E-48XS-DC
+
+    Hardware version    : 1.20
+
+    Boot version        : 1.2.14
+
+    Software version    : S8600E_RGOS 11.0(4)B8
+
+    Serial number       : G1M51XXX00084
+
+  Slot M2 : M8600E-CM
+
+    Hardware version    : 1.30
+
+    Boot version        : 1.2.25
+
+    Software version    : S8600E_RGOS 11.0(4)B8
+
+    Serial number       : G1M70XXX00210

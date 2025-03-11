@@ -1,0 +1,115 @@
+loopback0:
+     line protocol is up
+     Flags: (0xc0080e9) LOOPBACK MULTICAST RUNNING 
+     Type: SOFTWARE_LOOPBACK
+     Internet address: 11.89.0.1/32
+     Metric: 0, MTU: 32768, BW: 8000000 Kbps, DLY: 5000 usec, VRF: global
+     Reliability 255/255, Txload 1/255, Rxload 1/255
+     Last clearing of "show interface" counters never
+     5 minutes input rate 0 bit/sec, 0 packet/sec, bandwidth utilization -
+     5 minutes output rate 0 bit/sec, 0 packet/sec, bandwidth utilization -
+     0 packets received; 0 packets sent
+     0 bytes received; 0 bytes sent
+     0 multicast packets received
+     0 multicast packets sent
+     0 input errors; 0 output errors
+     0 collisions; 0 dropped
+gigabitethernet0:
+     line protocol is up
+     Flags: (0xc008063) BROADCAST MULTICAST ARP RUNNING 
+     Type: ETHERNET_CSMACD
+     Description: TO_CNC_PE1
+     Internet address: 172.17.77.1/30
+     Broadcast address: 172.17.77.3
+     Metric: 0, MTU: 1500, BW: 1000000 Kbps, DLY: 10 usec, VRF: global
+     Reliability 255/255, Txload 1/255, Rxload 1/255
+     Ethernet address is ccd8.1f28.f727
+     Last clearing of "show interface" counters never
+     input peak rate 5940309 bits/sec,  9 weeks 6 days ago
+     output peak rate 6706330 bits/sec,  2 weeks 0 day ago
+     5 minutes input rate 201000 bits/sec, 40 packets/sec, bandwidth utilization 0.02%
+     5 minutes output rate 205000 bits/sec, 44 packets/sec, bandwidth utilization 0.02%
+     184943501 packets received; 165330825 packets sent
+     123396446863 bytes received; 35550246714 bytes sent
+     16 multicast packets received
+     2024071 multicast packets sent
+     0 input errors; 0 output errors
+     0 collisions; 0 dropped
+     Unknown protocol 0
+         line status up: speed 1000M,  duplex full, media-type force copper
+         rxframes:184943502, rxOctets:124136220931, rxBroadcast:16, rxMulticast:1, rxPause:0
+         txframes:165330825, txOctets:36409284497, txBroadcast:52203, txMulticast:1971868, txPause:0
+         rxCrcErr:0, rxLenErr:0, rxCodeErr:0, rxOverflow:0, rxBad:0 
+         txUnderrun:0, txCarrierSenceErr:0, singleColl:0 multipleColl:0 
+
+gigabitethernet1:
+     line protocol is down
+     Flags: (0x8062) BROADCAST MULTICAST ARP RUNNING 
+     Type: ETHERNET_CSMACD
+     Metric: 0, MTU: 1500, BW: 1000000 Kbps, DLY: 10 usec, VRF: global
+     Reliability 255/255, Txload 1/255, Rxload 1/255
+     Ethernet address is ccd8.1f28.f728
+     Last clearing of "show interface" counters never
+     5 minutes input rate 0 bit/sec, 0 packet/sec, bandwidth utilization 0.00%
+     5 minutes output rate 0 bit/sec, 0 packet/sec, bandwidth utilization 0.00%
+     0 packets received; 0 packets sent
+     0 bytes received; 0 bytes sent
+     0 multicast packets received
+     0 multicast packets sent
+     0 input errors; 0 output errors
+     0 collisions; 0 dropped
+     Unknown protocol 0
+         line status down: speed auto,  duplex auto, media-type auto unknown
+         rxframes:0, rxOctets:0, rxBroadcast:0, rxMulticast:0, rxPause:0
+         txframes:0, txOctets:0, txBroadcast:0, txMulticast:0, txPause:0
+         rxCrcErr:0, rxLenErr:0, rxCodeErr:0, rxOverflow:0, rxBad:0 
+         txUnderrun:0, txCarrierSenceErr:0, singleColl:0 multipleColl:0 
+
+vlan8:
+     line protocol is up
+     Flags: (0xc008063) BROADCAST MULTICAST ARP RUNNING 
+     Type: ETHERNET_CSMACD
+     Description: NTP
+     Internet address: 8.8.8.9/28
+     Broadcast address: 8.8.8.15
+     Internet address: 8.8.8.8/28
+     Broadcast address: 8.8.8.15
+     Metric: 0, MTU: 1500, BW: 1000000 Kbps, DLY: 10 usec, VRF: global
+     Reliability 255/255, Txload 1/255, Rxload 1/255
+     Ethernet address is ccd8.1f28.f72b
+     Last clearing of "show interface" counters never
+     input peak rate 102 bits/sec,  5 days 20 hours ago
+     output peak rate 499 bits/sec,  5 days 20 hours ago
+     5 minutes input rate 0 bit/sec, 0 packet/sec, bandwidth utilization -
+     5 minutes output rate 0 bit/sec, 1 packet/sec, bandwidth utilization -
+     2 packets received; 602178 packets sent
+     128 bytes received; 31313208 bytes sent
+     2 multicast packets received
+     602178 multicast packets sent
+     0 input errors; 0 output errors
+     0 collisions; 0 dropped
+     Unknown protocol 0
+vlan10:
+     line protocol is up
+     Flags: (0xc008063) BROADCAST MULTICAST ARP RUNNING 
+     Type: ETHERNET_CSMACD
+     Description: AA_PD_ATM&COUNTER
+     Internet address: 29.72.0.60/26
+     Broadcast address: 29.72.0.63
+     Internet address: 29.72.0.62/26
+     Broadcast address: 29.72.0.63
+     Metric: 0, MTU: 1500, BW: 1000000 Kbps, DLY: 10 usec, VRF: global
+     Reliability 255/255, Txload 1/255, Rxload 1/255
+     Ethernet address is ccd8.1f28.f72b
+     Last clearing of "show interface" counters never
+     input peak rate 6212060 bits/sec,  8 weeks 6 days ago
+     output peak rate 5915940 bits/sec,  10 weeks 5 days ago
+     5 minutes input rate 31000 bits/sec, 15 packets/sec, bandwidth utilization -
+     5 minutes output rate 151000 bits/sec, 21 packets/sec, bandwidth utilization -
+     35250759 packets received; 67405034 packets sent
+     11682978737 bytes received; 47340602434 bytes sent
+     687490 multicast packets received
+     22426827 multicast packets sent
+     1564566 input errors; 0 output errors
+     0 collisions; 0 dropped
+     Unknown protocol 0

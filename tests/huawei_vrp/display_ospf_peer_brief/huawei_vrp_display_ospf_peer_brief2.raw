@@ -1,0 +1,17 @@
+
+OSPF Process 200 with Router ID 43.123.126.254
+		  Peer Statistic Information
+ ----------------------------------------------------------------------------
+ Area Id          Interface                        Neighbor id      State    
+ 0.0.0.0          GigabitEthernet4/0/0             43.123.120.248   Full        
+ 0.0.0.0          GigabitEthernet5/0/0             43.123.120.249   Full        
+ ----------------------------------------------------------------------------
+ Total Peer(s):     2
+
+   OSPF Process 65534 with Router ID 143.123.216.106
+		  Peer Statistic Information
+ ----------------------------------------------------------------------------
+ Area Id          Interface                        Neighbor id      State    
+ 0.0.0.0          GigabitEthernet6/0/0             43.123.120.249   Full        
+ ----------------------------------------------------------------------------
+ Total Peer(s):     1

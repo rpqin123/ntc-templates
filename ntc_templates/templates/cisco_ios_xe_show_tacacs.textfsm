@@ -1,0 +1,34 @@
+# show tacacs
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value PUBPRIV (\S+)
+Value NAME (\S+)
+Value ADDR (\S+)
+Value PORT (\d+)
+Value STATUS (\w+)
+Value OPENS (\d+)
+Value CLOSES (\d+)
+Value ABORTS (\d)
+Value ERRORS (\d+)
+Value TIMEOUTS (\d+)
+Value ATTEMPTS (\d+)
+Value SENT (\d+)
+Value RECV (\d+)
+
+Start
+ ^Tacacs\+\sServer\s\-\s+${PUBPRIV}\s+
+ ^.*Server name:\s${NAME}
+ ^.*Server address:\s${ADDR}
+ ^.*Server port:\s${PORT}
+ ^.*opens:\s+${OPENS}
+ ^.*closes:\s+${CLOSES}
+ ^.*aborts:\s+${ABORTS}
+ ^.*errors:\s+${ERRORS}
+ ^.*Timeouts:\s+${TIMEOUTS}
+ ^.*Attempts:\s+${ATTEMPTS}
+ ^.*Sent:\s+${SENT}
+ ^.*Recv:\s+${RECV}
+ ^.*Status:\s+${STATUS} -> Record
+
+
+

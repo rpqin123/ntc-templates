@@ -1,0 +1,18 @@
+
+Slot 	  BoardType            BarCode                         Description
+================================================================================
+BACKPLANE  CR5Z1BKP08A         2102xxxxxxN0K8000325                                             
+LPU 4      CR57EMGFB23         2103xxxxxx10K9000068            LPUI-51-E-48xFE/GE-SFP           
+  PIC 0    CR57EFGFB2          030Pxxxxxx001577                24*100/1000Base-X-SFP            
+  PIC 1    CR57EFGFB2          030Pxxxxxx000002                24*100/1000Base-X-SFP            
+LPU 5      CR57EMGFB23         2103xxxxxx10K9000069            LPUI-51-E-48xFE/GE-SFP           
+  PIC 0    CR57EFGFB2          030Pxxxxxx000004                24*100/1000Base-X-SFP            
+  PIC 1    CR57EFGFB2          030Pxxxxxx000003                24*100/1000Base-X-SFP            
+MPU 9      CR57SRU200A5        2103xxxxxx10K9000027            SRUA5-200                        
+MPU 10     CR57SRU200A5        2103xxxxxx10K9000028            SRUA5-200                        
+SFU 11     CR57SFU200C0        2103xxxxxx10K9000092            SFUI-200-C                       
+SFU 12     
+SFU 13     
+FAN 18     CR52FCBH            2102xxxxxxN0K8000257                                             
+FAN 19     CR52FCBH            2102xxxxxxN0K8000258
+

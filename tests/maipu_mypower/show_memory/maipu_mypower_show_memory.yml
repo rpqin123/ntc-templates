@@ -1,0 +1,9 @@
+---
+parsed_sample:
+  - used: "202488588"
+    used_mb: "193.1"
+    free: "867216756"
+    free_mb: "827.0"
+    total: "1069705344"
+    total_mb: "1020.1"
+    used_percent: "18.93"

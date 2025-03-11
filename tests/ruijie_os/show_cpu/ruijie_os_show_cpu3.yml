@@ -1,0 +1,7 @@
+---
+parsed_sample:
+  - slot_id: "0"
+    slot_name: "WS6812"
+    cpu_5_sec: "0.30"
+    cpu_1_min: "0.20"
+    cpu_5_min: "0.20"

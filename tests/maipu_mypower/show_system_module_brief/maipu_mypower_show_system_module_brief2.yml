@@ -1,0 +1,17 @@
+---
+parsed_sample:
+  - module: "Mpu 0"
+    online: "online"
+    state: "Start Ok"
+    name: "SM3120-12TC(V1)"
+    sn: "A874174272700092"
+  - module: "Power 1"
+    online: "online"
+    state: "Normal"
+    name: "/"
+    sn: ""
+  - module: "Fan 1"
+    online: "online"
+    state: "Normal"
+    name: "/"
+    sn: ""

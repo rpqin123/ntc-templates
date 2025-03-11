@@ -1,0 +1,12 @@
+# show ntp status
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SYNC (\w+)
+Value STRATUM (\d+)
+Value REF (\S+\s\S+\s\S+)
+Value POLL (\d+)
+Value LASTUP (\d+\s\S+\s\S+)
+
+Start
+ ^Clock\sis\s${SYNC},\sstratum\s${STRATUM},\s${REF}
+ ^system poll interval is\s${POLL}, last update was\s${LASTUP}

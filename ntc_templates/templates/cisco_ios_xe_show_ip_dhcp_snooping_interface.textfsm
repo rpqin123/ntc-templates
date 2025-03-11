@@ -1,0 +1,14 @@
+# show ip dhcp snooping (interfaces)
+# Jeff Fry - July 2021 - Fryguy.net
+#
+#Value INTF (\w+\w/\w/\w)
+Value INTF (\S+[\d/\d/\d]+)
+Value TRUST (\w+)
+Value OPTION (\w+)
+Value RATELMT (\w+)
+
+Start
+ ^Interface\s+Trusted.* -> Continue
+ ^${INTF}\s+${TRUST}\s+${OPTION}\s+${RATELMT} -> Record
+
+

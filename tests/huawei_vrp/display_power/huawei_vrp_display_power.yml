@@ -1,0 +1,18 @@
+---
+parsed_sample:
+  - id: "16"
+    mode: "AC"
+    present: "Yes"
+    state: "Normal"
+  - id: "17"
+    mode: "AC"
+    present: "Yes"
+    state: "Normal"
+  - id: "16"
+    mode: "DC"
+    present: "Yes"
+    state: "Normal"
+  - id: "17"
+    mode: "DC"
+    present: "Yes"
+    state: "Normal"

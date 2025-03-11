@@ -1,0 +1,14 @@
+# show ip ssh
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SSHVER (\S+)
+Value ENCR (\S+)
+Value TIMEOUT (\d+\s\S+)
+Value RETRY (\d+)
+Value MOD (\S+)
+
+Start
+ ^.*Enabled - version ${SSHVER}
+ ^Encryption Algorithms:${ENCR}
+ ^.*timeout: ${TIMEOUT}; Authentication retries: ${RETRY}
+ ^Modulus Size : ${MOD}\sbits

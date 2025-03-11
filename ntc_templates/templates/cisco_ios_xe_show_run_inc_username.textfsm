@@ -1,0 +1,9 @@
+# show run | inc username
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value USER (\S+)
+Value PRIV (\d+)
+Value TYPE (\d+)
+
+Start
+ ^username ${USER}\s+privilege\s${PRIV}\ssecret\s${TYPE} -> Record

@@ -1,0 +1,16 @@
+OSPF Process 100 with Router ID 53.123.1.248
+		  Peer Statistic Information
+ ----------------------------------------------------------------------------
+ Area Id          Interface                        Neighbor id      State    
+ 0.0.0.0          Vlanif100                        53.123.1.249      Full        
+ 0.0.0.0          XGigabitEthernet1/0/12           53.123.254.20     Full        
+ 0.0.0.0          XGigabitEthernet1/0/2            53.123.255.240    Full        
+ 0.0.0.0          XGigabitEthernet1/0/7            53.123.255.238    Full        
+ 0.0.0.0          XGigabitEthernet1/0/3            53.123.255.240    Full        
+ 0.0.0.0          XGigabitEthernet2/0/0            53.123.1.254      Full        
+ 0.0.0.0          XGigabitEthernet1/0/0            53.123.1.253      Full        
+ 0.0.0.0          XGigabitEthernet1/0/8            53.123.254.254    Full        
+ 0.0.0.0          XGigabitEthernet1/0/1            53.123.1.246      Full        
+ 0.0.0.0          XGigabitEthernet1/0/46           43.123.120.248   Full        
+ ----------------------------------------------------------------------------
+ Total Peer(s):    10

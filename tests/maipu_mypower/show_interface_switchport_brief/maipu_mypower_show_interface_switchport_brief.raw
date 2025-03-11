@@ -1,0 +1,56 @@
+ Interface            Status     Link                 ActSpeed   ActDuplex  VSL      Type     Pvid  Desc
+ -------------------------------------------------------------------------------------------------
+ gi0/1                Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/2                Enabled    Up                   1000       Full                Nni      120   
+ gi0/3                Enabled    Up                   1000       Full                Nni      120   
+ gi0/4                Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/5                Enabled    Up                   1000       Full                Nni      120   
+ gi0/6                Enabled    Up                   1000       Full                Nni      120   
+ gi0/7                Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/8                Enabled    Up                   10         Full                Nni      110   
+ gi0/9                Enabled    Up                   1000       Full                Nni      120   
+ gi0/10               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/11               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/12               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/13               Enabled    Up                   1000       Full                Nni      120   
+ gi0/14               Enabled    Up                   1000       Full                Nni      120   
+ gi0/15               Enabled    Down                 Unknown    Unknown             Nni      120   
+ gi0/16               Enabled    Up                   1000       Full                Nni      120   
+ gi0/17               Enabled    Down                 Unknown    Unknown             Nni      160   
+ gi0/18               Enabled    Down                 Unknown    Unknown             Nni      160   
+ gi0/19               Enabled    Up                   1000       Full                Nni      160   
+ gi0/20               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/21               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/22               Enabled    Up                   100        Full                Nni      120   
+ gi0/23               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/24               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/25               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/26               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/27               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/28               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/29               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/30               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/31               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/32               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/33               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/34               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/35               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/36               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/37               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/38               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/39               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/40               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/41               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/42               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/43               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/44               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/45               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/46               Enabled    Down                 Unknown    Unknown             Nni      110   
+ gi0/47               Enabled    Up                   1000       Full                Nni      1     to_AA_WH-WD-GGKJ-RT-01
+ gi0/48               Enabled    Up                   1000       Full                Nni      1     to_AA_WH-WD-GGKJ-RT-02
+ te0/49               Enabled    Down                 Unknown    Unknown             Nni      1     
+ te0/50               Enabled    Down                 Unknown    Unknown             Nni      1     
+ te0/51               Enabled    Down                 Unknown    Unknown             Nni      1     
+ te0/52               Enabled    Down                 Unknown    Unknown             Nni      1     
+ te0/53               Enabled    Down                 Unknown    Unknown             Nni      1     
+ te0/54               Enabled    Down                 Unknown    Unknown             Nni      1     

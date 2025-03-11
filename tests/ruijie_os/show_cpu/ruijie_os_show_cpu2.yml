@@ -1,0 +1,17 @@
+---
+parsed_sample:
+  - slot_id: "1"
+    slot_name: "M8600E-48XS-DC"
+    cpu_5_sec: "13.0"
+    cpu_1_min: "12.6"
+    cpu_5_min: "12.7"
+  - slot_id: "M2"
+    slot_name: "M8600E-CM"
+    cpu_5_sec: "2.9"
+    cpu_1_min: "2.2"
+    cpu_5_min: "1.9"
+  - slot_id: "M1"
+    slot_name: "M8600E-CM"
+    cpu_5_sec: "5.50"
+    cpu_1_min: "4.30"
+    cpu_5_min: "4.40"

@@ -1,0 +1,12 @@
+
+Summary Prefixes : 2334
+Proto     total      active      added        deleted      freed   
+          routes     routes      routes       routes       routes  
+DIRECT    56         56          125          69           69        
+STATIC    0          0           0            0            0         
+RIP       0          0           0            0            0         
+OSPF      4202       4202        71411        67209        67209     
+IS-IS     0          0           0            0            0         
+BGP       2280       30          43048        40768        40768     
+UNR       0          0           0            0            0         
+Total     6538       4288        114584       108046       108046

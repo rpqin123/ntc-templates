@@ -1,0 +1,25 @@
+# show ip dhcp snooping (VLANS)
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SNOOP (\w+)
+Value GLEAN (\w+)
+Value CFGVL (\d+[,\d+]+)
+Value OPVLAN (\d+[,\d+]+)
+Value L3INT (\w+[\d+\S+]+)
+
+Start
+ ^Switch DHCP snooping is ${SNOOP}
+ ^Switch DHCP gleaning is ${GLEAN}
+ ^DHCP snooping is configured on following VLANs: -> Vlans
+ ^DHCP snooping is operational on following VLANs: -> Oper
+ ^DHCP snooping is configured on the following L3 Interfaces: -> L3Int
+
+Vlans
+ ^${CFGVL} -> Start
+
+Oper
+ ^${OPVLAN} -> Start
+
+L3Int
+ ^${L3INT} -> Start
+

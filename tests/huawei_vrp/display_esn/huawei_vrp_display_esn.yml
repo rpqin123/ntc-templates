@@ -1,0 +1,6 @@
+---
+parsed_sample:
+  - role: "master"
+    esn: "21021xxxxxx0JB000288"
+  - role: "slave"
+    esn: "210211xxxxxxJB000288"

@@ -1,0 +1,15 @@
+
+No Present mode State                                             Num
+-------------------------------------------------------------------------------
+AC:
+16 Yes     AC   Normal                                  Abnormal(0)/Normal(2)
+17 Yes     AC   Normal                                  Abnormal(0)/Normal(2)
+Power monitor cable state:
+ Plug
+
+
+PEM:
+16 Yes     DC   Normal                                  Abnormal(0)/Normal(2)
+17 Yes     DC   Normal                                  Abnormal(0)/Normal(2)
+Power monitor cable state:
+ Plug

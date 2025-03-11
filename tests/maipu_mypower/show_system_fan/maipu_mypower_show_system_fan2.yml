@@ -1,0 +1,14 @@
+---
+parsed_sample:
+  - fan_id: "0"
+    fan_name: "FAN-5B-01"
+    status: "Online"
+    description: "<NULL>"
+    sn: "A236164672500406"
+    work_status: "Normal"
+    speed_rate: "2600"
+    cmm_software_version: "2.0.102"
+    statistics_in: "1"
+    statistics_out: "0"
+    statistics_ierr: "0"
+    statistics_oerr: "0"

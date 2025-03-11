@@ -1,0 +1,5 @@
+Clock is synchronized, stratum 5, reference is 11.123.99.82
+nominal freq is 250.0000 Hz, actual freq is 250.0000 Hz, precision is 2**24
+reference time is E5D91C20.703D7375 (01:42:56.000 UTC Mon, Mar 14, 2022)
+clock offset is 0.00150 sec, root delay is 0.02359 sec
+root dispersion is 0.02322 msec, peer dispersion is 0.02322 msec

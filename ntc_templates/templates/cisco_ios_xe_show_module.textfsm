@@ -1,0 +1,13 @@
+# show module
+# Jeff Fry - July 2021 - Fryguy.net
+#
+Value SWITCH (.\d+)
+Value PORTS (\d+)
+Value MODEL (\w+\-\w+)
+Value SERIAL (\S+)
+Value MAC (\w\w\w\w\.\w\w\w\w\.\w\w\w\w)
+Value HWVER (\S+)
+Value SWVER (\S+)
+
+Start
+ ^${SWITCH}\s+${PORTS}\s+${MODEL}\s+${SERIAL}\s+${MAC}\s+${HWVER}\s+${SWVER}\s+ -> Record

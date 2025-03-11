@@ -1,0 +1,17 @@
+Dev  Slot   MaxPorts  Configured-Module    Online-Module        Status
+
+---  ----   --------  -------------------- -------------------- ------
+
+1    M1     1         RSR7708-SRCMI-X      RSR7708-SRCMI-X      master
+
+1    M2     1         RSR7708-SRCMI-X      RSR7708-SRCMI-X      slave
+
+1    F1     0         RSR7708-DSF-X        RSR7708-DSF-X        active
+1    F2     0         RSR7708-DSF-X        RSR7708-DSF-X        standby
+1    1/0    16        DFNM-16GE            DFNM-16GE            running
+
+1    2/0    0                                                   none
+
+1    3/0    16        DFNM-16GE            DFNM-16GE            running
+
+1    4/0    0                                                   none

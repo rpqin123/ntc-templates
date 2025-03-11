@@ -1,0 +1,15 @@
+MyPower (R) Operating System Software
+MP3840 system image file (flash0: /flash/rp9-i-6.3.11.1.3.bin), version 6.3.11.1.3(integrity), Compiled on Aug 15 2013, 00:32:17
+Copyright (C) 1999 Maipu Communication Technology Co., Ltd. All Rights Reserved.
+
+MP3840 Version Information
+	System ID           : 00017a88b704
+	Hardware Model	    : RM3B-MPU206-4GE with 1024 MBytes DDR SDRAM, 64 MBytes flash
+	Hardware Version    : 030(Hotswap Supported)
+	MPU CPLD Version    : 002
+	Monitor Version     : 1.13(DFS10)
+	Software Version    : 6.3.11.1.3(integrity)
+	Software Image File : flash0: /flash/rp9-i-6.3.11.1.3.bin
+	Compiled      	    : Aug 15 2013, 00:32:17 
+
+System Uptime is 37 weeks 1 day

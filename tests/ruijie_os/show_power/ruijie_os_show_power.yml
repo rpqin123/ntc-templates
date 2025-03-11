@@ -1,0 +1,18 @@
+---
+parsed_sample:
+  - power_id: "1"
+    power_type: "RG-PA1600I"
+    sn: ""
+    status: "ok"
+  - power_id: "2"
+    power_type: "N/A"
+    sn: ""
+    status: "N/A"
+  - power_id: "3"
+    power_type: "N/A"
+    sn: ""
+    status: "N/A"
+  - power_id: "4"
+    power_type: "RG-PA1600I"
+    sn: ""
+    status: "ok"

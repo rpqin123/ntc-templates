@@ -1,0 +1,23 @@
+Interface                        IP-Address      Status                Protocol Description
+loopback0                        11.89.0.1       up                    up      
+gigabitethernet0                 172.17.77.1     up                    up       TO_CNC_PE1
+gigabitethernet1                 unassigned      down                  down    
+gigabitethernet2                 unassigned      down                  down    
+gigabitethernet3                 unassigned      down                  down    
+vlan8                            8.8.8.9         up                    up       NTP
+vlan10                           29.72.0.60      up                    up       AA_PD_ATM&COUNTER
+vlan20                           29.72.0.124     up                    up       AA_OA_STAND
+vlan81                           29.74.0.156     up                    up       AA_GE_BV
+vlan82                           29.74.0.172     up                    up       AA_GE_EG
+vlan83                           29.74.0.188     up                    up       AA_GE_OCP
+vlan110                          29.74.0.124     up                    up       AA_GT_GUEST
+vlan120                          29.74.0.60      up                    up       AA_OA_DHCP
+vlan160                          29.72.0.252     up                    up       AA_CO_PR
+vlan170                          29.72.0.236     up                    up       AA_CO_TR
+vlan180                          29.74.0.252     up                    up       AA_PBOC
+vlan190                          29.72.0.220     up                    up       GT_GUST
+vlan198                          29.74.0.220     administratively down down     PD_TEST
+vlan200                          11.89.0.28      up                    up       MGT
+vlan500                          29.72.0.204     up                    up       AA_CO_VD
+vlan800                          29.74.0.140     up                    up       AA_GE_ENV
+null0                            unassigned      up                    up      
