@@ -19,7 +19,6 @@ Start
   ^${MODULE}\s+(?:${MAC_ADDRESS_START}\s+-\s+${MAC_ADDRESS_END})?\s+${HW_VER}(\s+${SW_VER})?\s*$$
   ^Module\s+Status\s+Uptime\s*$$
   ^${MODULE}\s+${STATUS}(\s+${UPTIME})?\s*$$
-  ^\s*$$
-  ^. -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"
 
 EOF

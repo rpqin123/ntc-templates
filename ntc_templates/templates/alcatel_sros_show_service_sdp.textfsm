@@ -14,7 +14,6 @@ Start
   ^SdpId\s+AdmMTU\s+OprMTU\s+Far\s+End\s+Adm\s+Opr\s+Del\s+LSP\s+Sig\s*$$
   ^-+ -> SDP
   ^\s*$$
-  ^. -> Error
 
 SDP
   ^${SDP_ID}\s+${ADM_MTU}\s+${OPR_MTU}\s+${FAR_END}\s+${ADM}\s+${OPR}\s+${DEL}\s+${LSP}\s+${SIG} -> Record
@@ -22,6 +21,6 @@ SDP
   ^-+ -> Done
   ^\s*$$
   ^=+
-  ^. -> Error
+  ^. -> EOF
 
 Done

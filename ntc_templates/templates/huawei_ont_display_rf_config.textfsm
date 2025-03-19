@@ -6,4 +6,3 @@ Start
   ^\s*switch:\s+${SWITCH},\s*state:\s+${STATE}\s*$$
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

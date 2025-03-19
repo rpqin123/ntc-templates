@@ -35,4 +35,3 @@ Start
   ^\s*--\s+\[Q\s+quit\|D\s+dump\|C-z\s+pause\]\s*$$
   ^\s*--\s+\[Q\s+quit\|C-z\s+pause\]\s*$$
   ^\s*$$
-  ^. -> Error

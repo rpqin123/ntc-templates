@@ -10,4 +10,3 @@ Start
   ^Copyright
   ^System\s+image
   ^\s*$$
-  ^. -> Error

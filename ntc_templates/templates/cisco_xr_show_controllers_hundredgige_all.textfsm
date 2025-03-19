@@ -72,8 +72,7 @@ StateChanger
   ^Autonegotiation\s+disabled.*
   ^Management\s+information\s+for\s+interface -> Ender
   ^$$
-  ^\s+$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s+$$ "LINE NOT FOUND"
 
 State
   ^\s+Administrative\s+state:\s+${ADMIN_STATE} 
@@ -82,7 +81,7 @@ State
   ^Autonegotiation\s+${AUTONEGOTIATION}
   ^\s+$$ -> Record StateChanger
   ^$$ -> Record StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 Phy
   ^\s+Media\s+type:\s+${MEDIA_TYPE}
@@ -100,23 +99,23 @@ Phy
   ^\s+Lane.+\(mA\) -> Record
   ^\s+$$
   ^$$ -> Record StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 Lanes
   ^\s+${LANE}\s+${WAVELENGTH}\s+${TX_VALUE_DBM}\s+${TX_VALUE_MW}\s+${RX_VALUE_DBM}\s+${RX_VALUE_MW}\s+${LASER_BIAS}  -> Record
   ^\s+DOM\s+alarms: -> Dom
   ^\s*$$ -> StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 Dom
   ^\s+${DOM_ALARMS} -> Record
   ^\s*$$ -> StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
 
 AlarmHeader
   ^\s+Thresholds.+Low\s+Low
   ^\s+--.+-- -> AlarmThresholds
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 AlarmThresholds
   ^\s+Transceiver\s+Temp\s+\(C\):\s+${TEMPERATURE_ALARM_HIGH}\s+${TEMPERATURE_WARN_HIGH}\s+${TEMPERATURE_WARN_LOW}\s+${TEMPERATURE_ALARM_LOW}
@@ -126,14 +125,14 @@ AlarmThresholds
   ^\s+Transmit\s+Power\s+\(dBm\):\s+${TX_ALARM_DBM_HIGH}\s+${TX_WARN_DBM_HIGH}\s+${TX_WARN_DBM_LOW}\s+${TX_ALARM_DBM_LOW}
   ^\s+Receive\s+Power\s+\(mW\):\s+${RX_ALARM_MW_HIGH}\s+${RX_WARN_MW_HIGH}\s+${RX_WARN_MW_LOW}\s+${RX_ALARM_MW_LOW}
   ^\s+Receive\s+Power\s+\(dBm\):\s+${RX_ALARM_DBM_HIGH}\s+${RX_WARN_DBM_HIGH}\s+${RX_WARN_DBM_LOW}\s+${RX_ALARM_DBM_LOW} -> Record StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
 
 Stats
   ^\s+FEC:
   ^\s+Corrected\s+Codeword\s+Count:\s+${FEC_CORRECTED}
   ^\s+Uncorrected\s+Codeword\s+Count:\s+${FEC_UNCORRECTED} -> Record
   ^\s+$$ -> StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 MacInfo
   ^\s+Operational\s+address:\s+${MAC_ADDRESS}
@@ -142,7 +141,7 @@ MacInfo
   ^\s+Operating\s+in.*
   ^\s+$$ -> Record StateChanger
   ^$$ -> Record StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
  
 OpsValues
   ^\s+Speed:\s+${SPEED}
@@ -157,7 +156,7 @@ OpsValues
   ^\s+Signal.*
   ^\s+$$ -> Record StateChanger
   ^$$ -> Record StateChanger
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 Ender
   ^.*

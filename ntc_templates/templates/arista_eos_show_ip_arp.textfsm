@@ -8,6 +8,5 @@ Start
   ^VRF:\s+${VRF}
   ^Address
   ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE} -> Record
-  ^. -> Error
 
 EOF

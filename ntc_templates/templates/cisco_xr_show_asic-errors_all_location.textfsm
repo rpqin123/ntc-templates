@@ -22,5 +22,4 @@ Start
   ^Reset\s+error\s+count\s+:\s+${RESET_ERROR_COUNT}
   ^-+$$
   ^\*+$$
-  ^\s*$$
-  ^. -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

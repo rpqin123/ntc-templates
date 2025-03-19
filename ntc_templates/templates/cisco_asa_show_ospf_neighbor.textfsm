@@ -9,4 +9,3 @@ Start
   ^Neighbor\s+ID\s+Pri\s+State\s+Dead\s+Time\s+Address\s+Interface\s*$$
   ^${NEIGHBOR_ID}\s+${PRIORITY}\s+${STATE}\s+${DEAD_TIME}\s+${IP_ADDRESS}\s+${INTERFACE} -> Record
   ^\s*$$
-  ^. -> Error

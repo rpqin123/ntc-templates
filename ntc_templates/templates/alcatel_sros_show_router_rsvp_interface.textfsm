@@ -13,7 +13,6 @@ Start
   ^\s+Sessions\s+Sessions\s+\(Mbps\)\s+\(Mbps\)
   ^-+ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^${INTERFACE}\s*${TOTAL_SESSIONS}\s*${ACTIVE_SESSIONS}\s*${TOTAL_BW}\s*${RESV_BW}\s*${ADMIN_STATE}\s*${OPER_STATE} -> Record
@@ -21,6 +20,6 @@ Interface
   ^=+
   ^-+ -> Done
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Done

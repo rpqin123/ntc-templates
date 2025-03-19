@@ -35,19 +35,18 @@ Start
   ^\s*Sensor\s+Index\s+Temperature\s+\(Celsius\)\s+Status\s*$$ -> Sensors
   ^\s*Unit\s+Device\s*$$ -> UnitsDescription
   ^\s*$$
-  ^. -> Error
 
 SystemLocation
   ^\s*System\s+MAC\s+Address:\s*${ADDRESS}\s*$$ -> Start
   ^\s*${LOCATION}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Sensors
   ^(\s*-+)*\s*$$
   ^\s*${SENSOR_ID}\s+${SENSOR_TEMP}\s+${SENSOR_STATUS}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UnitsDescription
   ^(\s*-+)*\s*$$
@@ -56,24 +55,24 @@ UnitsDescription
   ^\s*Unit\s+Main\s+Power\s+Supply\s+Redundant\s+Power\s+Supply -> UnitsPowerSupplies
   ^\s*${UNIT_DESCRIPTIONS}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UnitsPowerSupplies
   ^(\s*-+)*\s*$$
   ^\s*\d+\s+${UNIT_MAIN_POWER_SUPPLY}\s+${UNIT_REDUNDANT_POWER_SUPPLY}\s*$$
   ^\s*Unit\s+Fans\s+Status\s*$$ -> UnitsFansStatuses
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UnitsFansStatuses
   ^(\s*-+)*\s*$$
   ^\s*\d+\s+${UNIT_FANS_STATUS}\s*$$
   ^\s*Unit\s+Temperature\s+\(Celsius\)\s+Status\s*$$ -> UnitsTempStatuses
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UnitsTempStatuses
   ^(\s*-+)*\s*$$
   ^\s*\d+\s+${UNIT_TEMP}\s+${UNIT_TEMP_STATUS}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

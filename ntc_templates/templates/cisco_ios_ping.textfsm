@@ -12,7 +12,9 @@ Value RTT_MAX (\d+)
 Value List RESPONDERS (.*)
 
 Start
-  ^Type\s+escape\s+sequence\s+to\s+abort.
+  ^Type\s+escape\s+sequence\s+to\s+abort. -> Ping
+
+Ping
   ^Sending\s+${SENT_QTY},\s+${SENT_TYPE}\s+to\s+${DESTINATION},\s+timeout\s+is\s+${TIMEOUT}\s+seconds:
   ^Reply\s+to\s+request\s+\d+\s+from\s+${RESPONDERS},\s+\d+\s+ms
   ^Packet\s+sent\s+with\s+a\s+source\s+address\s+of\s+${SOURCE}
@@ -21,4 +23,4 @@ Start
   ^Success\s+rate\s+is\s+${SUCCESS_PCT}\s+percent\s+\(${SUCCESS_QTY}\/\d+\)(?:,\s+round-trip\s+min/avg/max\s+\=\s+)?(?:${RTT_MIN}/${RTT_AVG}/${RTT_MAX})?(?:\sms)?
   ^\s*$$
   # Error out if raw data does not match any above rules.
-  ^.* -> Error "Could not parse line:"
+  ^.* -> EOF

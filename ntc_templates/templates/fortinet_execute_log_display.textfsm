@@ -16,4 +16,3 @@ Start
   ^\s*${LOGS_SEARCHED}%\s+of\s+logs\s+has\s+been\s+searched\.\s*$$
   ^\s*${MESSAGE_NUMBER}:\s+date=${YEAR}-${MONTH}-${DAY}\s+time=${HOUR}:${MINUTE}:${SECOND}\s+${MESSAGE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

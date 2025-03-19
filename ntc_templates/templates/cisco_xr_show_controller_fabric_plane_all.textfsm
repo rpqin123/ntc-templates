@@ -12,7 +12,6 @@ Start
   ^-.+ 
   ^${PLANE_ID}\s+${ADMIN_STATE}\s+${PLANE_STATE}\s+${UP_DN_COUNTER}\s+${UP_MCAST_COUNTER} -> Record
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
   
 EOF

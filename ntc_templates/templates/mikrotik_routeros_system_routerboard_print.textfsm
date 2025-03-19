@@ -20,4 +20,3 @@ Start
   ^\s*current-firmware:\s${CURRENT_FIRMWARE}
   ^\s*upgrade-firmware:\s${UPGRADE_FIRMWARE}
   ^\s*(?:\d{2}:){2}\d{2}\s+echo:\s*.*$$ -> Next
-  ^. -> Error

@@ -64,5 +64,4 @@ Start
   ^\s+Loopback:\s+.+?\s*$$
   ^\s+MTU:\s+\d+\s*$$
   ^\s+MRU:\s+\d+\s*$$
-  ^\s+Forward\s+error\s+correction:\s+\w+\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s+Forward\s+error\s+correction:\s+\w+\s*$$ "LINE NOT FOUND"

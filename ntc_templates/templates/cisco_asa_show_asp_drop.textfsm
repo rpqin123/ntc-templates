@@ -215,8 +215,7 @@ Start
   ^.+unable-to-add-flow\)\s+${UNABLE_TO_ADD_FLOW}
   ^.+unable-to-create-flow\)\s+${UNABLE_TO_CREATE_FLOW}
   ^.+unsupported-ip-version\)\s+${UNSUPPORTED_IP_VERSION}
-  ^Flow\s+drop: -> FLOW
-  ^.* -> Error "LINE NOT FOUND"
+  ^Flow\s+drop: -> FLOW "LINE NOT FOUND"
 
 FLOW
   ^\s+$$
@@ -241,4 +240,4 @@ FLOW
   ^.+vpn-handle-not-found\)\s+${FLOW_DROP_VPN_HANDLE_NOT_FOUND}
   ^.+np-socket-data-move-failure\)\s+${FLOW_DROP_NP_SOCKET_DATA_MOVE_FAILURE}
   ^.+dtls-hello-close\)\s+${FLOW_DROP_DTLS_HELLO_CLOSE}
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"

@@ -11,4 +11,3 @@ Start
   ^-+$$
   ^\s+ID\s+NAME\s+REMOTE\s+REF-ID\s+ST\s+LAST\s+POLL\s+REACH
   ^${ID}\s+${NAME}\s+${REMOTE}\s+${REF_ID}\s+${STRATUM}\s+${LAST}\s+${POLL}\s+${REACH} -> Record
-  ^. -> Error

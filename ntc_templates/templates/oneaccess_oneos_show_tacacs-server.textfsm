@@ -11,4 +11,3 @@ Start
   ^\s*IP\s+address\s+Port(\s+number)?\s+Secret\s+Key\s+(Source\s+address|Interface)\s+VRF\s*$$
   ^\s*-+\s*$$
   ^\s*$$
-  ^. -> Error

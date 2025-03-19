@@ -12,4 +12,3 @@ Start
   ^-+
   ^\s*${VLAN_ID}\s+${MAC_ADDRESS}\s+${INTERFACE}\s+${INDEX}\s+${STATUS} -> Record
   ^\s*$$
-  ^. -> Error

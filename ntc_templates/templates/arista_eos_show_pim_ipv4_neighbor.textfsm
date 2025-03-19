@@ -11,6 +11,5 @@ Start
   ^\s*Neighbor Address\s+Interface\s+Uptime\s+Expires\s+Mode\s+Transport\s*$$
   ^\s*${NEIGHBOR}\s+${INTERFACE}\s+${UPTIME}\s+${EXPIRES}\s+${MODE}\s+${TRANSPORT}\s*$$ -> Record
   ^%\s
-  ^. -> Error
 
 EOF

@@ -10,4 +10,3 @@ Start
   ^\s+set\s+${SET_CLAUSES}
   ^exit -> Record
   ^\s*$$
-  ^. -> Error

@@ -29,10 +29,9 @@ Entries
   ^\s+refresh:
   ^\s+Epoch:
   ^\s*$$
-  ^. -> Error
 
 Chain
   ^\s+IP\sadj\sout\sof\s${RECURSIVE_INTERFACE},\saddr\s${RECURSIVE_NEXTHOP}$$ -> Entries
   ^\s+${RECURSIVE_INTERFACE} -> Entries
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

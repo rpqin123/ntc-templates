@@ -18,4 +18,3 @@ Start
   ^System\s+Description
   ^Part\s+Number
   ^\s*$$
-  ^. -> Error

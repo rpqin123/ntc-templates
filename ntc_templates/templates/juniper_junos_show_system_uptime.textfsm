@@ -33,4 +33,3 @@ Start
   ^Last\s+configured:\s*${LAST_CONFIG_YEAR}-${LAST_CONFIG_MONTH}-${LAST_CONFIG_DAY}\s+${LAST_CONFIG_TIME}\s+${LAST_CONFIG_TIMEZONE}\s+\([^)]+\)\s+by\s+${LAST_CONFIG_USER}
   ^.*,\s*${USERS}\s+users?,\s*load\s+averages:\s*${LOAD_AVERAGE_1MIN},\s*${LOAD_AVERAGE_5MIN},\s*${LOAD_AVERAGE_15MIN}
   ^\s*$$
-  ^. -> Error

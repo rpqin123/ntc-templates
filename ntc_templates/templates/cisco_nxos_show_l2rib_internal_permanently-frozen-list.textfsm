@@ -6,5 +6,4 @@ Start
   ^${TOPOLOGY}\s+${MAC_ADDRESS}\s+${FROZEN_TIME} -> Record
   ^Topology\s+Mac Address\s+Frozen time
   ^-+
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

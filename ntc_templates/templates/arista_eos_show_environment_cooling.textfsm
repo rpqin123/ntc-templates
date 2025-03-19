@@ -14,5 +14,4 @@ Start
   ^-+\s+-+\s+-+\s+-+
   ^${FAN}\s+${STATUS}\s+${CONFIG_SPEED}\%?\s+${ACTUAL_SPEED}\%? -> Record
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"

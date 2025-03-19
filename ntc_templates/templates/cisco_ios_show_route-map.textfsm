@@ -11,7 +11,6 @@ Start
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
   ^Time\s+source\s+is
-  ^.+ -> Error
 
 Match
   ^\s*$$
@@ -20,7 +19,7 @@ Match
   ^\s+${MATCH_CLAUSES}\s*$$
   ^route-map -> Continue.Record
   ^route-map\s+${NAME},\s+${ACTION},\s+sequence\s+${SEQ}\s*$$ -> Start
-  ^.+ -> Error
+  ^.+ -> EOF
 
 Set
   ^\s*$$
@@ -28,4 +27,4 @@ Set
   ^\s+${SET_CLAUSES}\s*$$
   ^route-map -> Continue.Record
   ^route-map\s+${NAME},\s+${ACTION},\s+sequence\s+${SEQ}\s*$$ -> Start
-  ^.+ -> Error
+  ^.+ -> EOF

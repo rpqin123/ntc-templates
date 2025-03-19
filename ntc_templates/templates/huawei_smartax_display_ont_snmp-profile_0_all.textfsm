@@ -7,4 +7,3 @@ Start
   ^\s*${ONT_ID}\s*${SNMP_PROFILE_ID}\s*${SNMP_PROFILE_NAME} -> Record
   ^\s*-+\s*$$
   ^\s*$$
-  ^. -> Error

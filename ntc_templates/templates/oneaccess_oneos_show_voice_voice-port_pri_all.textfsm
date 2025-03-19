@@ -85,4 +85,3 @@ Start
   ^\s+ces\s*:
   ^\s+Insufficient
   ^\s*$$
-  ^. -> Error

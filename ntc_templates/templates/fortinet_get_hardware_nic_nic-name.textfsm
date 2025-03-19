@@ -41,7 +41,6 @@ Start
   ^=+\s+Link\s+Status\s+=+ -> LinkStatus
   ^=+\s+Counters\s+=+ -> Counters
   ^\s*$$
-  ^. -> Error
 
 LinkStatus
   ^Admin\s*:${ADMIN}\s*$$
@@ -54,7 +53,7 @@ LinkStatus
   ^Duplex\s*:${DUPLEX}\s*$$
   ^link_status\s*:${LINK_STATUS}\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Counters
   ^Rx\s+Pkts\s*:${RX_PACKETS}\s*$$
@@ -73,4 +72,4 @@ Counters
   ^Member\s+Ports\s*\:\s*$$
   ^\s*${MEMBER_PORTS}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

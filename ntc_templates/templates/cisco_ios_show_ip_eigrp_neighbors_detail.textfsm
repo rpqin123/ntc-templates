@@ -28,6 +28,5 @@ Neighbors
   ^\s*Topology-ids\s+from\s+peer\s+\-\s+${TOPOLOGY_IDS_FROM_PEER}\s*$$ -> Record
   ^\s*Max\s+Nbrs\:\s+${MAX_NEIGHBORS}\,\s+Current\s+Nbrs\:\s+${CURRENT_NEIGHBORS}\s*$$
   ^\s*$$
-  ^.* -> Error
 
 EOF

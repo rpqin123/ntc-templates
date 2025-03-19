@@ -8,10 +8,9 @@ Value CONN_TYPE (\S+)
 Start
   ^Name\s+IP\sAddress\s+IPv6\sAddress\s+MAC\sAddress\s+Address\sSource\s+Connection\sType\s*$$ -> HOSTSTable
   ^\s*$$
-  ^. -> Error
 
 HOSTSTable
   ^${HOSTNAME}\s+${IP_ADDRESS}\s+${IPV6_ADDRESS}\s+${MAC_ADDRESS}\s+${SOURCE}\s+${CONN_TYPE}\s*$$ -> Record
   ^Command Successful.\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -7,9 +7,8 @@ Value INTERFACE (\S+)
 Start
   ^Address\s+HWtype\s+HWaddress\s+Flags\sMask\s+Iface\s*$$ -> ARPTable
   ^\s*$$
-  ^. -> Error
 
 ARPTable
   ^${IP_ADDRESS}\s+(${HARDWARE_TYPE})?\s+${MAC_ADDRESS}\s+(${FLAGS})?\s+${INTERFACE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

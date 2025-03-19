@@ -8,9 +8,8 @@ Start
   ^\s*$$
   ^\s+Port\s+Learn\s+Mode\s+\|\s+Action\s+Eavesdrop\s+Prevention\s*$$
   ^\s*-+(?:\s|-|\+)+$$ -> Show_Port_Security
-  ^. -> Error
 
 Show_Port_Security
   ^\s+${PORT}\s+${LEARN_MODE}\s+\|\s+${ACTION}\s+${EAVESDROP_PREVENTION}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

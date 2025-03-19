@@ -20,4 +20,3 @@ Start
   ^\s+range\s+${START_IP}\s+${END_IP}\s*
   ^\s+host\s+${HOST}\s*
   ^\s+fqdn\s+(?:v\d+\s+)?${FQDN}\s*
-  ^. -> Error

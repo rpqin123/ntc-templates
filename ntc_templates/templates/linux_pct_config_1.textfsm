@@ -34,4 +34,3 @@ Start
   ^\s*lxc.apparmor.profile:\s+${LXC_APPARMOR_PROFILE}\s*$$
   ^\s*lxc.cgroup.devices.allow:\s+${LXC_CGROUP_DEVICE_ALLOW}\s*$$
   ^\s*tags:\s+(?:${TAGS})?\s*$$
-  ^. -> Error

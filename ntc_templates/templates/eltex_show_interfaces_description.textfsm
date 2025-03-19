@@ -16,43 +16,42 @@ Start
   ^\s*Loopback\s+State\s+State\s+Description\s*$$ -> Loopback
   ^\s*Oob-eth\s+State\s+State\s+Description\s*$$ -> Oob
   ^\s*$$
-  ^. -> Error
 
 Port2
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Port4
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Port5
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}(?:\s+${INTERFACE_MODE})?\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Ch2
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Ch4
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Ch5
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}(?:\s+${INTERFACE_MODE})?\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Vlan
   ^(?:\s*-+)+\s*$$
@@ -60,16 +59,16 @@ Vlan
   ^\s*$$ -> Start
   ^\s*${INTERFACE}\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$
   ^\s*${DESCRIPTION}\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Loopback
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Oob
   ^(?:\s*-+)+\s*$$
   ^\s*${INTERFACE}\s+${ADMIN_STATE}\s+${LINK_STATE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

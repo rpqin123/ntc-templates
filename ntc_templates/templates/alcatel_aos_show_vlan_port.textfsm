@@ -8,4 +8,3 @@ Start
   ^\s*[-+]+\s*$$
   ^\s*${VLAN_ID}\s*${PORT}\s*${TYPE}\s*${STATUS}\s*$$ -> Record
   ^\s*$$
-  ^.*$$ -> Error

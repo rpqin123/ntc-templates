@@ -7,4 +7,3 @@ Value TIMEZONE (\w+\/\w+)
 Start
   ^${YEAR}-${MONTH}-${DAY}\s${TIME}\s${TIMEZONE} -> Record
   ^\s*$$
-  ^. -> Error

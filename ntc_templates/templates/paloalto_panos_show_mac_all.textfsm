@@ -10,4 +10,3 @@ Start
 Start_record
   ^${VLAN_ID}\s+${MAC_ADDRESS}\s+${INTERFACE}\s+${STATUS}\s+${TTL} -> Record
   ^\s*$$
-  ^. -> Error

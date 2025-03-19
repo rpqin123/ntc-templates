@@ -18,7 +18,6 @@ Start
   ^\s*OSPF\s+Router\s+with\s+ID\s+\(${ROUTER_ID}\)\s+\(Process\s+ID\s+${PROCESS_ID}\)
   ^\s+Net\s+Link\s+States\s+\(Area ${AREA}\) -> LSAInfo
   ^\s*$$
-  ^. -> Error
 
 LSAInfo
   ^\s+LS\s+age:\s+${LSA_AGE}
@@ -33,13 +32,13 @@ LSAInfo
   ^\s+${LSA_ASBR}$$
   ^\s+Network\s+Mask:\s+${LSA_NETWORK_MASK} -> LSAs
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 LSAs
   ^\s+Attached\s+Router:\s+${LS_ATT_ROUTER} -> Next.Record
   ^\s+LS\s+age:\s+${LSA_AGE} -> LSAInfo
   ^\s+Router\s+Link\s+States\s+\(Area ${AREA}\) -> LSAInfo
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 EOF

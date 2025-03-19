@@ -44,7 +44,6 @@ Start
   ^\s*Authentication Servers\s*$$ -> AuthC_Servers
   ^\s*Accounting Servers\s*$$ -> Acct_Servers
   ^\s*$$
-  ^. -> Error
 
 AuthC_Servers
   ^\s*Idx\s+Type\s+Server Address\s+Port\s+State\s+Tout\s+MgmtTout\s+RFC3576\s+IPSec - state\/Profile Name\/RadiusRegionString\s*$$
@@ -52,7 +51,7 @@ AuthC_Servers
   ^\s*${INDEX}\s+(\*)?\s+${TYPE}\s+${AUTHENTICATION_ADDR}\s+${PORT}\s+${STATE}\s+${TIMEOUT}\s+${MGMT_TIMEOUT}\s+${RFC3576}\s+${IPSEC_STATE}\s+${IPSEC_PROFILE}\s+\/${IPSEC_REGION}\s*$$ -> Record
   ^\s*$$
   ^\s*Accounting Servers\s*$$ -> Acct_Servers
-  ^. -> Error
+  ^. -> EOF
 
 Acct_Servers
   ^\s*Idx\s+Type\s+Server Address\s+Port\s+State\s+Tout\s+MgmtTout\s+RFC3576\s+IPSec - state\/Profile Name\/RadiusRegionString\s*$$
@@ -60,4 +59,4 @@ Acct_Servers
   ^\s*${INDEX}\s+(\*)?\s+${TYPE}\s+${ACCOUNTING_ADDR}\s+${PORT}\s+${STATE}\s+${TIMEOUT}\s+${MGMT_TIMEOUT}\s+${RFC3576}\s+${IPSEC_STATE}\s+${IPSEC_PROFILE}\s+\/${IPSEC_REGION}\s*$$ -> Record
   ^\s*Authentication Servers\s*$$ -> AuthC_Servers
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -9,4 +9,3 @@ Start
   ^.*${CONFIGFOLDER} -> Continue
   ^.*/BSA/config/${CONFIGFILE}
   ^.*$$
-  ^. -> Error

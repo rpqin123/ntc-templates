@@ -10,9 +10,8 @@ Start
   ^PHY:\s+Physical
   ^(?:\*|\^|\#|\-)down:
   ^\(\w+\):\s+\S+
-  ^. -> Error
 
 Begin
   ^${INTERFACE}\s+${PHY}\s+${PROTOCOL}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

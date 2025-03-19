@@ -16,4 +16,3 @@ Routes
   # for comware v5 ecmp
   ^\s+${PROTOCAL}\s+${DISTANCE}\s+${METRIC}\s+${NEXTHOP_IP}\s+${NEXTHOP_IF} -> Record
   ^\s*$$
-  ^. -> Error

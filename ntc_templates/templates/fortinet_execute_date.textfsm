@@ -5,4 +5,3 @@ Value DAY (\d{2})
 Start
   ^\s*current\s+date\s+is:\s+${YEAR}-${MONTH}-${DAY}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

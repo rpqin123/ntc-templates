@@ -12,7 +12,6 @@ Start
   ^Interface\s+Table
   ^Interface-Name\s+Adm\s+Opr\(v4\/v6\)\s+Mode\s+Port/SapId\s*$$ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^\s+IP-Address\s+PfxState
@@ -23,6 +22,6 @@ Interface
   ^Interfaces -> Done
   ^=+
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Done

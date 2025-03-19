@@ -21,4 +21,3 @@ Start
   ^IPv6\sActive\s+${IPV6_ACTIVE}\s*$$
   ^Command\sSuccessful.\s*$$
   ^\s*$$
-  ^. -> Error

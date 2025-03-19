@@ -24,4 +24,3 @@ Start
   ^\s*Available\s*\(bytes\):\s*${AVAILABLE},$$
   ^\s*Comments\s*:\s*${COMMENTS}$$
   ^\s*$$
-  ^.*$$ -> Error

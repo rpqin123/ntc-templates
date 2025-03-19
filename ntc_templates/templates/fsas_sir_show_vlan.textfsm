@@ -7,11 +7,10 @@ Start
   ^---- -> VLANS
   ^Total\s+Count
   ^\s*$$
-  ^. -> Error
 
 VLANS
   ^\d+ -> Continue.Record
   ^${VLAN_ID}\s+${INTERFACES}\s+\S+\s+\S+\s+${VLAN_NAME}\s*$$
   ^\s+${INTERFACES}\s+\S+\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

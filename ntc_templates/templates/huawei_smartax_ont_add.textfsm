@@ -9,4 +9,3 @@ Start
 OntDetails
   ^\s*PortID\s*:${PORT_ID},\s*ONTID\s*:${ONT_ID} -> Record
   ^\s*$$
-  ^. -> Error

@@ -10,4 +10,3 @@ Start
   ^\s*DefaultGateway:\s*(?:${DEFAULT_GATEWAY})?\s*$$
   ^\s*success!\s*$$
   ^\s+$$
-  ^. -> Error

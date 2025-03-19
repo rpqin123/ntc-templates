@@ -20,5 +20,4 @@ FIB
   # Match other lines before erroring out on unknown input lines  
   ^\s*$$
   ^[-+]*$$
-  ^. -> Error
 

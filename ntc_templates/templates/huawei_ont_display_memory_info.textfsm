@@ -16,4 +16,3 @@ Start
   ^\s*Swap:\s+${SWAP_TOTAL}\s+${SWAP_USED}\s+${SWAP_FREE}\s*$$
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

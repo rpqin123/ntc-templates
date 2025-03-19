@@ -13,7 +13,6 @@ Start
   ^Number
   ^\s+Port-Channel\s+Protocol\s+Ports\s+$$ -> PCS
   ^\s*$$
-  ^. -> Error
 
 
 

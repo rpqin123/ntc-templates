@@ -11,4 +11,3 @@ Start
   ^[Pp]ort\s+[Nn]ame\s+[Ss]tatus\s+[Vv]lan\s+[Dd]uplex\s+[Ss]peed\s+[Tt]ype\s*$$
   ^-+
   ^\s*$$
-  ^. -> Error

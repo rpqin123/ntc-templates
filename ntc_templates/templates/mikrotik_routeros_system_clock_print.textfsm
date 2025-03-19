@@ -13,4 +13,3 @@ Start
   ^\s*gmt-offset:\s+${GMT_OFFSET}\s*$$
   ^\s*dst-active:\s+${DST_ACTIVE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

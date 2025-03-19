@@ -15,4 +15,3 @@ Start
   ^\s*Peer.+\s*$$
   ^\s*Address.+\s*$$
   ^\s*${PEER_ADDRESS}\s+${PEER_ASN}\s+${CONNECTION_STATE}\s+${UPTIME_DOWNTIME}\s+${LAST_MSG_RECEIVED}\s+${S_G_RECEIVED} -> Record  
-  ^. -> Error

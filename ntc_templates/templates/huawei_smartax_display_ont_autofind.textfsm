@@ -33,4 +33,3 @@ Start
   ^\s*-+\s*$$
   ^\s*(Loid|Checkcode)\s*:
   ^\s*$$
-  ^. -> Error

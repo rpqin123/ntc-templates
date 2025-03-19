@@ -33,7 +33,6 @@ Start
   # Checking for header
   ^\s*Network\s+Next(?:\s+|-)[Hh]op\s+Metric\s+LocPrf\s+Weight\s+Path\s*$$ -> BGPTable
   ^\s*$$
-  ^. -> Error
 
 BGPTable
   # Regex to match the complete line including network
@@ -45,6 +44,6 @@ BGPTable
   ^\s*${STATUS}${PATH_SELECTION}${ROUTE_SOURCE}\s+${NEXT_HOP}\s{1,19}${METRIC}\s{1,10}${LOCAL_PREF}\s{2,6}${WEIGHT}\s*${AS_PATH}\s*${ORIGIN}\s*$$ -> Record
   ^Processed
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 EOF

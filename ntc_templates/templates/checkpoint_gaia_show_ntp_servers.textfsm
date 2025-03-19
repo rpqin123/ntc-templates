@@ -6,4 +6,3 @@ Start
   ^IP\sAddress\s+Type\s+Version\s*$$
   ^${IP_ADDRESS}\s+${TYPE}\s+${VERSION}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

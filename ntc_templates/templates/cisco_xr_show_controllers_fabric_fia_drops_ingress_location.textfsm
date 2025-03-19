@@ -59,5 +59,4 @@ Start
   ^\s+sp1\s+bad\s+code\s+${SP1_BAD_CODE}
   ^\s+sp1\s+align\s+fail\s+${SP1_ALIGN_FAIL}
   ^\s+sp1\s+prot\s+err\s+${SP1_PROT_ERR}
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

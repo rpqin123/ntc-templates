@@ -10,4 +10,3 @@ Start
   ^Total Entries:\s+\d+
   ^${INTERFACE}\s+${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${TYPE} -> Record
   ^\s*$$
-  ^. -> Error

@@ -9,5 +9,4 @@ Start
 Start_record
   ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE} -> Record
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"

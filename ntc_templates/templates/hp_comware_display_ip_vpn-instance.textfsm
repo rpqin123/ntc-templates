@@ -8,4 +8,3 @@ VPNInstances
   ^\s*${NAME}\s+${RD}\s+.* -> Record
   ^\s*${NAME}\s+.* -> Record
   ^\s*$$
-  ^. -> Error

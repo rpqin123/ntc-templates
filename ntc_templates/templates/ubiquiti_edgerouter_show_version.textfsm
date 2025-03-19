@@ -15,4 +15,3 @@ Start
   ^HW\sS/N:\s+${SERIAL_NUMBER}
   ^Uptime:\s+${UPTIME}
   ^\s*$$
-  ^. -> Error

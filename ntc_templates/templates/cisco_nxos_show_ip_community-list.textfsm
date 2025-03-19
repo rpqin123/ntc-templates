@@ -16,4 +16,3 @@ Start
   ^\s+${SEQ}\s+${ACTION}\s+${COMMUNITY}\s*$$ -> Continue
   ^\s+ -> Record
   ^$$
-  ^.*$$ -> Error

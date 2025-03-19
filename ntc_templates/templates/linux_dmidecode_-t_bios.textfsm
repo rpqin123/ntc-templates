@@ -13,7 +13,6 @@ Start
   ^\s*\#\s*fully\s*supported\s*by\s*this\s*version\s*of\s*dmidecode\.\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> BIOS
-  ^. -> Error
 
 BIOS
   ^\s*BIOS\s*Information\s*$$
@@ -24,7 +23,7 @@ BIOS
   ^\s*Runtime\s*Size:\s+${BIOS_RUNTIME_SIZE}\s*$$
   ^\s*ROM\s*Size:\s+${BIOS_ROM_SIZE}\s*$$
   ^\s*Characteristics:\s* -> Characteristics
-  ^. -> Error
+  ^. -> EOF
 
 Characteristics
   ^\s*.*\s* -> Characteristics
@@ -35,4 +34,4 @@ Characteristics
   ^\s*Installable\s*Languages:\s*\d+\s*$$
   ^\s*\S.+\S\s*$$
   ^\s*Currently\s*Installed\s*Language:\s*\S.+\S\s*$$ -> Record
-  ^. -> Error
+  ^. -> EOF

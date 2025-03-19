@@ -12,5 +12,4 @@ Start
   ^-------\s+
   ^${WLANID}\s+${PROFILE}\s/\s${SSID}\s+${STATUS}\s+${INTERFACE}(\s+${PMIP_MOBILITY})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
 

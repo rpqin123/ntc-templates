@@ -14,18 +14,17 @@ Start
   ^\|\s+ID\s+\|\s+VLAN Name* -> VLAN_TABLE
   ^\+-+\s+CROSS\s+CONNECTION\s+TABLE -> CROSS_TABLE
   ^\s*$$
-  ^. -> Error
 
 VLAN_TABLE
   ^\|\s*${VLAN_ID}\s*\|\s*${VLAN_NAME}\s*\| -> Record
   ^\+-+\+.*
   ^\+-+\s+CROSS\s+CONNECTION\s+TABLE -> CROSS_TABLE
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
   
 CROSS_TABLE
   ^\|\s+OVID
   ^\+-+\+.*
   ^\|\s+No Entry Found
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

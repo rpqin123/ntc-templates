@@ -14,6 +14,5 @@ Diag
   ^Mod\s+Redundancy\s+Role\s+Operating\s+Mode\s+Configured\s+Mode\s+Redundancy\s+Status -> End
   ^Mod\s+Online\s+Diag\s+Status -> End
   ^\s*$$
-  ^. -> Error
 
 End

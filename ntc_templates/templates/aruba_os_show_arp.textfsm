@@ -12,4 +12,3 @@ Start
  ^\s+Protocol\s+IP\s+Address\s+Hardware\s+Address\s+Interface\s+Age                                 
  ^\s+${PROTOCOL}\s+${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${INTERFACE}\s+${AGE} -> Record                            
  ^\s*$$                                                                                             
- ^. -> Error

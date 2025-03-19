@@ -50,4 +50,3 @@ Start
   ^\s+as4-capability=${AS4_CAPABILITY}(\s+state=${STATE})?\s*$$
   ^\s+state=${STATE}\s*$$
   ^\s*$$
-  ^. -> Error

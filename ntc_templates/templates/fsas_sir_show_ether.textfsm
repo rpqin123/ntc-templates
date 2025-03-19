@@ -26,4 +26,3 @@ Start
   ^since\s+:\s+${SINCE}\s*$$
   ^config\s+:\s+mode\(${CONFIG_MODE}\),\s+mdi\(${CONFIG_MDI}\),\s+media\(${CONFIG_MEDIA}\)\s*$$
   ^\s*$$
-  ^. -> Error

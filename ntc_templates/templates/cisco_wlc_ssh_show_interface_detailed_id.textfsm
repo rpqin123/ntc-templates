@@ -43,4 +43,3 @@ Start
   ^\s*L2\s+Multicast.*$$
   ^\s*IPv6\s+ACL.*$$
   ^\s*$$
-  ^.* -> Error

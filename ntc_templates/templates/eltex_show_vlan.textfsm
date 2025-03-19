@@ -14,7 +14,6 @@ Start
   ^\s*Vlan\s+Name\s+Ports\s+Type\s+Authorization\s*$$ -> TableType2
   ^\s*Vlan\s+Name\s+Tagged\s+Ports\s+UnTagged\s+Ports\s+Created\s+by\s*$$ -> TableType3
   ^\s*$$
-  ^. -> Error
 
 TableType1
   ^(?:\s*-+)+\s*$$
@@ -22,7 +21,7 @@ TableType1
   # Skip wrapped lines
   ^\s{5}\s*\S+(?:\s+\S+)*\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TableType2
   ^(?:\s*-+)+\s*$$
@@ -30,7 +29,7 @@ TableType2
   # Skip wrapped lines
   ^\s{5}\s*\S+(?:\s+\S+)*\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TableType3
   ^(?:\s*-+)+\s*$$
@@ -38,4 +37,4 @@ TableType3
   # Skip wrapped lines
   ^\s{5}\s*\S+(?:\s+\S+)*\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

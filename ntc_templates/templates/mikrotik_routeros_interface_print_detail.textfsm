@@ -19,7 +19,6 @@ Value VRF (\S+)
 Start
   ^\s*Flags:\s+D\s+-\s+dynamic(;|,)\s+X\s+-\s+disabled,\s+R\s+-\s+running(;|,)\s+S\s+-\s+slave(;|,)?\s*(P\s+-\s+passthrough)?\s*$$ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^\s*\d+(?:\s+D)?(?:\s*X|R)?(?:\s*S)?\s+ -> Continue.Record
@@ -30,4 +29,4 @@ Interface
   ^\s*${ID}(?:\s+${DYNAMIC})?(?:\s*${STATUS})?(?:\s*${SLAVE})?\s+;{3}\s+${DESCRIPTION}\s*$$
   ^\s*$$
   ^\s*${DESCRIPTION}\s*$$
-  ^. -> Error
+  ^. -> EOF

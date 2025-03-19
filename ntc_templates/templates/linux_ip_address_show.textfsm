@@ -24,4 +24,3 @@ Start
   ^\s+inet6\s+${IPV6_ADDRESSES}/${IPV6_MASKS}\s+(?:brd|scope).*$$
   ^\s+valid_lft.*$$
   ^\s*$$
-  ^. -> Error

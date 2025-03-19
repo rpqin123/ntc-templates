@@ -36,32 +36,31 @@ Start
   ^\s*Mac\s+based\s+VLANs\s*:\s*$$ -> MacBasedVlansTable
   ^\s*Subnet\s+based\s+VLANs\s*:\s*$$ -> SubnetBasedVlansTable
   ^\s*$$
-  ^. -> Error
 
 VlanMemberTable
   ^\s*Vlan\s+Name\s+Egress\s+rule\s+Port\s+Membership\s+Type\s*$$ -> VlanMemberTableType1
   ^\s*Vlan\s+Name\s+Egress\s+rule\s+Added\s+by\s*$$ -> VlanMemberTableType2
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 VlanMemberTableType1
   ^(?:\s*-+)+\s*$$
   ^\s*${VLAN}\s+${NAME}\s+${EGRESS_RULE}\s+${INTERFACE_MEMBERSHIP_TYPE}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 VlanMemberTableType2
   ^(?:\s*-+)+\s*$$
   ^\s*${VLAN}\s+${NAME}\s+${EGRESS_RULE}\s+${ADDED_BY}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 ForbiddenVlansTable
   ^\s*Vlan\s+Name\s*$$
   ^(?:\s*-+)+\s*$$
   ^\s*${FORBIDDEN_VLAN}\s+${FORBIDDEN_VLAN_NAME}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 ClassificationRules
   ^\s*$$ -> Start
@@ -71,18 +70,18 @@ ProtocolBasedVlansTable
   ^(?:\s*-+)+\s*$$
   ^\s*${PROTOCOL_BASED_VLAN_GROUP_ID}\s+${PROTOCOL_BASED_VLAN_ID}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 MacBasedVlansTable
   ^\s*Group\s+ID\s+Vlan\s+ID\s*$$
   ^(?:\s*-+)+\s*$$
   ^\s*${MAC_BASED_VLAN_GROUP_ID}\s+${MAC_BASED_VLAN_ID}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 SubnetBasedVlansTable
   ^\s*Group\s+ID\s+Vlan\s+ID\s*$$
   ^(?:\s*-+)+\s*$$
   ^\s*${SUBNET_BASED_VLAN_GROUP_ID}\s+${SUBNET_BASED_VLAN_ID}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

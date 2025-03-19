@@ -90,7 +90,6 @@ Start
   ^\s*Output\s+queues\s*:\s*\(queue\s+#:\s+packets\s+passed/packets\s+dropped\)
   ^\s*${OUTPUT_QUEUE_NUM}\s*:\s*${OUTPUT_QUEUE_PACKETS_PASSED}/${OUTPUT_QUEUE_PACKETS_DROPPED}\s*$$
   ^\s*$$
-  ^. -> Error
 
 Columns2
   ^\s*-+(?:\s+-+)*\s*$$
@@ -120,4 +119,4 @@ Columns2
   ^[a-zA-Z\-]+\s*(\d+(/\d+)*)?(?:\s+.*?\:\s*(?:[a-zA-Z\-]+\s*(\d+(/\d+)*)?,)*[a-zA-Z\-]+\s*(\d+(/\d+)*),?)?\s*$$
   ^\s+(?:[a-zA-Z\-]+\s*(\d+(/\d+)*)?,)*[a-zA-Z\-]+\s*(\d+(/\d+)*)\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

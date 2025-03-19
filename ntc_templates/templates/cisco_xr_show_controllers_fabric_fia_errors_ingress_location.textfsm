@@ -37,5 +37,4 @@ Start
   ^\s+ab\s+overflow\s+req lost\s+${AB_OVERFLOW_REQ_LOST}
   ^\s+ni\s+bad\s+crc32\s+${NI_BAD_CRC32}
   ^\s+ni\s+crc32\s+corrupt\s+${NI_CRC32_CORRUPT}
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

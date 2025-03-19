@@ -50,7 +50,6 @@ Start
   ^DROP:$$ -> DROP
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error
  
 DHCP_MESSAGE_TYPES
   ^Discover\s+${DHCP_DISCOVER_RX}\s+${DHCP_DISCOVER_TX}\s+${DHCP_DISCOVER_DROPS}$$
@@ -64,21 +63,21 @@ DHCP_MESSAGE_TYPES
   ^Total\s+${DHCP_TOTAL_MESSAGES_RX}\s+${DHCP_TOTAL_MESSAGES_TX}\s+${DHCP_TOTAL_MESSAGES_DROPS}$$ -> Start
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 DHCP_L2_FORWARDING
   ^Total\s+Packets\s+Forwarded\s+:\s+${DHCP_L2_FORWARDING_TOTAL_PACKETS_TX}$$
   ^Total\s+Packets\s+Received\s+:\s+${DHCP_L2_FORWARDING_TOTAL_PACKETS_RX}$$
   ^Total\s+Packets\s+Dropped\s+:\s+${DHCP_L2_FORWARDING_TOTAL_PACKETS_DROPPED}$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
  
 NON_DHCP
   ^Total\s+Packets\s+Forwarded\s+:\s+${NON_DHCP_TOTAL_PACKETS_RX}$$
   ^Total\s+Packets\s+Received\s+:\s+${NON_DHCP_TOTAL_PACKETS_TX}$$
   ^Total\s+Packets\s+Dropped\s+:\s+${NON_DHCP_TOTAL_PACKETS_DROPPED}$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 DROP
   ^Received\s+on\s+untrusted\s+port\s+:\s+${DHCP_DROP_RECEIVED_ON_UNTRUSTED_PORT}$$
@@ -93,4 +92,4 @@ DROP
   ^Insertion\s+of\s+option\s+82\s+failed\s+:\s+${DHCP_DROP_INSERTION_OF_OPTION_82_FAILED}$$
   ^Packet\s+Malformed\s+:\s+${DHCP_DROP_PACKET_MALFORMED}$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

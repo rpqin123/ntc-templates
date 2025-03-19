@@ -23,7 +23,6 @@ Start
   ^\s*Context -> Continue.Record
   ^\s*Context\s${CONTEXT} -> CONTEXT
   ^.*$$
-  ^. -> Error
 
 CONTEXT
   ^\s+Cellular\scontroller:\s${CONTROLLER}
@@ -39,7 +38,7 @@ CONTEXT
   ^\s*Data\s+bearer\s+technology\s+:
   ^\s*=+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 IPV4
   ^\s+Address\s*:\s*${IPV4_ADDRESS}
@@ -59,7 +58,7 @@ IPV4
   ^\s+Rx\sbytes\s*:\s*${RX_BYTES}
   ^\s*Data\s+statistics\s+:
   ^\s*$$ -> CONTEXT
-  ^. -> Error
+  ^. -> EOF
 
 IPV6
   ^\s*Address\s+\s+:
@@ -70,4 +69,4 @@ IPV6
   ^\s*Last\s+call\s+end\s+reason\s+:
   ^\s*Data\s+statistics\s+:
   ^\s*$$ -> CONTEXT
-  ^. -> Error
+  ^. -> EOF

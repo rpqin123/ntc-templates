@@ -13,7 +13,6 @@ Start
   ^\s*Multicast\s(M|m)ac\sAddress\sTable\s*$$
   ^-*$$
   # ^(-*\s*)*$$
-  ^. -> Error
 
 MAT
   # capture the mac address table
@@ -22,7 +21,7 @@ MAT
   ^\s*Total\s+[M|m]ac -> Start
   ^\s*-+\s+.*-*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 MMAT
   # capture the multicast mac address table

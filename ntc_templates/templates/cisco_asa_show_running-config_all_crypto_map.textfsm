@@ -17,7 +17,6 @@ Value TFC_PACKETS (\S\S)
 Start
   # Value's address , start of block
   ^crypto\smap\s${MAP}\s${SEQ}\smatch\saddress\s${MATCHED_ADDRESS}\s*$$ -> ReadBlockLines
-  ^. -> Error
 
 ReadBlockLines
   #1 Fake start, block "match address" to trigger recording of current block
@@ -47,4 +46,4 @@ ReadBlockLines
   ^crypto\smap\s${MAP}\sinterface\s${INTERFACE}\s*$$
   #
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

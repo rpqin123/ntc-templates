@@ -34,4 +34,3 @@ Start
   ^Rekey\s+Call\s+=\s+${REKEY_CALL}
   ^VPN\s+Filter\s+=\s+${VPN_FILTER}
   ^\s*$$
-  ^. -> Error

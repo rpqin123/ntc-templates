@@ -20,8 +20,7 @@ ModStatus
   ^Mod\s+Online\s+Diag\s+Status -> End
   ^Mod\s+Redundancy\s+Role\s+Operating\s+Redundancy\s+Mode\s+Configured\s+Redundancy\s+Mode -> End
   ^Mod\s+Redundancy\s+Role\s+Operating\s+Mode\s+Configured\s+Mode\s+Redundancy\s+Status -> End
-  ^\s*$$
-  ^. -> Error NotInModStatus
+  ^\s*$$ NotInModStatus
 
 SwitchStack
   # #1083 C9200L-24T
@@ -29,6 +28,6 @@ SwitchStack
   ^\s*${MODULE}\s+\d+\s+\S+\s+\S+\s+${MAC_ADDRESS}\s+${MOD_HW}\s+${MOD_SW}\s*$$ -> Record
   #\s -> Record
   ^\s*$$
-  ^. -> Error NotInSwtichStack
+  ^. -> EOF NotInSwtichStack
 
 End

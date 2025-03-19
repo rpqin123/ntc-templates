@@ -23,7 +23,6 @@ Start
   ^==\s+\[onboard\]$$
   ^\s+==\[${NAME}\]$$
   ^\s+mode:\s+${MODE}$$ -> PhysicalStatus
-  ^. -> Error
 
 PhysicalStatus
   ^\s+ip:\s+${IP_ADDRESS}\s+${NETMASK}$$
@@ -36,4 +35,4 @@ PhysicalStatus
   ^\s+==\[ -> Continue.Record
   ^\s+==\[${NAME}\]$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

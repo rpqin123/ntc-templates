@@ -11,17 +11,16 @@ Start
   ^If\s+Name\s+Area\s+Id\s+Designated\s+Rtr\s+Bkup\s+Desig\s+Rtr\s+Adm\s+Oper\s*$$
   ^-+ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^${INTERFACE}\s+${AREA}\s+${DESIG_RTR}\s+${BKUP_DESIG_RTR}\s+${ADMIN_STATE}\s+${OPER_STATE} -> Record
   ^-+ -> Total
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Total
   ^No.\s+
   ^=+ -> Done
-  ^. -> Error
+  ^. -> EOF
   
 Done

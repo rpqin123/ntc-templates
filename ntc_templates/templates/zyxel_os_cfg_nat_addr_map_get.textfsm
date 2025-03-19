@@ -10,10 +10,9 @@ Value GLOBAL_END_IP ((\d+\.\d+\.\d+\.\d+)?)
 Start
   ^Index\s+MappingRuleName\s+Interface\s+Type\s+LocalStartIP\s+LocalEndIP\s+GlobalStartIP\s+GlobalEndIP\s*$$ -> NAT_ADDRTable
   ^\s*$$
-  ^. -> Error
 
 NAT_ADDRTable
   ^${INDEX}\s+${NAME}\s+${INTERFACE}\s+${TYPE}\s+${LOCAL_START_IP}\s+${LOCAL_END_IP}\s+${GLOBAL_START_IP}\s+${GLOBAL_END_IP}\s*$$ -> Record
   ^Command\sSuccessful.\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -9,4 +9,3 @@ Start
   ^Total.*
   ^\s*$$
   ^{master:\d+}
-  ^. -> Error

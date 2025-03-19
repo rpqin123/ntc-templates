@@ -22,5 +22,4 @@ Start
   ^\s+alias\s+${ALIAS}$$
   ^\d+
   ^\s+
-  ^. -> Error
 

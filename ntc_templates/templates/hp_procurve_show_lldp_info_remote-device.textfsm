@@ -9,7 +9,6 @@ Start
   ^\s+LocalPort\s|\sChassisId.*$$
   ^\s+-.* -> LLDP
   ^\s*$$
-  ^. -> Error
 
 LLDP
   ^\s+${LOCAL_INTERFACE}\s+\|\s${CHASSIS_ID}\s+${NEIGHBOR_INTERFACE}\s*$$ -> Record
@@ -17,4 +16,4 @@ LLDP
   ^\s+${LOCAL_INTERFACE}\s+\|\s${CHASSIS_ID}\s+${NEIGHBOR_INTERFACE}\s+${NEIGHBOR_DESCRIPTION}\s+${NEIGHBOR_NAME}\s*$$ -> Record
   ^\S+\#\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

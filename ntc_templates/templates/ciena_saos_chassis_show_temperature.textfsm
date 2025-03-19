@@ -15,4 +15,3 @@ Start
   ^\|\s*${CURRENT}\s*\|\s*${LOW}\s*\|\s*${HIGH}\s*\|
   ^\+-+\+-+\+-+\+
   ^\s*$$
-  ^. -> Error

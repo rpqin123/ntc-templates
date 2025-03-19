@@ -12,4 +12,3 @@ Start
   ^\s*${SERVICE_ID}\s+${TYPE}\s+${ADMIN_STATUS}\s+${OPERATIONAL_STATUS}\s+${CUSTOMER_ID}\s+${SERVICE_NAME}\s*$$ -> Record
   ^Matching\s+Services\s+:\s+\d+\s*$$
   ^-+\s*$$
-  ^. -> Error

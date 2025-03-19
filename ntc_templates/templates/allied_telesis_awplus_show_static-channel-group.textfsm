@@ -13,7 +13,6 @@ Start
   ^Static\s+Aggregator:\s+${PO_NAME}
   ^Member
   ^\s+${INTERFACES}
-  ^. -> Error
 
 AlternativeOutput
   ^%\s+LAG\s+Maximum
@@ -27,4 +26,4 @@ AlternativeOutput
   ^%\s+Member:\s+${PO_NAME}
   ^%\s+Member:$$
   ^\s+${INTERFACES}
-  ^. -> Error
+  ^. -> EOF

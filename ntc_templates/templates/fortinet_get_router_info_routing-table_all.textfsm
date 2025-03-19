@@ -17,4 +17,3 @@ Start
   ^\s*${TYPE}\s+${DESTINATION}(?:\s+\[${DISTANCE}/${METRIC}\]\s+via)?\s+${GATEWAY},\s*${INTERFACE}(?:\s*,\s*${LAST_TIME_UPDATE})?\s*$$ -> Record
   ^\s*(?:\[${DISTANCE}/${METRIC}\]\s+via\s+)?${GATEWAY},\s*${INTERFACE}(?:\s*,\s*${LAST_TIME_UPDATE})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

@@ -16,7 +16,6 @@ Start
   ^\s+|\s*$$
   ^\S+\s+\S+\s+\d+\s+\d+:\d+:\d+\.\d+\s+\S+\s*$$
   ^\s*$$
-  ^. -> Error
 
 IPv6Groups
   # multiline IPv6 HSRP group
@@ -28,4 +27,4 @@ IPv6Groups
   ^Interface\s+Grp\s+Pri\s+P\s+State\s+Active\s+addr\s+Standby\s+addr\s+\s+Group\s+addr\s*$$
   ^\s+P\s+indicates
   ^\s+|\s*$$
-  ^. -> Error
+  ^. -> EOF

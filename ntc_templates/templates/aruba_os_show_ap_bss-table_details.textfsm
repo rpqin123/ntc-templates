@@ -36,7 +36,6 @@ Start
   ^Num
   ^Flags
   ^-+
-  ^. -> Error
 
 
 Before_ArubaOS_8_9
@@ -47,11 +46,11 @@ Before_ArubaOS_8_9
   ^bss
   ^Channel -> Start
   ^Num -> End
-  ^. -> Error
+  ^. -> EOF
 
 After_ArubaOS_8_9
   ^-+\s+-+
   ^${BSS}\s+${ESS}\s+${PORT}\s+${IP_ADDRESS}\s+${BAND}\s+${CHANNEL}\s+${TYPE}\s+${CUR_CL}\s+${AP_NAME}\s+${IN_T}\s+${TOT_T}\s+${MTU}\s+${ACL_STATE}\s+${ACL}\s+${FM}\s+${FLAGS}\s+${CLUSTER}\s+${ACTIVE_CLIENTS}\s+${STANDBY_CLIENTS}\s+${DATAZONE}\s*$$ -> Record
   ^Channel -> Start
   ^Num -> End
-  ^. -> Error
+  ^. -> EOF

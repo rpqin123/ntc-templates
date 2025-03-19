@@ -13,7 +13,6 @@ Start
   ^Route\s+Source\s+Networks\s+Subnets\s+Overhead\s+Memory\s+\(bytes\)\s*$$ -> RouteData1
   ^Route\s+Source\s+Networks\s+Subnets\s+Replicates\s+Overhead\s+Memory\s+\(bytes\)\s*$$ -> RouteData2
   ^\s*$$
-  ^. -> Error
 
 RouteData1
   ^${ROUTE_SOURCE}\s{2,16}${NETWORKS}\s{1,12}${SUBNETS}\s{1,12}${OVERHEAD}\s{1,12}${MEMORY}\s*$$ -> Record
@@ -22,7 +21,7 @@ RouteData1
   ^\s+Intra-area:\s+\d+\s+Inter-area:\s+\d+\s+External-1:\s+\d+\s+External-2:\s+\d+\s*$$
   ^\s+NSSA\s+External-1:\s+\d+\s+NSSA\s+External-2:\s+\d+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 RouteData2
   ^${ROUTE_SOURCE}\s{2,16}${NETWORKS}\s{1,12}${SUBNETS}\s{1,12}${REPLICATES}\s{1,12}${OVERHEAD}\s{1,12}${MEMORY}\s*$$ -> Record
@@ -31,4 +30,4 @@ RouteData2
   ^\s+Intra-area:\s+\d+\s+Inter-area:\s+\d+\s+External-1:\s+\d+\s+External-2:\s+\d+\s*$$
   ^\s+NSSA\s+External-1:\s+\d+\s+NSSA\s+External-2:\s+\d+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -29,8 +29,7 @@ Ckn1
   ^\s+Live peer list:\s+${LIVE_PEER_LIST}
   ^\s+Potential peer list:\s+${POTENTIAL_PEER_LIST} -> Record
   ^\s+$$
-  ^$$ -> Ckn2
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ -> Ckn2 "LINE NOT FOUND"
  
 Ckn2
   ^\s+CKN:\s+${CKN}
@@ -47,6 +46,6 @@ Ckn2
   ^\s+Potential peer list:\s+${POTENTIAL_PEER_LIST} -> Record
   ^\s+$$
   ^$$ -> Start
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 EOF

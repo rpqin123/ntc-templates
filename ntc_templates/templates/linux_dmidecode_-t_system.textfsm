@@ -12,7 +12,6 @@ Start
   ^\s*\#\s*fully\s*supported\s*by\s*this\s*version\s*of\s*dmidecode\.\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
 
 decisor
   ^\s*System\s*Configuration\s*Options\s*$$ -> system_configurations
@@ -20,7 +19,7 @@ decisor
   ^\s*System\s*Information\s*$$ -> system
   ^\s*System\s*Event\s*Log\s*$$ -> system_event_log
   ^\s*System\s*Reset\s*$$ -> system_reset
-  ^. -> Error
+  ^. -> EOF
 
 system
   ^\s*Manufacturer:\s+${SYSTEM_MANUFACTURER}\s*$$
@@ -33,19 +32,19 @@ system
   ^\s*Family:\s+\S.+\S\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF
 
 system_configurations
   ^\s*Option\s+\d+:\s+\S.+\S\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF
 
 system_boot_information
   ^\s*System\s*Boot\s*Information\s*$$
   ^\s*Status:\s+\S.+\S\s*$$ -> Record
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF
 
 system_event_log
   ^\s*Area\s*Length:\s+\d+\s*bytes\s*$$
@@ -62,7 +61,7 @@ system_event_log
   ^\s*Data\s*Format\s+\d+:\s+\S.+\S\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF
 
 system_reset
   ^\s*Status:\s+\S.+\S\s*$$
@@ -75,4 +74,4 @@ system_reset
   ^\s*Timeout:\s+\S.+\S\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF

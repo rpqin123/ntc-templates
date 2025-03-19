@@ -12,4 +12,3 @@ Start
   ^(\s*\d+\.\d+\.\d+\.\d+\s+){2}${HELPERS} -> Continue
   ^(\s*\d+\.\d+\.\d+\.\d+\s+){3}${HELPERS}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

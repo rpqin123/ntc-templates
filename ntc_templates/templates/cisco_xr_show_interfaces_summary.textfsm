@@ -9,4 +9,3 @@ Start
   ^----
   ^${INTF_TYPE}+\s+${TOTAL}\s+${UP}\s+${DOWN}\s+${ADMIN_DOWN} -> Record
   ^\s*$$
-  ^. -> Error

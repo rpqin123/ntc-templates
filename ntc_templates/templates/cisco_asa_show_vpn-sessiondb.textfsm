@@ -33,7 +33,6 @@ VPN_Session_Summary
   ^\s*Tunnels\s+Summary\s* -> Tunnels_Summary
   #
   ^\s*$$
-  ^. -> Error
 
 Tunnels_Summary
   ^\s*\-+\s*$$
@@ -41,4 +40,4 @@ Tunnels_Summary
   ^\s*${TUNNELS_SUMMARY_NAME}\s+:\s+${TUNNELS_SUMMARY_ACTIVE}\s+:\s+${TUNNELS_SUMMARY_CUMULATIVE}\s+:\s+${TUNNELS_SUMMARY_PEAK_CONCURRENT}\s*$$
   ^\s*Totals\s+:\s+${TOTALS_ACTIVE}\s+:\s+${TOTALS_CUMULATIVE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

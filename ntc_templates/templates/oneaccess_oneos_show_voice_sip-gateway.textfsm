@@ -52,4 +52,3 @@ Start
   ^\s*SIP-GW\s+entity\s+opened\s+sockets:
   ^\s+\S+P\s+sockets:
   ^\s*$$
-  ^. -> Error

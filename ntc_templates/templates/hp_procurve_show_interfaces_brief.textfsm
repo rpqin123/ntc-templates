@@ -15,19 +15,18 @@ Start
   ^\s+\|\s+Intrusion\s+MDI\s+Flow(?:\s+Bcast)?\s*$$
   ^\s+Port\s+Type\s+\|\s+Alert\s+Enabled\s+Status\s+Mode\s+Mode\s+Ctrl\s*$$ -> showintbrief1
   ^\s+Port\s+Type\s+\|\s+Alert\s+Enabled\s+Status\s+Mode\s+Mode\s+Ctrl\s+Limit\s*$$ -> showintbrief2
-  ^. -> Error
 
 showintbrief1
   ^\s+${PORT}\*?\s+${TYPE}\s+\|\s+${INTRUSION_ALERT}\s+${ENABLED}\s+${STATUS}\s+${MODE}?\*?\s+(?:${MDI_MODE}\s+)?${FLOW_CTRL}\s*$$ -> Record
   ^\s*-+(?:\s|-|\+)+$$
   ^\s*\*\s+third-party.*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 showintbrief2
   ^\s+${PORT}\*?\s+${TYPE}\s+\|\s+${INTRUSION_ALERT}\s+${ENABLED}\s+${STATUS}\s+${MODE}?\*?\s+(?:${MDI_MODE}\s+)?${FLOW_CTRL}\s+${BCAST_LIMIT}\s*$$ -> Record
   ^\s*-+(?:\s|-|\+)+$$
   ^\s*\*\s+third-party.*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 

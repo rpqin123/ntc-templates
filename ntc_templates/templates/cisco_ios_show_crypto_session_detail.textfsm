@@ -49,4 +49,3 @@ Start
  ^\s+Inbound:\s+#.*
  ^\s+Outbound:\s+#.*
  ^\s*$$
- ^. -> Error

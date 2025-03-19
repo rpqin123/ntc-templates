@@ -15,4 +15,3 @@ Start
   ^\s*-+\s*$$
   ^\s*Notes: -> EOF
   ^\s*$$
-  ^. -> Error

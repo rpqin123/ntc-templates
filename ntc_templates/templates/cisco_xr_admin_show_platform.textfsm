@@ -9,16 +9,15 @@ Start
   ^Location
   ^Node
   ^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s\S{3}\s+\d
-  ^. -> Error
 
 Normal
   # show platform
   ^${NODE}\s+${TYPE}\s+${STATE}\s+(${CONFIG_STATE})? -> Record
   # admin show platform
   ^${NODE}\s+${TYPE}\s+\S+\s+${STATE}\s+(${CONFIG_STATE})? -> Record
-  ^. -> Error
+  ^. -> EOF
 
 XRvChassis
   ^${NODE}\s+${TYPE}\s+\S+\s+${STATE}\s+(${CONFIG_STATE})? -> Record
   ^\-+
-  ^. -> Error
+  ^. -> EOF

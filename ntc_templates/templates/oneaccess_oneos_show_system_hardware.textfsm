@@ -63,4 +63,3 @@ Start
   ^\s*BRI\s*:
   ^\s*Uplink\s*:
   ^\s*$$
-  ^. -> Error

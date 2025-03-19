@@ -7,4 +7,3 @@ Value HOSTNAME (\S+)
 Start
   ^\s*CTID\s+NPROC\s+STATUS\s+IP_ADDR\s+HOSTNAME\s*$$
   ^\s*${CTID}\s*${NPROC}\s*${STATUS}\s*(-|${IP_ADDR})\s*${HOSTNAME}\s*$$ -> Record
-  ^. -> Error

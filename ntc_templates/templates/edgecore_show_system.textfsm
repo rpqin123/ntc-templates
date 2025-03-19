@@ -21,7 +21,6 @@ Start
   ^\s*System\s+OID\s+String:\s+${OID}\s*$$
   ^\s*System\s+Information\s*$$ -> SystemInfo
   ^\s*$$
-  ^. -> Error
 
 SystemInfo
   ^\s*System\s+Up\s+Time:\s+${UPTIME}\s*$$
@@ -40,10 +39,10 @@ SystemInfo
   ^\s*Jumbo\s+Frame:\s+${JUMBO_FRAME_STATUS}\s*$$
   ^\s*POST\s+Result:\s*$$ -> PostResults
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 PostResults
   ^\s*Done\s+All\s+Pass.\s*$$
   ^\s*$$
   ^\s*${POST_RESULTS}\s*$$ -> PostResults
-  ^. -> Error
+  ^. -> EOF

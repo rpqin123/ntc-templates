@@ -8,4 +8,3 @@ Start
   ^--
   ^\?\s+\(${IP_ADDRESS}\)\s+at\s+<*${MAC_ADDRESS}>*\s+(\[\S+\]\s*)?([A-Z]+\s*)?on\s+${INTERFACE} -> Record
   ^\s*$$
-  ^. -> Error

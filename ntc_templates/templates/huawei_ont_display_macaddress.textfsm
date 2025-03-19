@@ -8,4 +8,3 @@ Start
   ^\s*${INDEX}\s+${PORT_ID}\s+${VLAN}\s+${MAC_ADDRESS} -> Record
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

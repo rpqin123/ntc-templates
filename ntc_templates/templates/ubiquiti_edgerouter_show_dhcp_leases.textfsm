@@ -10,4 +10,3 @@ Start
 
 Entries
   ^${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${EXPIRATION}\s+${POOL}\s+${HOST}\s*$$ -> Record
-  ^. -> Error

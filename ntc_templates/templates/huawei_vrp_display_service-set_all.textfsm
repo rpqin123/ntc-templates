@@ -7,4 +7,3 @@ Start
   ^\s*ID.+$$ -> Next
   ^\s*${ID}\s+${NAME}\s+${SSID}\s*$$ -> Record
   ^\s*Total:.+$$ -> Next
-  ^.*$$ -> Error

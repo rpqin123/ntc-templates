@@ -67,7 +67,6 @@ Start
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
   ^Time\s+source\s+is
-  ^.*$$ -> Error
 
 GetDescription
   ^${NEIGHBOR_DESCRIPTION} -> IgnoreDescription
@@ -76,7 +75,7 @@ IgnoreDescription
   ^Time\s+remaining -> Start
   ^\S*
   ^\s*$$
-  ^.* -> Error
+  ^.* -> EOF
 
 PowerMDI
   ^\s+Power\s+Pair:\s+${POWER_PAIR}\s*$$
@@ -99,4 +98,4 @@ Med
   ^\s*Total\s+entries\s+displayed -> Record
   ^\s*-+\s*$$ -> Continue.Record
   ^\s*-+\s*$$ -> Start
-  ^.* -> Error
+  ^.* -> EOF

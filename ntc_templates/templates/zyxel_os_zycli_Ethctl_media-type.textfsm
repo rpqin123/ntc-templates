@@ -9,4 +9,3 @@ Start
   ^The\sautonegotiated\smedia\stype\sis\s${NEGOTIATED_SPEED}\s${NEGOTIATED_DUPLEX}\sDuplex\s*$$
   ^Link\sis\s${LINK_ACTIVE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

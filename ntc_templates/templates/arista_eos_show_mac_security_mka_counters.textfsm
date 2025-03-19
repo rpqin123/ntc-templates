@@ -10,7 +10,6 @@ Start
 Data
   ^${INTERFACE}\s+${RX_SUCCESS}\s+${RX_FAILURE}\s+${TX_SUCCESS}\s+${TX_FAILURE} -> Record
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
   
 EOF  

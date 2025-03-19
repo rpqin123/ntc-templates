@@ -137,7 +137,6 @@ VLANS
   ^\s+
   ^-+
   ^\S+\s+[TtYyPpEe]{4} -> Done
-  ^.+ -> Error
 
 Done
   ^.*

@@ -13,7 +13,6 @@ Start
   ^\s*Created\s+by:\s+D-Default,\s+S-Static,\s+G-GVRP,\s+R-Radius\s+Assigned\s+VLAN\s*$$
   ^\s*Vlan\s+Name\s+Ports\s+Created\s+by\s*$$ -> Column4
   ^\s*$$
-  ^. -> Error
 
 Column5
   ^(\s*-*)*\s*$$

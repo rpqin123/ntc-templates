@@ -16,4 +16,3 @@ Start
   ^\s+Type\s+Number\s+Number\s+Duration\s*$$
   ^\s*no\s+isdn\s+active\s+calls                           
   ^\s*$$
-  ^. -> Error

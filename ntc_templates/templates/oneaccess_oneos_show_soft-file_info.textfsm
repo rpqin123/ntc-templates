@@ -21,4 +21,3 @@ Start
   ^\s*---
   ^[fF]ile\sis\s${STATUS} -> Record
   ^\s*$$
-  ^. -> Error

@@ -9,8 +9,7 @@ Start
   ^--.+
   ^${RELOAD_CAUSE} ->  RT
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
   
 RT  
   ^\s+

@@ -10,8 +10,7 @@ Start
   ^\s*IP\sARP\sTable\s
   ^\s*Total\snumber\sof\sentries:
   ^\s*Address\s+Age\s+MAC\s+Address\s+Interface\s+Physical\sInterface\s*$$ -> Data
-  ^. -> Error
 
 Data
   ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE}\s+${PHYSICAL_INTERFACE}(?:\s+[#*+])?\s*$$ -> Record
-  ^. -> Error
+  ^. -> EOF

@@ -48,4 +48,3 @@ Start
   ^\s*RelayNextHop\s*:\s+${RELAY_NEXT_HOP}\s+TunnelID\s*:\s+${TUNNEL_ID}\s*$$
   ^\s*Interface\s*:\s+${INTERFACE}\s+Flags\s*:\s+${FLAGS}\s*$$
   ^\s*$$
-  ^. -> Error

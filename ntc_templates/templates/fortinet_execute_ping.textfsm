@@ -19,4 +19,3 @@ Start
   ^\s*${TRANSMITTED}\s+packets\s+transmitted\,\s+${RECEIVED}\s+packets\s+received\,\s+${PACKET_LOSS}\%\s+packet\s+loss\s*$$
   ^\s*round-trip\s+min/avg/max\s+=\s+${MIN_RTT}/${AVG_RTT}/${MAX_RTT}\s+ms\s*$$
   ^\s*$$
-  ^. -> Error

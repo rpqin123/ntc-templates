@@ -12,6 +12,5 @@ Start
 Routes
   ^${NETWORK}(/${PREFIX_LENGTH})?\s+${NEXTHOP_IP}\s+${NEXTHOP_IF}\s+${PROTOCOL}\s+${ADDITIONAL_INFO} -> Record
   ^\s*$$
-  ^. -> Error
 
 EOF

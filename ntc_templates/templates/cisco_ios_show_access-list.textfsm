@@ -15,7 +15,7 @@ Value PROTOCOL (\w+)
 #
 # SOURCE RegEx must be able to catch every possible source combination including masks. 'any' and 'host' and 'wildcard bits' are possible too.
 #
-Value SOURCE (host\s\d+\.\d+\.\d+\.\d+|any|\d+\.\d+\.\d+\.\d+\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+,\s+wildcard bits\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+)
+Value SOURCE (host\s\d+\.\d+\.\d+\.\d+|any|\d+\.\d+\.\d+\.\d+\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+,\s+wildcard bits\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+|host\s(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*)|(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*)|(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*/\d+))
 #
 # We can specify protocols to match. 'eq', 'gt', 'lt', 'range' and 'neq' are supported.
 #
@@ -29,7 +29,7 @@ Value DESTINATION_PORT ([\da-zA-Z\s]+)
 #
 # DESTINATION RegEx must be able to catch every possible source combination including masks. 'any' and 'host' and 'wildcard bits' are possible too.
 # 
-Value DESTINATION (host\s\d+\.\d+\.\d+\.\d+|any|\d+\.\d+\.\d+\.\d+\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+,\s+wildcard bits\s\d+\.\d+\.\d+\.\d+)
+Value DESTINATION (host\s\d+\.\d+\.\d+\.\d+|any|\d+\.\d+\.\d+\.\d+\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+,\s+wildcard bits\s\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+|host\s(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*)|(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*)|(?:(?:[a-fA-F0-9:]+:+)+[a-fA-F0-9:]*/\d+))
 Value MODIFIER (log|tos normal|eq ftp|gt 1024)
 Value MATCHES (\d+)
 
@@ -41,3 +41,4 @@ Start
   ^\s*${SN}\s+${ACTION}\s+${SOURCE}(\s+${MODIFIER})*(\s\(${MATCHES}\smatches\))* -> Record
   ^Load\s+for\s+
   ^Time\s+source\s+is
+  ^. -> EOF

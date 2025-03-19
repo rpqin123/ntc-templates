@@ -41,6 +41,5 @@ Start
   ^\s+RPT\s+join\s+desired
   ^\s+Prune
   ^\s+No\s+interfaces\s+in\s+(immediate|inherited)\s+olist
-  ^.* -> Error
 
 EOF

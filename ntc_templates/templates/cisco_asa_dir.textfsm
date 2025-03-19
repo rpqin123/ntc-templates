@@ -10,7 +10,6 @@ Value NAME (\S+)
 
 Start
   ^Directory of\s+${FILE_SYSTEM} -> DIR
-  ^. -> Error
 
 DIR
   ^Directory of\s+${FILE_SYSTEM} -> DIR
@@ -20,7 +19,7 @@ DIR
   ^\d+\s+\S+\s+\S+\s+\d+\s+\S+
   ^${TOTAL_SIZE} bytes total \(${TOTAL_FREE} bytes free/${TOTAL_PERCENT_FREE}\% free\)
   ^.*$$
-  ^. -> Error DIR
+  ^. -> EOF DIR
 
 #
 EOF

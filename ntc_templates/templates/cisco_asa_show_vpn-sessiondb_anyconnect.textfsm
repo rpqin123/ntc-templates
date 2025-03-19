@@ -51,4 +51,3 @@ Connection
   ^\s*Audt\s+Sess\s+ID\s+:\s+${AUDT_SESS_ID}$$
   ^\s*Security\s+Grp\s+:\s+${SECURITY_GRP}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

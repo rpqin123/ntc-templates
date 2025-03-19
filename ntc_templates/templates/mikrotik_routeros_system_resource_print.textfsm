@@ -43,4 +43,3 @@ Start
   ^\s*board\-name\:\s+${BOARD_NAME}\s*$$
   ^\s*platform\:\s+${PLATFORM}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

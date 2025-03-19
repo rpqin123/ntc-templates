@@ -41,7 +41,6 @@ Start
   ^Maximum\s+frame\s+Size
   ^MED\s+Device\s+information -> MED
   ^\s*$$
-  ^. -> Error
 
 SystemDescription
   ^${NEIGHBOR_DESCRIPTION} -> IgnoreDescription
@@ -50,7 +49,7 @@ IgnoreDescription
   ^System\s+capabilities\s+supported -> Start
   ^${NEIGHBOR_DESCRIPTION}
   ^\s*$$
-  ^.*$$ -> Error
+  ^.*$$ -> EOF
 
 MED
   ^Device\s+class
@@ -74,4 +73,4 @@ MED
   ^Ca
   ^\S+\s+has\s+\d+\s+neighbors -> Record Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

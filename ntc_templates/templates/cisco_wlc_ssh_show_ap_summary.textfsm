@@ -26,4 +26,3 @@ Start
   ^AP\s+Name\s+Slots\s+AP\s+Model\s+Ethernet\s+MAC\s+Location\s+Port\s+Country\s+Priority\s*$$
   ^AP\s+Name\s+Slots\s+AP\s+Model\s+Ethernet\s+MAC\s+Radio\s+MAC\s+Location\s+Country\s+IP\s+Address\s+State\s*$$
   ^-+
-  ^. -> Error

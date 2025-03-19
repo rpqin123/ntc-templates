@@ -8,4 +8,3 @@ Start
   ^Local\s+Interface\s+Parent\s+Interface\s+Chassis\s+Id\s+Port\s+info\s+System\s+Name
   ^${LOCAL_INTERFACE}\s*${PARENT_INTERFACE}\s+${CHASSIS_ID}\s+${NEIGHBOR_INTERFACE}\s+${NEIGHBOR_NAME} -> Record
   ^\s*$$
-  ^. -> Error

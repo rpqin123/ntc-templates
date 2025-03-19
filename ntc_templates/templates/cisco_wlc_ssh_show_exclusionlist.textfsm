@@ -5,7 +5,6 @@ Start
   ^Manually\s*Disabled\s*Clients -> ManuallyDisabled
   ^No\s*dynamically
   ^\s*$$
-  ^. -> Error
 
 ManuallyDisabled
   ^---

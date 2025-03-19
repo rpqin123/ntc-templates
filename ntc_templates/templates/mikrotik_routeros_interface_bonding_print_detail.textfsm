@@ -8,7 +8,6 @@ Value MODE (\S+)
 Start
   ^\s*Flags:\s*X\s*-\s*disabled(?:;|,)\s*R\s*-\s*running\s*$$ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^\s*\d+\s*(?:X|R)?\s*$$ -> Continue.Record
@@ -17,4 +16,4 @@ Interface
   ^\s*${ID}\s*${STATUS}\s*;{3}\s*${DESCRIPTION}\s*$$
   ^\s*${DESCRIPTION}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

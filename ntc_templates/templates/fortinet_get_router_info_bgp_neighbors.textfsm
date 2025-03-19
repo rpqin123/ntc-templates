@@ -49,7 +49,6 @@ Start
   ^Notification\s+Error\s+Message:\s+.*$$
   ^\s*\%\s+No\s+neighbor\s+exist\s*$$
   ^\s*$$
-  ^. -> Error
 
 AddrFamState
   ^\s+BGP\s+table\s+version\s+${TABLE_VERSION},\s+neighbor\s+version\s+${NEI_TABLE_VERSION}\s*$$
@@ -65,4 +64,4 @@ AddrFamState
   ^\s+${ACCEPTED_PREFIXES}\saccepted\sprefixes,\s${ACCEPTED_PREFIXES_RIB}\sprefixes\sin\srib\s*$$
   ^\s+${ANNOUNCED_PREFIXES}\sannounced\sprefixes\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

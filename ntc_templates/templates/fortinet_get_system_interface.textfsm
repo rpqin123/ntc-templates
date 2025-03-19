@@ -59,4 +59,3 @@ Start
   # name:status:type
   ^name:\s+${NAME}\s+status:\s+${STATUS}\s+type:\s+${TYPE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

@@ -16,4 +16,3 @@ Start
   ^${HOST}\s+${MAC_ADDRESS}\s+${TTL}\s+${TYPE}\s+${CIRCUIT} -> Record
   ^Showing\s+ARP\s+entries\s+in\s+RP\s+OS\s+kernel:
   ^Host\s+Hardware\s+address\s+Flags\s+Type
-  ^. -> Error

@@ -32,7 +32,6 @@ TimestampLogs
   ^%${FACILITY}-${SEVERITY}-${MNEMONIC}:\s+${MESSAGE}$$ -> DefaultLogs
   ^${MESSAGE}$$
   ^\s*$$
-  ^. -> Error
 
 DefaultLogs
   ^%(\D\D\D)-(\d{1,2}) -> Continue.Record
@@ -46,4 +45,4 @@ DefaultLogs
   ^${MONTH}\s+${DAY}\s+${YEAR}\s+${TIME}\s+${HOSTNAME}\s+:\s+%${FACILITY}-${SEVERITY}-${MNEMONIC}:\s+${MESSAGE}$$ -> TimestampLogs
   ^${MESSAGE}$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

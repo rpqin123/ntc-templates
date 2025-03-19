@@ -21,6 +21,5 @@ Start
   ^Neighbor\s+V\s+AS\s+MsgRcvd\s+MsgSent\s+TblVer\s+InQ\s+OutQ\s+Up\/Down\s+State\/PfxRcd
   ^${BGP_NEIGH}\s+\S+\s+${NEIGH_AS}(\s+\d+?){5}\s+${UP_DOWN}\s+${STATE_PFXRCD}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
 
 EOF

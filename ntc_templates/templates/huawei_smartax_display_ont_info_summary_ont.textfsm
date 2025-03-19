@@ -14,10 +14,9 @@ Start
   ^\s*\d+\s*\S+\s*(-|\S+)\s*(-|\d+)\s+(-?\d+\.\d+\/-?\d+\.\d+|\S+)\s+(\S.+\S)\s*$$
   ^\s+ID\s+\(m\)\s+\(dBm\)
   ^\s*$$
-  ^. -> Error
 
 ONTs
   ^\s*-+\s*$$
   ^\s+${ONT_ID}\s+${RUN_STATE}\s+(-|${LAST_UPTIME})\s*(-|${LAST_DOWNTIME})\s+(-|${LAST_DOWNCAUSE}) -> Record
   ^\s+ONT\s+SN\s+Type\s+Distance\s+Rx\/Tx\s+power\s+Description\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

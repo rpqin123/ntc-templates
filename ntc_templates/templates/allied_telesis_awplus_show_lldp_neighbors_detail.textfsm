@@ -8,7 +8,6 @@ Value MANAGEMENT_IP (.+)
 
 Start
   ^LLDP\s+Detailed\s+Neighbor\s+Information -> Neighbor
-  ^. -> Error
 
 Neighbor
   ^Local -> Continue.Record
@@ -56,4 +55,4 @@ Neighbor
   ^\s*------
   # Drop multi line options
   ^\s{8,}
-  ^. -> Error
+  ^. -> EOF

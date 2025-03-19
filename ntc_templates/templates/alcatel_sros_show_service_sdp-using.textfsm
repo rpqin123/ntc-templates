@@ -12,7 +12,6 @@ Start
   ^SDP\s+Using
   ^SvcId\s+SdpId\s+Type\s+Far\s+End\s+Opr\s+I.Label\s+E.Label\s*$$ -> SDP
   ^\s*$$
-  ^. -> Error
 
 SDP
   ^\s+State         
@@ -22,6 +21,6 @@ SDP
   ^Number\s+of
   ^=+
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Done

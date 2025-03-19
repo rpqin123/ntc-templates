@@ -12,4 +12,3 @@ Start
   ^${BGP_NEIGH}\s+\S+\s+${NEIGH_AS}(?:\s+\S+\s+){5}${UP_DOWN}\s+${STATE_PFXRCD}\s*$$ -> Record
   ^Total number\s+of\s+neighbors\s+\d*\s*$$
   ^\s*$$
-  ^. -> Error

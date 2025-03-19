@@ -26,7 +26,6 @@ Start
   ^\s*Address\sfamily.*\s*$$
   ^\s*New\sCLI\sformat.*\s*$$
   ^\s*Old\sCLI\sformat.*\s*$$
-  ^. -> Error
 
 Interfaces
   ^\s*${INTERFACES}\s*$$

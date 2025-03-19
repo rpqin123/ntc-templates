@@ -16,6 +16,5 @@ Start
   ^\s*\*\s+-\s+Dynamically\s+created\s+peer
   ^\s*Peer\s+AS\s+MsgRcvd\s+MsgSent\s+OutQ\s+PrefRcv\s+Up\/Down\s+State
   ^\s{2}${PEER}\s+${REMOTE_ASN}\s+${MESSAGES_RECEIVED}\s+${MESSAGES_SENT}\s+${OUTPUT_QUEUE}\s+${PREFIXES_RECEIVED}\s+${UP_DOWN}\s+${STATE}\s*$$ -> Record
-  ^. -> Error
 
 EOF

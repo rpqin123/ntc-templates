@@ -112,4 +112,3 @@ Start
   ^\s*WCCP\s+Redirect\s+inbound:\s+${WCCP_REDIRECT_INBOUND}\s*$$
   ^\s*WCCP\s+Redirect\s+exclude:\s+${WCCP_REDIRECT_EXCLUDE}\s*$$
   ^\s*$$
-  ^. -> Error

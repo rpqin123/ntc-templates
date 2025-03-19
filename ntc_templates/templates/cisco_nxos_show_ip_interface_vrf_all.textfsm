@@ -73,7 +73,6 @@ Start
   ^\s+WCCP\s+Redirect\s+inbound:\s+${WCCP_REDIRECT_INBOUND}
   ^\s+WCCP\s+Redirect\s+exclude:\s+${WCCP_REDIRECT_EXCLUDE}
   ^\s*$$
-  ^. -> Error
 
 
 MULTICAST
@@ -90,7 +89,7 @@ MULTICAST
   ^\s+(?:\S+\s+){9}${MULTICAST_GROUPS} -> Continue
   ^\s+(?:\S+\s+){10}${MULTICAST_GROUPS} -> Continue
   ^.* -> Start
-  ^. -> Error
+  ^. -> EOF
 
 UNNUMBERED
   ^\s*${UNNUMBERED_CHILD_INTFS}:\s*$$ -> Continue
@@ -116,4 +115,4 @@ UNNUMBERED
   ^(?:\S+\s+){19}${UNNUMBERED_CHILD_INTFS}: -> Continue
   ^(?:\S+\s+){20}${UNNUMBERED_CHILD_INTFS}: -> Continue
   ^.* -> Start
-  ^. -> Error
+  ^. -> EOF

@@ -26,4 +26,3 @@ NTP_Servers
   ^\s+${INDEX}\s+${NTP_KEY_INDEX}\s+${NTP_SERVER}\s+${STATUS}\s+${NTP_MSG_AUTH_STATUS}\s*$$ -> Record
   ^\s+[-\s]+$$
   ^\s*$$
-  ^. -> Error

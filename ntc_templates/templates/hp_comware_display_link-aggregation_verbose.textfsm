@@ -11,7 +11,6 @@ Start
   ^Aggregation\s+Mode:\s+${AGGREGATION_MODE}
   ^Loadsharing\s+Type:\s+${LOADSHARING}
   ^Local: -> LocalPorts
-  ^\s*$$ ^. -> Error
 
 LocalPorts
   ^\s+Port
@@ -19,7 +18,7 @@ LocalPorts
   ^\s+${LOCAL_INTERFACES}\s+.*
   # Start of remote block port
   ^Remote: -> RemotePorts
-  ^. -> Error
+  ^. -> EOF
   ^\s*$$ ^. -> Error
 
 RemotePorts
@@ -29,5 +28,5 @@ RemotePorts
   # New item, restart from the beginning
   ^Aggregat -> Continue.Record
   ^Aggregat\S+\s+Interface:\s+${INTERFACE} -> Start
-  ^. -> Error
+  ^. -> EOF
   ^\s*$$ ^. -> Error

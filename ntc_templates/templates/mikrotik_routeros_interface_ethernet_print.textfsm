@@ -14,4 +14,3 @@ Start
 IfacesTable
   ^\s*${ID}\s+(?:${STATUS})?(?:${SLAVE})?\s+${NAME}\s+${MTU}\s+${MAC_ADDRESS}\s+${ARP}\s+${SWITCH}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

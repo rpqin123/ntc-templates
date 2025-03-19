@@ -25,4 +25,3 @@ Start
   ^-+\s+-+\s+-+\s+-+\s+-+\s+-+\s+-+(\s+-+|)\s*$$
   ^MODE\s+Legend:\s*$$
   ^B=Basic,\s+A=Advance,\s+Man=ManLag,\s+Dyn=DynLag\s*$$
-  ^.*$$ -> Error

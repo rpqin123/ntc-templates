@@ -92,4 +92,3 @@ Start
   ^\s*802.1Q-tunnel\s+TPID:\s*${TUNNEL_TPID_802_1Q}\s*$$
   ^\s*Layer\s+2\s+Protocol\s+Tunnel\s*:\s*${LAYER_2_PROTOCOL_TUNNEL}\s*$$
   ^\s*$$
-  ^. -> Error

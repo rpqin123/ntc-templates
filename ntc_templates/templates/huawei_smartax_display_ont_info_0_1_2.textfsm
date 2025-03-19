@@ -13,18 +13,17 @@ Start
   ^\s+$$
   ^\s+F\/S\/P\s+ONT\s+SN\s+Control\s+Run\s+Config\s+Match\s+Protect\s*$$
   ^\s+ID\s+flag\s+state\s+state\s+state\s+side\s*$$ -> SNs
-  ^. -> Error
 
 SNs
   ^\s+-
   ^\s*${FSP}\s*${ONT_ID}\s*${SERIAL_NUMBER}\s*${CONTROL_FLAG}\s*(-|${RUN_STATE})\s*(-|${CONFIG_STATE})\s*(-|${MATCH_STATE})\s*${PROTECT_SIDE}\s*$$ -> Record
   ^\s*F\/S\/P\s+ONT(-ID)?\s+Description\s*$$ -> Descriptions
   ^\s*$$
-  ^.-> Error
+  ^.-> EOF
 
 Descriptions
   ^\s+-
   ^\s*ID\s*$$
   ^\s+\w+\/\s\w+\/\w+\s+\d+\s+.+?\s*$$
   ^\s+In\s+port\s+\w+\/\s*\w+\/\w+\s*,\s+the\s+total(\s*number)?\s+of\s+ONTs\s+(is|are):\s+\w+(\,\s*online:\s*\w+)?(\,\s*offline:\s*\w+)? -> Start
-  ^. -> Error
+  ^. -> EOF

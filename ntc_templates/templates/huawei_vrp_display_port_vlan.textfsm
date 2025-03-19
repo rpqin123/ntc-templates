@@ -7,7 +7,6 @@ Value List TRUNK_VLAN_LIST (\d+\-\d+|\d+)
 Start
   ^\s*$$
   ^[pPoOrRtT]{4}.*$$ -> VLANS
-  ^. -> Error
 
 VLANS
   ^[\w\.\/\-]+ -> Continue.Record
@@ -139,4 +138,4 @@ VLANS
   ^[\w\.\/\-]+\s+\S+\s+\d+\s+[0-9\- ]+$$
   ^\s{6,}
   ^-+$$
-  ^. -> Error
+  ^. -> EOF

@@ -16,4 +16,3 @@ Start
   # Match records that only include the interface value
   ^\s*${LOCAL_INTERFACE} -> Record
   ^\s*$$
-  ^. -> Error

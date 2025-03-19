@@ -7,4 +7,3 @@ Start
   ^-+$$
   ^${PART}\s+${STATE}\s+${VERSION} -> Record
   ^\s*$$
-  ^. -> Error

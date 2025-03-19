@@ -18,4 +18,3 @@ Start
   ^\s*Dropped\s+packets\s*:\s*${DROPPED_PACKETS}\s*$$
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

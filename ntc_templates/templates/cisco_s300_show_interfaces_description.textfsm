@@ -5,17 +5,16 @@ Start
   ^\s*Port\s+Description\s*$$ -> Column1
   ^\s*Ch\s+Description\s*$$ -> Column2
   ^\s*$$
-  ^. -> Error
 
 Column1
   ^(\s*-*)*\s*$$
   ^\s*Ch\s+Description\s*$$ -> Column2
   ^\s*${INTERFACE}(\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Column2
   ^(\s*-*)*\s*$$
   ^\s*${INTERFACE}(\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

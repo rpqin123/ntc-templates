@@ -11,4 +11,3 @@ Interfaces
   ^(\w+) -> Continue.Record
   ^${INTERFACE}\s+${IP_ADDRESS}\s+(${STATE}/${LINK_STATUS})(\s+${DESCRIPTION})?
   ^\s+${IP_ADDRESS}
-  ^. -> Error

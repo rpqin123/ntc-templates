@@ -15,5 +15,4 @@ Start
   ^${MODULE}:
   ^${SENSOR}\s+${DESCRIPTION}\s+${CURRENT_VALUE}\s+\(${SETPOINT}\)\s+\S+\s+${ALERT_LIMIT}\s+${CRITICAL_LIMIT} -> Record
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"

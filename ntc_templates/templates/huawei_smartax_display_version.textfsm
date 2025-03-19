@@ -25,4 +25,3 @@ BoardInfo
   ^\s+-
   ^\s*Uptime\s+is\s+\d+\s+day\(s\),\s+\d+\s+hour\(s\),\s+\d+\s+minute\(s\),\s+\d+\s+second\(s\)
   ^\s*$$
-  ^. -> Error

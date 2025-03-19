@@ -11,4 +11,3 @@ Start
   ^\s+port-ID\s*Port-type\s*$$
   ^\s+${ONT_ID}\s+${ONT_PORT_ID}\s+${ONT_PORT_TYPE}\s*(-|${SPEED_MBPS})\s*(-|${DUPLEX})\s*(-|${LINK_STATE})\s*(-|${RING_STATUS}) -> Record
   ^\s+-
-  ^. -> Error

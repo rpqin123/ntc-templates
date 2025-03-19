@@ -29,12 +29,11 @@ Start
   # match other sections
   ^\s*(\S+\s*)+$$
   ^\s*$$
-  ^. -> Error
 
 UsingPolicy
   ^\s+Status:\s+${SL_ENABLED}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Transport
   ^\s+Type:\s+${TRANSPORT_TYPE}\s*$$
@@ -46,7 +45,7 @@ Transport
   ^\s+VRF:\s+${VRF}\s*$$
   ^\s+(\S+\s*)+$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Registration
   ^\s+Status:\s+${REG_STATUS}\s*$$
@@ -55,14 +54,14 @@ Registration
   # match other lines
   ^\s+(\S+\s*)+$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 LicenseAuth
   ^\s+Status:\s+${LICENSE_AUTH}(\s+\S+){6}$$
   # match other lines
   ^\s+(\S+\s*)+$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 UsageReporting
   ^\s+Last\s+ACK\s+received:\s+${LAST_ACK_RECEIVED}\s*$$
@@ -73,4 +72,4 @@ UsageReporting
   ^\s+Last\s+report\s+push:\s+${LAST_RPT_PUSH}\s*$$
   ^\s+Last\s+report\s+file\s+write:\s+${LAST_RPT_FILE_WRITE}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

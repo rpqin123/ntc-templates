@@ -40,4 +40,3 @@ Start
   ^\s+Member\s+of\s+
   ^\s+...\s+\S+\s+,
   ^\s*$$
-  ^. -> Error

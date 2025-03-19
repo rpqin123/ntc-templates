@@ -12,7 +12,6 @@ Start
   ^Service\s+Access\s+Points
   ^PortId\s+SvcId\s+Ing.\s+Ing.\s+Egr.\s+Egr.\s+Adm\s+Opr\s*$$ -> SAPS
   ^\s*$$
-  ^. -> Error
 
 SAPS
   ^\s+QoS\s+Fltr\s+QoS\s+Fltr        
@@ -22,4 +21,4 @@ SAPS
   ^Number\s+of
   ^\*\s+indicates
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

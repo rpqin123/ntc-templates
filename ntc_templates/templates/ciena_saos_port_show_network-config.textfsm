@@ -18,4 +18,3 @@ Start
   ^\|\s*Name\s*\|\s*PVID\s*\|\s*Type\s*\|\s*Vid\s*\|\s*Filter\s*\|\s*Filter\s*\|\s*VLAN\s*\|\s*Filter\s*\|\s*Policy\s*\|\s*Type\s*\|\s*Type\s*\|\s*$$
   ^\|\s*${NAME}\s*\|\s*${PRIVATE_VLAN_ID}\s*\|\s*${ACCEPT_FRAME_TYPE}\s*\|\s*${UNTAG_INGRESS_VLAN_ID}\s*\|\s*(${VLAN_INGRESS_FILTER}|\s+)\s*\|\s*${VS_INGRESS_FILTER}\s*\|\s*${EGRESS_UNTAG_VLAN}\s*\|\s*${VS_EGRESS_FILTER}\s*\|\s*${INGRESS_COS_POLICY}\s*\|\s*${VPLS_PORT_TYPE}\s*\|\s*${ETH_VC_ETHERTYPE}\s*\| -> Record
   ^\s*$$
-  ^. -> Error

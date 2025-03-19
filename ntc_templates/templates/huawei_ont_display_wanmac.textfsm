@@ -4,4 +4,3 @@ Start
   ^\s*(wan\s+mac\s+\=\s+)?${MAC_ADDRESS}\s*$$
   ^\s+$$
   ^\s*success!\s*$$ -> Record
-  ^. -> Error

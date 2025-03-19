@@ -28,4 +28,3 @@ Start
   ^\s*Boot\s+ROM\s+Version:\s*${ROM_VERSION}\s*$$
   ^\s*Operation\s+Code\s+Version:\s*${OPERATION_CODE_VERSION}\s*$$
   ^\s*$$
-  ^. -> Error

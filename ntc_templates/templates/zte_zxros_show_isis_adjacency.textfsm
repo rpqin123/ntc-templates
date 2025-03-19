@@ -15,4 +15,3 @@ Start
   ^Interface\s+System\s+id\s+State\s+Lev\s+Holds\s+SNPA\S*\s+Pri\s+MT\s+NSF\s+AF\s*$$
   ^${INTERFACE}\s+${SYSTEM_ID}\s+${STATE}\s+${LEV}\s+${HOLD_TIME}\s+${SNPA}\s+${PRI}\s+${MT}?\s+${NSF}\s+${AF}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

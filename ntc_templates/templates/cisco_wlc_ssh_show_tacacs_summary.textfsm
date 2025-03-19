@@ -15,7 +15,6 @@ Start
   ^\s*Authorization Servers\s*$$ -> AuthZ_Servers
   ^\s*Accounting Servers\s*$$ -> Acct_Servers
   ^\s*$$
-  ^. -> Error
 
 AuthC_Servers
   ^\s*Idx\s+Server Address\s+Port\s+State\s+Tout\s+MgmtTout\s*$$
@@ -24,7 +23,7 @@ AuthC_Servers
   ^\s*Authorization Servers\s*$$ -> AuthZ_Servers
   ^\s*Accounting Servers\s*$$ -> Acct_Servers
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 AuthZ_Servers
   ^\s*Idx\s+Server Address\s+Port\s+State\s+Tout\s+MgmtTout\s*$$
@@ -33,7 +32,7 @@ AuthZ_Servers
   ^\s*Authentication Servers\s*$$ -> AuthC_Servers
   ^\s*Accounting Servers\s*$$ -> Acct_Servers
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Acct_Servers
   ^\s*Idx\s+Server Address\s+Port\s+State\s+Tout\s+MgmtTout\s*$$
@@ -42,4 +41,4 @@ Acct_Servers
   ^\s*Authentication Servers\s*$$ -> AuthC_Servers
   ^\s*Authorization Servers\s*$$ -> AuthZ_Servers
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

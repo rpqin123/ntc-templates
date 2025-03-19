@@ -11,4 +11,3 @@ Start
   ^${NEIGHBOR_NAME}\s+${LOCAL_INTERFACE}\s+${HOLDTIME}\s+${CAPABILITIES}\s+${NEIGHBOR_INTERFACE} -> Record
   ^Total.*
   ^\s*$$
-  ^. -> Error

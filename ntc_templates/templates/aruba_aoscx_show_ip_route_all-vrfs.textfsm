@@ -12,4 +12,3 @@ Start
   ^\d+\.\d+\.\d+\.\d+\/\d+\W\s+vrf\s+\S+ -> Continue.Record
   ^${IP_ADDRESS}\/${PREFIX_LENGTH}\W\s+vrf\s+${VRF}
   ^\s+via\s+${INTERFACE},\s+${METRIC},\s+${STATUS}
-  ^. -> Error

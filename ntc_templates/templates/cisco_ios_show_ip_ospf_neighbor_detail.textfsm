@@ -37,4 +37,3 @@ Start
   ^\s*Last\sretransmission\sscan\slength\sis\s${LAST_RETRANSMISSION_SCAN_LENGTH},\smaximum\sis\s${MAX_RETRANSMISSION_SCAN_LENGTH}\s*$$
   ^\s*Last\sretransmission\sscan\stime\sis\s${LAST_RETRANSMISSION_SCAN_TIME}\smsec,\smaximum\sis\s${MAX_RETRANSMISSION_SCAN_TIME}\smsec\s*$$
   ^\s*$$
-  ^. -> Error

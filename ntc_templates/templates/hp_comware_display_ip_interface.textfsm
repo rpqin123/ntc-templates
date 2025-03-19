@@ -8,7 +8,6 @@ Value MTU (\d+)
 
 Start
   ^${INTERFACE}\s+current\s+state\s*:\s*${LINE_STATUS} -> Interface
-  ^. -> Error
 
 
 Interface
@@ -44,4 +43,4 @@ Interface
   ^\s+Reply\spacket\s*:\s*\d+
   ^\s+Unknown\spacket\s*:\s*\d+
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

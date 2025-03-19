@@ -8,4 +8,3 @@ Start
   ^ip\sroute(\svrf\s${VRF})?\s${NETWORK}\s${MASK}\s${NEXTHOP_IP} -> Record
   ^ip\sroute(\svrf\s${VRF})?\s${NETWORK}\s${MASK}\s${NEXTHOP_INTERFACE} -> Record
   ^\s*$$
-  ^. -> Error

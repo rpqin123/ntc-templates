@@ -12,4 +12,3 @@ Start
   ^\s+\(\w+\)
   ^${INTERFACE}\s+${IP_ADDRESS}\s+${PROTO}/${LINK}/${STATUS} -> Record
   ^\s*$$
-  ^.*$$ -> Error

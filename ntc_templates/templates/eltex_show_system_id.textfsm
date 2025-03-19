@@ -7,10 +7,9 @@ Start
   ^\s*Unit\s+MAC\s+address\s+Hardware\s+version\s+Serial\s+number\s*$$ -> Firmware1
   ^\s*Serial\s+number\s*:\s*${SERIAL_NUMBER}\s*$$
   ^\s*$$
-  ^. -> Error
 
 Firmware1
   ^(\s*-+)*\s*$$
   ^\s*${UNIT}\s+${MAC_ADDRESS}\s+${HARDWARE_VERSION}\s+${SERIAL_NUMBER}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

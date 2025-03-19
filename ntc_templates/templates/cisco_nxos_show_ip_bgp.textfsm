@@ -22,7 +22,6 @@ Start
   ^Path type:
   ^Origin codes:
   ^\s*Network\s+Next Hop\s+Metric\s+LocPrf\s+Weight\s+Path -> Bgp_table
-  ^. -> Error
 
 Bgp_table
   #
@@ -44,6 +43,6 @@ Bgp_table
   ^${STATUS}${PATH_SELECTION}${ROUTE_SOURCE}\s${NEXT_HOP}\s${METRIC}\s${LOCAL_PREF}\s${WEIGHT}(\s${AS_PATH})?\s${ORIGIN}$$ -> Record
   ^\s*$$ -> Clearall
   ^BGP\s+routing\s.+VRF\s+${VRF},.+ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 EOF

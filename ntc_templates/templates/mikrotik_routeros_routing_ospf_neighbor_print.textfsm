@@ -8,4 +8,3 @@ Value INTERFACE (\S+)
 Start
   ^.*router-id=${NEIGHBOR_ID}.*address=${ADDRESS}.*interface=${INTERFACE}.*priority=${PRIORITY}.*state=\"${STATE}\".*adjacency=${UP_TIME}.*$$ -> Record
   ^\s*$$
-  ^. -> Error

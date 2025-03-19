@@ -63,7 +63,6 @@ Start
   ^\s+CleanAir\s+Persistent\s+Devices\s+state\.*\s${PERSISTANT_DEVICE_STATE}s*$$
   ^\s+CleanAir\s+Persistent\s+Device\s+Propagation\.*\s${PERSISTANT_DEVICE_PROPAGATION}s*$$
   ^\s*$$
-  ^. -> Error
 
 
 AirQuality
@@ -75,13 +74,13 @@ AirQuality
   ^\s+Unclassified\s+Severity\s+Threshold\.*\s${AQ_UNCLASSIFIED_THRESH}s*$$
   ^Interference\s+Device\s+Settings\: -> Interference
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Interference
   ^\s+Interference\s+Device\s+Reporting\.*\s${INTERFERE_DEVICE_REPORT}S*$$
   ^\s+Interference\s+Device\s+Types\: -> Device_type
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Device_type
   ^\s+Bluetooth\s+Link\.*\s${BLUETOOTH_LINK}
@@ -105,7 +104,7 @@ Device_type
   ^\s+Interference\s+Device\s+Alarms\.*\s${INT_DEVICE_ALARM}s*$$
   ^\s+Interference\s+Device\s+Types\s+Triggering\s+Alarms\: -> Device_alarms
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Device_alarms
   ^\s+Bluetooth\s+Link\.*\s${BLUETOOTH_LINK_ALARM}s*$$

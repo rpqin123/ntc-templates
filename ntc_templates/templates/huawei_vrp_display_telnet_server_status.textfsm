@@ -13,4 +13,3 @@ Start
   ^\s*ACL4\s*number\s*:\s*${ACL4_NUMBER}
   ^\s*ACL6\s*number\s*:\s*${ACL6_NUMBER}
   ^\s*$$
-  ^. -> Error

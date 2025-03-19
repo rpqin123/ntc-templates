@@ -25,7 +25,6 @@ Start
   ^\s*Software\s+version
   ^\s*Build\s+date
   ^\s*Current\s+boot\s+config
-  ^. -> Error
 
 SystemName
   ^\s+${HOSTNAME}

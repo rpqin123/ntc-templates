@@ -37,4 +37,3 @@ Start
   ^\|${NAME}\s*\|${PORT_OP}\|${PORT_STP}\|\s*${PORT_ROLE}\|${RSTP_ST}\s*\|\s*${STP_ST}\s*\|\s*${PR}\|\s*${PATH_COST_OPER}\s*\|${PATH_COST_D}\s*\|\s*${EDGEP_AD}\|\s*${EDGEP_OP}\|${P2P_MAC_ADM}\|\s*${P2P_MAC_OP}\s*\|\s*${DOMAIN_ADM}\|\s*${DOMAIN_EF}\|${PORT_UPTIME}\| -> Record
   ^\+-.*
   ^\s*$$
-  ^. -> Error

@@ -25,7 +25,6 @@ Start
   ^\s*Remote\s+LLDP\s+nearest-bridge\s+Agents\s+on\s+Local\s+Port\s+${LOCAL_INTERFACE}:\s*$$
   ^\s*Remote\s+LLDP\s+Agents\s+on\s+Local\s+Slot\/Port\s+${LOCAL_INTERFACE}:\s*$$
   ^\s*$$ -> LLDP
-  ^.*$$ -> Error
 
 LLDP
   ^\s*Chassis\s+${CHASSIS_ID},\s+Port\s+${MAC_ADDRESS}:\s*$$
@@ -49,4 +48,4 @@ LLDP
   ^\s*Remote\s+port\s+default\s+vlan
   ^\s*Mau\s+Type\s+=\s+${MAU_TYPE},?\s*$$
   ^\s*$$ -> Record Start
-  ^.*$$ -> Error
+  ^.*$$ -> EOF

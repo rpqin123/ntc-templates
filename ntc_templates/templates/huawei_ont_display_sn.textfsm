@@ -4,4 +4,3 @@ Start
   ^\s*sn\s+=\s+${SERIAL_NUMBER}\s*$$
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

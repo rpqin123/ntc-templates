@@ -11,4 +11,3 @@ Start
   ^\s*${INSTANCE}\s+${DIRECTION}\s+(${IP_VERSION}\s+)?(ACL|acl)\s+name\s+${ACL_NAME} -> Record
   ^\s*${INSTANCE}\s+${DIRECTION}\s+(${IP_VERSION}\s+)?(ACL|acl)\s+${ACL_NB} -> Record
   ^\s*Total:\d+\s*$$ -> Next
-  ^.*$$ -> Error

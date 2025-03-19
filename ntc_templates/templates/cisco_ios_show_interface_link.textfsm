@@ -14,7 +14,6 @@ Start
   ^\s*Port\s+Name\s+Down Time\s+Down Since\s*$$ -> DownSince
   ^\s*Port\s+Name\s+Down Time\s+Up Time\s*$$ -> UpTime
   ^\s*$$
-  ^. -> Error
 
 DownSince
   ^\s*${PORT}\s+${DOWNTIME}\s*$$ -> Record
@@ -22,11 +21,11 @@ DownSince
   ^\s*${PORT}\s+${NAME}\s*${DOWNTIME}\s*$$ -> Record
   ^\s*${PORT}\s+${NAME}\s*${DOWNTIME}\s+${SINCE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UpTime
   ^\s*${PORT}\s+${NAME}\s+${DOWNTIME}\s+${UPTIME}?\s*$$ -> Record
   ^\s*${PORT}\s+${DOWNTIME}\s+${UPTIME}?\s*$$ -> Record
   ^\s*${PORT}\s+${NAME}\s+${DOWNTIME}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

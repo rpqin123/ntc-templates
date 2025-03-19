@@ -9,11 +9,10 @@ Start
   ^\s*Flags:\s+X\s+-\s+disabled\s*$$
   ^\s*#\s+NAME\s+GROUP\s+ADDRESS\s+LAST-LOGGED-IN\s*$$ -> UsersTable
   ^\s*$$
-  ^. -> Error
 
 UsersTable
   ^\s*${ID}\s+${NAME}\s+${GROUP}\s+(?:${ADDRESS})?\s+${LAST_LOGGED_IN}\s*$$ -> Record
   ^\s*${ID}\s+;;;\s+${COMMENT}\s*$$
   ^\s*${NAME}\s+${GROUP}\s+(?:${ADDRESS})?\s+${LAST_LOGGED_IN}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

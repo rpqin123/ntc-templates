@@ -33,8 +33,7 @@ Start
   ^override:\s+${HA_OVERRIDE_STATUS}
   ^Configuration\s+Status: -> Configuration_Status
   # Catch old 6.0_noha with no "Configuraton Status"
-  ^System\s+Usage\s+stats: ->  System_Usage_stats
-  ^. -> Error "in-Start"
+  ^System\s+Usage\s+stats: ->  System_Usage_stats "in-Start"
 
 UnhealthyStatus
   # semicolon necessary to anchor
@@ -44,14 +43,14 @@ UnhealthyStatus
 Configuration_Status
   ^System\s+Usage\s+stats: ->  System_Usage_stats
   ^\s*\S+\([\S\s]+\):\s\S+$$
-  ^. -> Error "in-Configuration_Status"
+  ^. -> EOF "in-Configuration_Status"
 
 System_Usage_stats
   ^HBDEV\s+stats: -> HBDEV_MONDEV_stats
   ^\s*\S+\([\S\s]+\):$$
   #^\s*\S+:\s+
   ^\s*sessions=
-  ^. -> Error "in-System_Usage_stats"
+  ^. -> EOF "in-System_Usage_stats"
 
 HBDEV_MONDEV_stats
   # Combine stats, no MONDEV in older FW's
@@ -64,4 +63,4 @@ HBDEV_MONDEV_stats
   ^vcluster\s+\d+:
   ^(Master|Slave|Primary|Secondary)\s*:\s+\S+,\s+(operating\s+cluster\s+index|HA\s+operating\s+index)\s+=\s+\d+ -> Record
   ^\s*$$
-  ^. -> Error "in-HBDEV_MONDEV_stats"
+  ^. -> EOF "in-HBDEV_MONDEV_stats"

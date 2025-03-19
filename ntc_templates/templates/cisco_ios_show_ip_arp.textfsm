@@ -11,5 +11,4 @@ Start
   ^${PROTOCOL}\s+${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${TYPE} -> Record
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
-  ^Time\s+source\s+is
-  ^. -> Error  
+  ^Time\s+source\s+is  

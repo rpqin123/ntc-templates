@@ -20,7 +20,6 @@ Start
   # Ignore IP routing not enabled
   ^\! IP routing not enabled
   # Error on everything else
-  ^. -> Error
 
 Routes
   ^\s+(\S+\s\S+?|\w?)\s+(\d+\.\d+\.\d+\.\d+)/(\d+)\s -> Continue.Record
@@ -33,4 +32,4 @@ Routes
   # Ignore IP routing not enabled
   ^\! IP routing not enabled
   # Error on everything else
-  ^. -> Error
+  ^. -> EOF

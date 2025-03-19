@@ -11,4 +11,3 @@ Start
   ^\s*${HOP_NUM}(?:\s+${ADDRESS})?\s+${DETAILS}\s*$$ -> Record
   ^\s*\*\s*$$
   ^\s*$$
-  ^. -> Error

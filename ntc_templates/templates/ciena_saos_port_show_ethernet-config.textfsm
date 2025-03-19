@@ -19,4 +19,3 @@ Start
   ^\+-+
   ^\|\s*${NAME}\s*\|\s*${TYPE}\s*\|\s*${ADMIN_STATUS}\s*\|\s*${SPEED}\s*\|\s*(${DUPLEX}|\s+)\s*\|\s*${FLOW_CONTROL}\s*\|\s*${FLOW_CONTROL_ADV}\s*\|\s*${AUTO_NEGOTIATION}\s*\|\s*${MTU}\s*\|\s*${MIRROR_STATE}\s*\|\s*${MIRROR_EG}\s*\|\s*${MIRROR_IG}\s*\| -> Record
   ^\s*$$
-  ^. -> Error

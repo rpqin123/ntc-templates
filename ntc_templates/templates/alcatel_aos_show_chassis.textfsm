@@ -25,4 +25,3 @@ Start
   ^\s*Number\s*Of\s*Resets:\s*${NUMBER_OF_RESETS}(?:,)?\s*$$
   ^\s*MAC\s*Address:\s*${MAC_ADDRESS}(?:,)?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

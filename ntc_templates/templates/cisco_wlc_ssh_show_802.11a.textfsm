@@ -48,33 +48,32 @@ Start
   ^Voice\s+MAC\s+optimization
   ^Call\s+Admission\s+Control
   ^\s*$$
-  ^. -> Error
 
 Spec_support
   ^11${SPECS}Support\.*\s${SPECS_VALUE}s*$$
   ^802.11(a|b|b\/g)\sOperational\sRates -> Data_Rates
   ^\s*802.11\S\s+(?:Low|Mid|High)\s+Band
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Data_Rates
   ^\s+802.11(a|g|b|(b\/g))\s${DATA_RATE}\s+Rate\.*\s+${DATA_RATE_VALUE}s*$$
   ^802.11n\s+MCS\s+Settings: -> MCS_Rates
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 MCS_Rates
   ^\s+MCS\s${MCS_RATE}\.*\s+${MCS_RATE_VALUE}s*$$
   ^802.11ac\s+MCS\s+Settings: -> AC_MCS_Rates
   ^802.11n Status: -> 80211n
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 AC_MCS_Rates
   ^\s+${SS_MCS_RATE}\s+\.*\s${SS_MCS_RATE_VALUE}s*$$
   ^802.11n\s+Status:\s*$$ -> 80211n
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 80211n
   ^\s+A-M[P|S]DU\s+Tx

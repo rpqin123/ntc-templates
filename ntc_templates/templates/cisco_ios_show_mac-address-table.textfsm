@@ -19,7 +19,6 @@ TYPE1
   ^Destination\s+Address\s+Address\s+Type\s+VLAN\s+Destination\s+Port
   ^\s*$$
   ^Multicast\s+Entries -> End
-  ^. -> Error
 
 TYPE2
   # Order of the group in brackets here matters
@@ -55,7 +54,7 @@ TYPE2
   ^\s+vlan\s+mac address\s+type\s+learn\s+age\s+ports
   ^\s*$$
   ^Multicast\s+Entries -> End
-  ^. -> Error
+  ^. -> EOF
 
 TYPE3
   ^\s*${VLAN_ID}\s+${DESTINATION_ADDRESS}\s+${TYPE}\s+\S+\s+${DESTINATION_PORT}(?:\s|$$) -> Record
@@ -64,7 +63,7 @@ TYPE3
   ^\s+vlan\s+mac address\s+type\s+protocols\s+port
   ^\s*$$
   ^Multicast\s+Entries -> End
-  ^. -> Error
+  ^. -> EOF
 
 TYPE4
   ^\s*${VLAN_ID}\s+${DESTINATION_ADDRESS}\s+${TYPE}\s+${DESTINATION_PORT}(?:\s|$$) -> Record
@@ -74,4 +73,4 @@ TYPE4
   ^\s*$$
   ^Total\s+Mac\s+Addresses
   ^MultiCast\s+Entries -> End
-  ^. -> Error
+  ^. -> EOF

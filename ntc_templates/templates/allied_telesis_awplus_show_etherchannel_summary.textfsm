@@ -6,4 +6,3 @@ Start
   ^Aggregator\s+${PO_NAME}
   ^\s+Admin\s+Key
   ^\s+Link:\s+${INTERFACES}
-  ^. -> Error

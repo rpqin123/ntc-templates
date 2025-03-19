@@ -8,4 +8,3 @@ Value PID (\d+)
 Start
   ^\s*VMID\s*NAME\s*STATUS\s*MEM\(MB\)\s*BOOTDISK\(GB\)\s*PID\s*$$
   ^\s*${VMID}\s*${NAME}\s*${STATUS}\s*${MEMORY}\s*${DISK}\s*${PID}\s*$$ -> Record
-  ^. -> Error

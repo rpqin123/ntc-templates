@@ -11,4 +11,3 @@ Start
   ^Interface\s+Attribute\s+Mode\s+BW\s+Admin\s+Phy\s+Prot\s+Description
   ^${INTERFACE}\s+${ATTRIBUTE}\s+${MODE}\s+${BW}\s+${ADMIN}\s+${PHYSICAL}\s+${PROTOCOL}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

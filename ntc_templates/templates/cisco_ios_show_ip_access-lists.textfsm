@@ -39,7 +39,6 @@ Start
   ^\s*$$
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
-  ^Time\s+source\s+is
-  ^.* -> Error "Could not parse line:"
+  ^Time\s+source\s+is "Could not parse line:"
 
 EOF

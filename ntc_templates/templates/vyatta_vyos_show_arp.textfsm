@@ -8,4 +8,3 @@ Start
   ^${IP_ADDRESS}\s+(${TYPE}|)\s+${MAC_ADDRESS}\s+(${FLAGS}|)\s+${INTERFACE}$$ -> Record
   ^Address\s+HWtype\s+HWaddress\s+Flags\s+Mask\s+Iface\s*$$
   ^\s*$$
-  ^. -> Error

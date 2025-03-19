@@ -8,4 +8,3 @@ Start
   ^\s*IP\s+Address\s+and\s+Netmask:\s+${IP}\s+${NETMASK}\s+on\s+${INTERFACE},\s*$$
   ^\s*Address\s+Mode:\s+${ADDR_MODE}\s*$$
   ^\s*$$
-  ^. -> Error

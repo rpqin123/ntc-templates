@@ -36,4 +36,3 @@ Start
   # Do not care about data after first section
   ^(Core\s+Type\s+last\s+sec|Temperatures\s*:) -> EOF
   ^\s*$$
-  ^. -> Error

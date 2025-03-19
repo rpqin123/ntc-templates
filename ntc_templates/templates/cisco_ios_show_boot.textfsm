@@ -43,9 +43,8 @@ Start
   ^Boot\s+optimization\s+:\s+${BOOT_OPTIMIZATION}
   ^\s*$$
   ^-+
-  ^. -> Error
   
 CurrentBootVariables
   ^${CURRENT_BOOT_VARIABLES}
   ^Boot\s*Variables\s*on\s*next\s*reload: -> Start
-  ^. -> Error
+  ^. -> EOF

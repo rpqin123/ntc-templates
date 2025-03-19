@@ -18,4 +18,3 @@ Start
   ^Address\s+Age\s+Address\s+Interface\s+VlanID\s+VlanID\s+Interface
   ^-+
   ^\s*$$
-  ^. -> Error

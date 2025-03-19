@@ -19,7 +19,6 @@ Start
   ^\s+Stdby\s*
   ^-+ -> LagPort
   ^\s*$$
-  ^. -> Error
 
 LagPort
   ^(lag-\d+)?\s*$$
@@ -28,4 +27,4 @@ LagPort
   ^-+ -> End
   ^=+
   ^Total
-  ^. -> Error
+  ^. -> EOF

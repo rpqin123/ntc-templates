@@ -8,7 +8,6 @@ Value List INTERFACES ([^,]+)
 Start
   ^---
   ^VLAN\s+Name\s+Status -> VLANS
-  ^. -> Error
 
 VLANS
   ^---
@@ -31,4 +30,4 @@ VLANS
   # Dropping lines
   ^\d+\s+\S+\s+\S+\s+\S+\s+\S+\s*
   ^\s{6,}
-  ^.+ -> Error
+  ^.+ -> EOF

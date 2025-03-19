@@ -19,7 +19,6 @@ Parse
   ^Packets\s+dropped\s+by\s+deleted\s+entries:
   ^Run\s+out\s+of\s+statistics\s+counter\s+errors:
   ^Statistics\s+last\s+cleared:
-  ^[ -]*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^[ -]*$$ "LINE NOT FOUND"
 
 EOF

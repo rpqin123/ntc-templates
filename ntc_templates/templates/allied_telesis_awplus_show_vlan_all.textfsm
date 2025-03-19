@@ -7,7 +7,6 @@ Start
   ^\s*VLAN\s+ID\s+Name\s+Type\s+State\s+Member\s+ports
   ^\s{8,}\(u\)-Untagged,\s+\(t\)-Tagged
   ^=== -> VLANS
-  ^. -> Error
 
 VLANS
   ^\d+ -> Continue.Record
@@ -31,4 +30,4 @@ VLANS
   ^\s{8,}(?:\S+\s+){7}${INTERFACES}\s* -> Continue
   ^\s{8,}(?:\S+\s+){8}${INTERFACES}\s* -> Continue
   ^\s{8,}
-  ^. -> Error
+  ^. -> EOF

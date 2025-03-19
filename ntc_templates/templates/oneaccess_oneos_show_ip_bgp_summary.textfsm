@@ -29,6 +29,5 @@ Start
   ^${BGP_NEIGHBOR}\s+${ADDRESS_FAMILY}\s+${NEIGHBOR_AS}\s+${MESSAGE_RECEIVED}\s+${MESSAGE_SENT}\s+${TABLE_VERSION}\s+${IN_QUEUE}\s+${OUT_QUEUE}\s+${UP_DOWN}\s+${STATE_PREFIX_RECEIVED} -> Record
   ^Total\snumber\sof\sneighbors\s${TOTAL_NEIGHBORS}
   ^\s*$$
-  ^. -> Error
 
 EOF

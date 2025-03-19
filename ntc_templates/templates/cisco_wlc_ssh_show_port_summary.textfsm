@@ -15,9 +15,8 @@ Start
   # Port Status and Modes (after the dashed line)
   ^\s*[-\s]+$$ -> Port_Status
   ^\s*$$
-  ^. -> Error
 
 Port_Status
   ^\s*${PORT}\s+${TYPE}\s+${STP_STATUS}\s+${ADMIN_MODE}\s+${PHYSICAL_MODE}\s+${PHYSICAL_STATUS}\s+${LINK_STATUS}\s+${LINK_TRAP}\s+${POE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

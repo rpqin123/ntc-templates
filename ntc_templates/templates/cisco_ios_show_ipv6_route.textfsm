@@ -15,6 +15,5 @@ Start
   ^\s*via\s+${NEXTHOP_IP}(,\s+${NEXTHOP_IF}.*)?\s*$$ -> Record
   ^\s*via\s+${NEXTHOP_IF}.*$$ -> Record
   ^\s* -> Clearall
-  ^.*$$ -> Error
 
 EOF

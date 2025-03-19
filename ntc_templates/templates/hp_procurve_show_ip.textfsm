@@ -16,7 +16,6 @@ Start
   ^\s+\|\s+Proxy
   ^\s*VLAN\s+ -> Interface
   ^\s*$$
-  ^. -> Error
 
 Interface
   ^\s*----
@@ -24,4 +23,4 @@ Interface
   ^\s*${VLAN_NAME}\s+\|\s+${CONFIG}\s+${IP_ADDRESS}\s+${SUBNET_MASK} -> Record
   ^\s*${VLAN_NAME}\s+\|\s+${CONFIG}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -20,4 +20,3 @@ Start
   ^\s*Swap: -> Record
   ^\s*PID\s+USERNAME\s+PRI\s+NICE\s+SIZE\s+RES\s+STATE\s+C\s+TIME\s+WCPU\s+COMMAND -> EOF
   ^\s*$$
-  ^. -> Error

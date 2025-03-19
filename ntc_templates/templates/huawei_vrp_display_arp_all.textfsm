@@ -14,4 +14,3 @@ Start
   ^Total:(\d+)\s+Dynamic:(\d+)\s+Static:(\d+)\s+Interface:(\d+)
   ^Redirect:(\d+)
   ^\s*$$
-  ^. -> Error

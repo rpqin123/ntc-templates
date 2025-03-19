@@ -8,6 +8,9 @@ Value DATE_TIME (.+?)
 Value NAME (\S+)
 
 Start
+  ^Directory of bootflash:/\s*$$ -> DIR
+
+DIR
   ^\s*${ID}\s+${PERMISSIONS}\s+${SIZE}\s+${DATE_TIME}\s+${NAME}\s*$$ -> Record
   ^Directory of\s+${FILE_SYSTEM}
   ^${TOTAL_SIZE}\s+\S+\s+\S+\s\(${TOTAL_FREE} bytes free\)
@@ -20,3 +23,5 @@ EmptyFileSystem
   ^${TOTAL_SIZE}\s+\S+\s+\S+\s\(${TOTAL_FREE} bytes free\) -> Record
 
 EOF
+
+# 20250318 - 修改‘Directory of bootflash:/\s*$$ -> DIR’，限制解析入口进入

@@ -11,5 +11,4 @@ LLDP
   ^\s+${LOCAL_INTERFACE}\s+\d+\s+(.*?)\s+${NEIGHBOR_INTERFACE} -> Record
   ^Total entries
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"

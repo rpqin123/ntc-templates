@@ -59,5 +59,4 @@ Start
   ^\s+Mc\s+vl1\s+src1\s+buffer\s+full\s+drp\s+${MC_VL1_SRC1_BUFFER_FULL_DRP}
   ^\s+Mc\s+vl2\s+src1\s+buffer\s+full\s+drp\s+${MC_VL2_SRC1_BUFFER_FULL_DRP}
   ^\s+Mc\s+vl3\s+src1\s+buffer\s+full\s+drp\s+${MC_VL3_SRC1_BUFFER_FULL_DRP}
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

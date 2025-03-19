@@ -83,4 +83,3 @@ Start
   ^HTTP\s+secure\s+server\s+ECDHE\s+curve:\s+${SECURE_ECDHE_CURVE}
   ^HTTP\s+secure\s+server\s+active\s+session\s+modules:\s+${SECURE_ACTIVE_SESSION_MODULES}
   ^\s*$$
-  ^. -> Error

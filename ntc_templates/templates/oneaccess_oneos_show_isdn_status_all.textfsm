@@ -21,7 +21,6 @@ Value List L3_CALL_DETAILS (.*)
 Start
   ^\s*isdn\sline\s+${ISDN_LINE} -> ISDNLINE
   ^\s*$$
-  ^. -> Error
 
 ISDNLINE
   ^\s+physical\stype\s+${PHYSICAL_TYPE}
@@ -44,11 +43,11 @@ ISDNLINE
   ^\s*$$ -> Record
   ^\s*isdn\sline\s+${ISDN_LINE} -> ISDNLINE
   ^\s+ces=\s+
-  ^. -> Error
+  ^. -> EOF
 
 L3Status
   ^\s*(active\scall\s*|)${L3_ACTIVE_CALLS}
   ^\s*->\s${L3_CALL_DETAILS}
   ^\s*$$ -> Record ISDNLINE
-  ^. -> Error
+  ^. -> EOF
 

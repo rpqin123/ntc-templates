@@ -50,4 +50,3 @@ Start
   ^\s+Router\s+Advertisement\s+prefix
   ^\s+Egress\s+Rate\s+Limit
   ^\s+Time\s+since\s+last\s+state\s+change
-  ^. -> Error

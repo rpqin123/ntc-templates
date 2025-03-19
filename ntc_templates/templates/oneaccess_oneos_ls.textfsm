@@ -5,15 +5,14 @@ Start
   ^Listing -> ONEOS5
   ^\S+\s+\d+\s+${BYTES}\s+.*\s+${FILE}$$ -> Record ONEOS6
   ^$$
-  ^. -> Error
 
 ONEOS5
   ^\.
   ^${FILE}\s+${BYTES} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 ONEOS6
   ^\S+\s+\d+\s+${BYTES}\s+.*\s+${FILE}$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -6,4 +6,3 @@ Value STATE (\S+)
 Start
   ^${IPV6_ADDRESS}\s+(dev\s${INTERFACE})?\s*(lladdr\s${MAC_ADDRESS})?\s*(router\s)?${STATE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

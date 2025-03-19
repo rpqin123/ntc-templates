@@ -21,4 +21,3 @@ Start
   ^\s*${NETWORK}\s+dev\s+${NEXTHOP_IF}\s+proto\s+${PROTOCOL}\s+scope\s+${SCOPE}\s+src\s+${SRC}(?:\s+${REACHABILITY})?\s*$$ -> Record
   # static
   ^\s*${NETWORK}\s+via\s+${NEXTHOP_IP}\s+dev\s+${NEXTHOP_IF}\s*(?:${REACHABILITY})?\s*$$ -> Record
-  ^. -> Error

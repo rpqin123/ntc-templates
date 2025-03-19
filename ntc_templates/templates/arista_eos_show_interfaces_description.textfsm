@@ -9,9 +9,8 @@ Start
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
   ^Time\s+source\s+is
-  ^. -> Error
 
 Begin
   ^${PORT}\s+${STATUS}\s+${PROTOCOL}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

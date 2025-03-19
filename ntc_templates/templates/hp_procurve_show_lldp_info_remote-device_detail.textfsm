@@ -14,7 +14,6 @@ Value MGMT_ADDRESS (\S+|.*?)
 Start
   ^\s*$$
   ^\s*LLDP\sRemote\sDevice\sInformation\sDetail -> LLDP
-  ^. -> Error
 
 LLDP
   ^\s+Local\sPort\s+:\s${LOCAL_INTERFACE}\s*$$
@@ -50,4 +49,4 @@ LLDP
   ^\s*$$
   ^\S+\#\s*$$ -> Record
   ^\s*-*$$ -> Record
-  ^. -> Error
+  ^. -> EOF

@@ -10,4 +10,3 @@ Start
   ^\s*ResourceVersion\s+:\s+${RESOURCE_VERSION}\s*$$
   ^\s*$$
   ^\s*success!\s*$$
-  ^. -> Error

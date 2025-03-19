@@ -9,10 +9,9 @@ Value DESCRIPTION (.*)
 Start
   ^\s*Port\s+Display\s+String\s+Description\s+String\s*$$ -> Ports
   ^\s*$$
-  ^. -> Error
 
 Ports
   ^(\s*=+)+\s*$$
   ^\s*${INTERFACE}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

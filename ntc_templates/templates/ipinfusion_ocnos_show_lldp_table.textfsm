@@ -8,7 +8,6 @@ Start
   ^Capability\s+codes:\s+\(R\)\s+Router,\s+\(B\)\s+Bridge,\s+\(O\)\s+Other
   ^LocalPort\s+RemoteDevice\s+RemotePortID\s+Capability\s+RemotePortDescr
   ^[-+\s+]+ -> Row
-  ^. -> Error
 
 Row  
   ^${LOCAL_INTERFACE}\s+${NEIGHBOR_NAME}\s+${NEIGHBOR_INTERFACE}\s+${CAPABILITIES}\s+${NEIGHBOR_INTERFACE_DESCRIPTION} -> Record

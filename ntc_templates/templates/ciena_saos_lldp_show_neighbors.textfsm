@@ -24,7 +24,6 @@ Start
   # neighbor record
   ^\|${LOCAL_PORT}\s*\|${REMOTE_PORT}\s*\|\s*Chassis\sId:\s*${REMOTE_CHASSIS_ID} -> Neighbor
   ^\s*$$
-  ^. -> Error
 
 Neighbor
   ^\|\s*\|\s*\|\s*Mgmt\sAddr:\s${REMOTE_MGMT_IPV4_ADDRESS}\s+\| -> NeighborMgmt
@@ -35,11 +34,11 @@ Neighbor
   ^\|\s*\|\s*\|\s*SyncE\sConfg:\s${REMOTE_SYNCE_CONFIG}\s+\| 
   ^\+\-+ -> Record Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 NeighborMgmt
   ^\|\s*\|\s*\|\s+${REMOTE_MGMT_IPV4_ADDRESS}\s+\|$$
   ^\|\s*\|\s*\|\s+${REMOTE_MGMT_IPV6_ADDRESS}\s+\|$$
   ^\|\s*\|\s*\|\s*System\sName:\s${REMOTE_SYSTEM_NAME} -> Neighbor
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

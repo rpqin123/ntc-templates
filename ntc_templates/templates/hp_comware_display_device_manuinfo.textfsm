@@ -23,7 +23,6 @@ Start
   ^\s*VENDOR_NAME\s*:\s*${VENDOR_NAME} -> Record
   ^\s*PRODUCT\s+NUMBER\s*:
   ^\s*$$
-  ^. -> Error
 
 # necessary to avoid an extra mostly empty match at the end
 EOF

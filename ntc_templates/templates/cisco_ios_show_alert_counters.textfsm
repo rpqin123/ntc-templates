@@ -12,6 +12,5 @@ Start
   ^Recommendation:\s+${recommendation} -> Record
   ^\s*Global\s+Errors
   ^\s*$$
-  ^. -> Error
 
 EOF

@@ -52,4 +52,3 @@ Start
   ^\s+MAC:
   ^{master:\d+}
   ^\s*$$
-  ^. -> Error

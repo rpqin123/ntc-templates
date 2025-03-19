@@ -14,4 +14,4 @@ Start
 Catch
   ^-+$$
   ^${INTERFACE}\s+${MAC_ADDRESS}\s+${METHOD}\s+${DOMAIN}\s+${STATUS}\s+${SESSION}$$ -> Record
-  ^.* -> Start
+  ^.* -> EOF

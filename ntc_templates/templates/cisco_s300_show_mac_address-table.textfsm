@@ -8,10 +8,9 @@ Start
   ^Aging
   ^\s+Vlan\s+Mac\s+Address\s+Port\s+Type -> Begin
   ^\s*$$
-  ^. -> Error
 
 Begin
   ^-+
   ^\s+${VLAN_ID}\s+${DESTINATION_ADDRESS}\s+${DESTINATION_PORT}\s+${TYPE} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -81,7 +81,6 @@ Start
   ^\s+For\s+Address\s+Family:\s+${AFI}\s*$$ -> AFI
   ^\s+Connections\s+established\s+${CONNECTIONS_ESTABLISHED};\s+dropped\s+${CONNECTIONS_DROPPED}\s*$$ -> Connection
   ^\s*$$
-  ^. -> Error
 
 AFI
   ^\s+For\s+Address\s+Family:\s+${AFI}\s*$$
@@ -119,7 +118,7 @@ AFI
   ^BGP\s+neighbor -> Continue.Record
   ^BGP\s+neighbor\s+is\s+${NEIGHBOR}\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Connection
   ^\s+Local\s+host\:\s+${LOCAL_ADDRESS}\,\s+Local\s+port\:\s+${LOCAL_PORT}
@@ -137,8 +136,8 @@ Connection
   ^BGP\s+neighbor\s+is\s+${NEIGHBOR}\s*$$ -> Start
   ^\s+For\s+Address\s+Family:\s+${AFI}\s*$$ -> AFI
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 PeerError
   ^\s+Error\s+Code:\s+${PEER_ERROR_CODE}\s*$$ -> Connection
-  ^. -> Error
+  ^. -> EOF

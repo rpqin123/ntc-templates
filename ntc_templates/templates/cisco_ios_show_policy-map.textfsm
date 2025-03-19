@@ -30,5 +30,4 @@ Start
   ^\s+Policy\sMap\s${POLICY_MAP}$$
   ^\s+Class\s${CLASS}$$
   ^[\S\s]*$$
-  ^\s*$$
-  ^. -> Error PolicyMap
+  ^\s*$$ PolicyMap

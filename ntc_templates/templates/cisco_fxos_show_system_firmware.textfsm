@@ -4,4 +4,3 @@ Value STARTUP_VERSION (\S+)
 Start
   ^\s*Version:\s+${VERSION}\s*$$
   ^\s*Startup-Vers:\s+${STARTUP_VERSION}\s*$$
-  ^. -> Error

@@ -12,4 +12,3 @@ Start
   ^\s{6,}${INTERFACE_LIST},*
   ^\s*Total
   ^\s*$$
-  ^. -> Error

@@ -11,11 +11,10 @@ Start
   ^Id\s+Status\s+IP\sAddress\s+HB\sSent/Recv
   ^-+ -> Loc
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
 
 Loc
   ^${ID}\s+${STATUS}\s+${IP_ADDRESS}\s+${HB_SENT}\/${HB_RECV} -> Record
   ^\s+$$
   ^$$ -> Start
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"

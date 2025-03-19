@@ -36,4 +36,3 @@ Start
   ^\s*\|\s*:(\s+:)?\s+(used|free)\s+\|
   ^\s*\|\s*Flash\s+size\s+\|
   ^\s*$$
-  ^. -> Error

@@ -18,7 +18,6 @@ Start
   ^[Rr]edundant-pseudo -> RedPse
   ^[Ii]nterface\s+[Mm]onitoring -> IntMon
   ^\s*$$
-  ^. -> Error
 
 Control
   ^${LINK_TYPE}\s+interfaces:\s*$$
@@ -33,7 +32,7 @@ Control
   ^[Rr]edundant-pseudo -> RedPse
   ^Interface\s+[Mm]onitoring -> IntMon
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Fabric
   ^${LINK_TYPE}\s+interfaces:\s*$$
@@ -51,7 +50,7 @@ Fabric
   ^Interface\s+[Mm]onitoring -> IntMon
   ^\s*$$
   ^Control\s+[Ll]ink\s+[Ss]tatus:\s+${CONTROL_LINK_STATUS}\s*$$ - Control
-  ^. -> Error
+  ^. -> EOF
 
 RedEth
   ^\s*Name\s+Status\s+Redundancy-group\s*$$
@@ -63,7 +62,7 @@ RedEth
   ^\s*$$
   ^Control\s+[Ll]ink\s+[Ss]tatus:\s+${CONTROL_LINK_STATUS}\s*$$ - Control
   ^[Ff]abric\s+[Ll]ink\s+[Ss]tatus:\s+${FABRIC_LINK_STATUS}\s*$$ -> Fabric
-  ^. -> Error
+  ^. -> EOF
 
 RedPse
   ^\s*Name\s+Status\s+Redundancy-group\s*$$
@@ -75,7 +74,7 @@ RedPse
   ^Control\s+[Ll]ink\s+[Ss]tatus:\s+${CONTROL_LINK_STATUS}\s*$$ - Control
   ^[Ff]abric\s+[Ll]ink\s+[Ss]tatus:\s+${FABRIC_LINK_STATUS}\s*$$ -> Fabric
   ^[Rr]edundant-ethernet -> RedEth
-  ^. -> Error
+  ^. -> EOF
 
 IntMon
   ^\s*Interface\s+Weight\s+Status\s+Redundancy-group\s*$$
@@ -87,4 +86,4 @@ IntMon
   ^[Ff]abric\s+[Ll]ink\s+[Ss]tatus:\s+${FABRIC_LINK_STATUS}\s*$$ -> Fabric
   ^[Rr]edundant-ethernet -> RedEth
   ^[Rr]edundant-pseudo -> RedPse
-  ^. -> Error
+  ^. -> EOF

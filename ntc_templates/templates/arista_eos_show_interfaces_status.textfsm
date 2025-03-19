@@ -11,4 +11,3 @@ Start
   ^${PORT}\s+${STATUS}\s+(?:in\s+)?${VLAN_ID}\s+${DUPLEX}\s+${SPEED}\s+${TYPE}\s*$$ -> Record
   ^Port\s+Name\s+Status\s+Vlan\s+Duplex\s+Speed\s+Type\s*$$
   ^\s*$$
-  ^. -> Error

@@ -10,7 +10,6 @@ FWVER1
   ^Boot\s+version\s+${BOOT_VERSION}\s.*
   ^HW\s+version\s+${HW_VERSION} -> Record
   ^\s*$$
-  ^. -> Error
 
 FWVER2
   ^\s+Version:\s${SW_VERSION} -> Record
@@ -18,4 +17,4 @@ FWVER2
   ^\s+Date:\s.*
   ^\s+Time:\s.* -> End
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

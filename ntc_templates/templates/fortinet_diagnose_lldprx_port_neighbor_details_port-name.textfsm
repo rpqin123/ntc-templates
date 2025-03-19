@@ -121,10 +121,9 @@ Start
   # Processing possible new information to eliminate errors
   ^1\s+[\S\s]+
   ^\s*$$
-  ^. -> Error
   
 MultipleLines
   ^${SYSTEM_DESC_DATA}
   ^1\s+system\.caps\.available:\s+${SYSTEM_CAPS_AVAILABLE} -> Start  
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

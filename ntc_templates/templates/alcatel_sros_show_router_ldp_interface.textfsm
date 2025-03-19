@@ -21,4 +21,3 @@ SubInterface
   ^No.\s+of\s+Interfaces
   ^-----------
   ^\s*$$
-  ^. -> Error

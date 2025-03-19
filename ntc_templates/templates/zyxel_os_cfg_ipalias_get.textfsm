@@ -13,4 +13,3 @@ IPALIASTable
   ^${NAME}\s+${IP_ALIAS_ACTIVE}\s+${IP_ALIAS_ADDRESS}\s+${IP_ALIAS_NETMASK}\s+${PUBLAN_ACTIVE}\s+${PUBLAN_IP_ADDRESS}\s+${PUBLAN_NETMASK}\s+(0|1)\s+(0|1)\s*$$ -> Record
   ^Command\sSuccessful.\s*$$
   ^\s*$$
-  ^. -> Error

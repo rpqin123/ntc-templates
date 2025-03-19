@@ -9,4 +9,3 @@ Start
 DHCPv6Table
   ^${IP_ADDRESS}\s+${EXPIRATION}\s+${STATE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

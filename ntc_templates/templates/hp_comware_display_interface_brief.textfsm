@@ -18,14 +18,13 @@ Start
   ^\s*Type:\s+A\s+-\s+access;\s+T\s+-\s+trunk;\s+H\s+-\s+hybrid\s*$$
   ^\s*Interface\s+Link\s+Speed\s+Duplex\s+Type\s+PVID\s+Description\s*$$ -> BridgeModeIfaces
   ^\s*$$
-  ^. -> Error
 
 RouteModeIfaces
   ^\s*${INTERFACE}\s+${LINK}(?:\s+${PROTOCOL})?(?:\s+${MAIN_IP})?(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 BridgeModeIfaces
   ^${INTERFACE}\s+${LINK}\s+${SPEED}(?:\(a\))?\s+${DUPLEX}(?:\(a\))?\s+${TYPE}\s+${PVID}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

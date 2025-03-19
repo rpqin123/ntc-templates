@@ -10,7 +10,6 @@ Start
   ^Time\s+source\s+is
   ^\s*__Platform_iVRF\:_ID00_
   ^\s*mgmtVrf\s+<not set>
-  ^. -> Error
 
 Start_record
   ^\s{2}\S+ -> Continue.Record
@@ -18,5 +17,4 @@ Start_record
   ^\s+${NAME}\s+${DEFAULT_RD}\s+${PROTOCOLS}\s+${INTERFACES}\s*$$
   ^\s+${NAME}\s+${DEFAULT_RD}\s+${PROTOCOLS}\s*$$
   ^\s+${NAME}\s+${DEFAULT_RD}\s*$$
-  ^\s*Platform\s+iVRF\s+Name -> Start
-  ^. -> Error "VRFError"
+  ^\s*Platform\s+iVRF\s+Name -> Start "VRFError"

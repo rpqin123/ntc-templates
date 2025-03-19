@@ -10,5 +10,4 @@ Start
   ^Interface\s+VNI\s+Multicast-group\s+VNI\s+state\s+Mode\s+BD\s+cfg\s+vrf\s*$$
   ^${INTERFACE}\s+${VNI}\s+${MCAST_GROUP}\s+${STATE}\s+${MODE}\s+${BD}\s+CLI\s+${VRF} -> Record
   ^\s*$$
-  ^. -> Error
   

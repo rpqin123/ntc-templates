@@ -63,7 +63,6 @@ Start
   ^\s*Diagnostics\scalibration\sis\sinternal -> DIAGNOSTICS
   ^\s*SFP\s+module\s+inventory\s+information\s*:
   ^\s*$$
-  ^. -> Error
 
 VENDOR
   ^\s*name\s+=\s+${VENDOR_NAME}
@@ -74,7 +73,7 @@ VENDOR
   ^\s*transceiver: -> TRANSCEIVER
   ^\s+serialNumber\s+=
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TRANSCEIVER
   ^\s*ethernetComplianceCode\s+=\s+${TCVR_ETHER_COMPLIANCE}
@@ -86,7 +85,7 @@ TRANSCEIVER
   ^\s*fiberSpeed -> Start
   ^\s+sonet
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 LINK_LENGTH
   ^\s*single\sfiber\smode\s+=\s+${LINKLEN_SM}
@@ -95,14 +94,14 @@ LINK_LENGTH
   ^\s*copper\scable\s+=\s+${LINKLEN_COPPER} -> Continue
   ^\s*copper\scable -> OPTIONS
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 OPTIONS
   ^\s*Max\sbit\srate\s+=\s+${MAX_BIT_RATE} -> Start
   ^\s*options\s+=\s${OPTIONS}
   ^\s+${OPTIONS}
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 DIAGNOSTICS
   ^\s*Temp\sHigh\sAlarm\s+=\s+${TEMP_HIGH_ALARM}
@@ -135,4 +134,4 @@ DIAGNOSTICS
   ^SFP -> Continue.Record
   ^SFP\s+${PORT}: -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

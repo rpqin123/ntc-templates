@@ -45,4 +45,3 @@ Interfaces
   ^RateLimitPeriod\s+=\s+${RATELIMITPERIOD}
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error

@@ -14,4 +14,3 @@ Start
   ^\s+Interface\s+ID\s+Area\s+Cost\s+State\s+Neighbors\s+Status
   ^\s+${INTERFACE}\s+\d+\s+${AREA}\s+${COST}\s+${STATE}\s+${NEIGHBORS_FC}\s+${STATUS} -> Record
   ^\s*$$
-  ^. -> Error

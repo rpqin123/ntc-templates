@@ -43,7 +43,6 @@ Start
   ^IP\s+unicast\s+RPF\s+check\s+is\s+${RPF_CHECK}
   ^RPF\s+mode.*$$
   ^\s*$$
-  ^. -> Error
 
 MULTICAST
   ^\s+${MULTICAST_GROUPS}\s*$$ -> Start
@@ -59,4 +58,4 @@ MULTICAST
   ^\s+(?:\S+\s+){9}${MULTICAST_GROUPS} -> Continue
   ^\s+(?:\S+\s+){10}${MULTICAST_GROUPS} -> Continue
   ^.* -> Start
-  ^. -> Error MULTICAST
+  ^. -> EOF MULTICAST

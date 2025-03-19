@@ -42,7 +42,6 @@ Start
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
   ^Time\s+source\s+is
-  ^. -> Error
 
 Issuer
   ^\s*e=${ISSUER_E}\s*$$
@@ -53,7 +52,7 @@ Issuer
   ^\s*st=${ISSUER_ST}\s*$$
   ^\s*c=${ISSUER_C}\s*$$
   ^\s*Subject:\s*$$ -> Subject
-  ^. -> Error
+  ^. -> EOF
 
 Subject
   ^\s*e=${SUBJECT_E}\s*$$
@@ -69,9 +68,9 @@ Subject
   ^\s*hostname=${SUBJECT_HOSTNAME}\s*$$
   ^\s*CRL Distribution Points:\s*$$ -> CRLDistPoints
   ^\s*Validity\s*Date:\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 CRLDistPoints
   ^\s*${CRL_DISTRIBUTION_POINT}\s*$$
   ^\s*Validity\s*Date:\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

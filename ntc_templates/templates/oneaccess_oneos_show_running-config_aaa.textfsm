@@ -10,4 +10,3 @@ Start
   ^\s*aaa\s+${AAA_PROTOCOL}\s+${AAA_COMMAND}\s+${AAA_CONFIG}\s*$$ -> Record
   ^exit
   ^\s*$$
-  ^. -> Error

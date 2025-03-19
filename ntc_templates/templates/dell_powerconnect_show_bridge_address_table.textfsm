@@ -10,4 +10,3 @@ Begin
   ^-+
   ^Aging
   ^\s+${VLAN_ID}\s+${DESTINATION_ADDRESS}\s+${DESTINATION_PORT}\s+${TYPE} -> Record
-  ^. -> Error

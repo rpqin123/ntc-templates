@@ -18,4 +18,3 @@ Start
   ^Load\s+for\s+
   ^Time\s+source\s+is
   ^\s*$$
-  ^. -> Error

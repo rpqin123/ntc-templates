@@ -186,5 +186,4 @@ Start
   ^\s*Unknown-multicast\s+max-ratio
   ^\s*Promiscuous\s+mode
   ^\s*DCD:
-  ^. -> Error
   ^\s*$$ ^. -> Error

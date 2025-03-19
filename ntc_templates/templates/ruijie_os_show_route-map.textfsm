@@ -16,7 +16,6 @@ Match
   ^\s+${MATCH_CLAUSES}\s*$$
   ^route-map -> Continue.Record
   ^route-map\s+${NAME},\s+${ACTION},\s+sequence\s+${SEQ}\s*$$ -> Start
-  ^.+ -> Error
 
 Set
   ^\s*$$
@@ -24,4 +23,4 @@ Set
   ^\s+${SET_CLAUSES}\s*$$
   ^route-map -> Continue.Record
   ^route-map\s+${NAME},\s+${ACTION},\s+sequence\s+${SEQ}\s*$$ -> Start
-  ^.+ -> Error
+  ^.+ -> EOF

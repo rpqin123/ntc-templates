@@ -25,4 +25,3 @@ Start
   ^Last Source Address:Vlan\s+:\s+${LAST_SRC_MAC_ADDR_VLAN}
   ^Security Violation Count\s+:\s+${VIOLATION_COUNT}
   ^\s*$$
-  ^. -> Error

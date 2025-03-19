@@ -16,4 +16,3 @@ Value LOCAL_ADDRESS (\S+)
 Start
   ^(\s?${INDEX}\s*)?${FLAGS}\s+(comment=${COMMENT}\s)?dst-address=${DST_ADDRESS}(\srouting-table=${ROUTING_TABLE})?(\spref-src=${PREF_SRC})?\sgateway=${GATEWAY}(\sgateway-status=${GATEWAY_STATUS})?(\simmediate-gw=${IMMEDIATE_GW})?\sdistance=${DISTANCE}\sscope=${SCOPE}(\starget-scope=${TARGET_SCOPE})?(\ssuppress-hw-offload=${SUPPRESS_HW_OFFLOAD})?(\slocal-address=${LOCAL_ADDRESS})?.*$$ -> Record
   ^\s*(?:\d{2}:){2}\d{2}\s+echo:\s*.*$$ -> Next
-  ^. -> Error

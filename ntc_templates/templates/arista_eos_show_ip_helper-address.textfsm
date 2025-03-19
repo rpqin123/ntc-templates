@@ -9,4 +9,3 @@ Start
  ^\s+DHCP\s+servers:\s+${IP_HELPER}$$
  ^\s+${IP_HELPER}$$
  ^$$
- ^. -> Error

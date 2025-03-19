@@ -6,4 +6,3 @@ Start
   ^\s+Solt\s+ID\s+Board\s+Name\s+Serial\s+Number
   ^\s+${SLOT_ID}\s+${BOARD_NAME}\s+${SERIAL_NUMBER} -> Record
   ^\s+-
-  ^. -> Error

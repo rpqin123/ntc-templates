@@ -26,6 +26,5 @@ Start
   ^\s+${PROTOCOL}\s+${PORT_MATCH}\s+(${PORT_RANGE_START}\s+${PORT_RANGE_END}|${PORT})\s*$$ -> Record
   ^\s+${PROTOCOL}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
 
 EOF

@@ -74,4 +74,3 @@ Start
   ^\s*link-partner-advertising:\s*${LINK_PARTNER_ADVERTISING}$$
   ^\s*(?:\d{2}:){2}\d{2}\s+echo:\s*.*$$ -> Next
   ^\s*$$
-  ^. -> Error

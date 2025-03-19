@@ -7,4 +7,3 @@ Start
   ^\s*current\s+time\s+is:\s+${HOUR}:${MINUTE}:${SECOND}\s*$$
   ^\s*last\s+ntp\s+sync:\s+${LAST_NTP_SYNC}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

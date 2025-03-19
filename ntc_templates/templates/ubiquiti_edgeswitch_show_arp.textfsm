@@ -10,4 +10,3 @@ Start
   ^\s+IP\s+Address\s+MAC\s+Address\s+Interface\s+Type\s+Age
   ^-+\s+-+\s+-+\s+-+\s+-+\s*$$
   ^\s*$$
-  ^. -> Error

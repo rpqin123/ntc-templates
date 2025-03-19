@@ -10,10 +10,9 @@ Start
   ^.*IP Route Entries
   ^.*Destination -> Route
   ^\s*$$
-  ^. -> Error
 
 Route
   ^\s*----
   ^\s*${DESTINATION}\s+${GATEWAY}\s+${VLAN_NAME}\s+${TYPE}\s+${SUBTYPE}\s+${METRIC}\s+${DISTANCE} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

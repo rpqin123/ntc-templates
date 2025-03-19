@@ -45,7 +45,6 @@ Start
   ^Serial\s+Number
   ^failover\s+replication
   ^\s*$$
-  ^. -> Error
 
 ThisHost
   ^Group\s+\d+\s+State:\s*${SERVICE_STATE}\s*$$
@@ -61,7 +60,7 @@ ThisHost
   ^\s+IPS
   ^\s*ASA\s+FirePOWER
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 OtherHost
   ^Group\s+\d+\s+State:\s*${SERVICE_STATE_MATE}\s*$$
@@ -76,7 +75,7 @@ OtherHost
   ^\s*ASA\s+FirePOWER
   ^Stateful\s+Failover\s+Logical\s+Update\s+Statistics\s*$$ -> Stats
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Stats
   ^Link\s*:\s+

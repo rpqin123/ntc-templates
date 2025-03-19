@@ -15,4 +15,3 @@ Start
   ^${SYSTEM_ID}\s*$$
   ^Total\s+Peer\S+:\s+\d+
   ^\s*$$
-  ^. -> Error

@@ -18,4 +18,3 @@ Standby
   ^${INTERFACE}\s*$$
   ^\s*${GROUP}\s+${PRIORITY}\s+${PREEMPT}\s+${STATE}\s+${ACTIVE}\s+${STANDBY}\s+${VIRTUAL_IP_ADDRESS} -> Record
   ^\s*$$
-  ^. -> Error

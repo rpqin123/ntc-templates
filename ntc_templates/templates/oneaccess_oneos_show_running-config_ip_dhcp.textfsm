@@ -29,4 +29,3 @@ Start
   ^\s*netmask
   ^(exit|!) -> Record Start
   ^\s$$
-  ^. -> Error

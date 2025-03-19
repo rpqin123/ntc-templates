@@ -12,14 +12,13 @@ Start
   ^Switch#\s+Role\s+Mac\s+Address\s+Priority\s+Version\s+State\s*$$
   ^\s*-+ -> Status
   ^\s*$$
-  ^. -> Error
 
 Status
   ^\*?\s*${SWITCH}\s+${ROLE}\s+${MAC_ADDRESS}\s+${PRIORITY}\s+${STATE}\s*$$ -> Record
   ^\*?\s*${SWITCH}\s+${ROLE}\s+${MAC_ADDRESS}\s+${PRIORITY}\s+${VERSION}\s+${STATE}\s*$$ -> Record
   ^\s*Stack\s+Port\s+Status -> Stack
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Stack
   ^.

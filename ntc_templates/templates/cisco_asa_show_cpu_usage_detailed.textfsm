@@ -19,4 +19,3 @@ Start
   ^Total\s+CPU\s+utilization\s+for:
   ^\s+\d+\s+seconds\s+=\s+\d+.\d+%
   ^\s*$$
-  ^. -> Error

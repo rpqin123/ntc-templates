@@ -19,4 +19,3 @@ Start
   ^\s+Description\s+:\s+${DESCRIPTION}\s*$$ -> Record
   ^\s*Total\s+:\s+\d+\s*$$
   ^\s*$$
-  ^.*$$ -> Error

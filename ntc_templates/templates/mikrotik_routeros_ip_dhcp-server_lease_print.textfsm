@@ -16,4 +16,3 @@ EntriesTable
   # are next to each other -> use '...print terse...' version of the command
   ^\s*${NUMBER}(?:\s+${FLAGS})?\s+${ADDRESS}(?:\s+${MAC_ADDRESS})?(?:\s+${HOST_NAME})?\s+${SERVER}(?:\s+${RATE_LIMIT})?\s+${STATUS}\s+${LAST_SEEN}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

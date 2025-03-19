@@ -50,4 +50,3 @@ Start
   ^\s*-+\s*$$
   ^\s*Channel\s+\d+\s+Information
   ^\s*$$
-  ^. -> Error

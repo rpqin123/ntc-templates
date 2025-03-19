@@ -32,4 +32,3 @@ Start
   ^\s*Current\s+Tx-Power\s+Level\s+:\s*${CURRENT_TX_POWER_LEVEL}%\s*$$ -> Record
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

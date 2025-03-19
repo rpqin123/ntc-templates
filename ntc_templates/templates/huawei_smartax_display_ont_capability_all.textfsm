@@ -60,4 +60,3 @@ Start
   ^\s*Fit\s+AP:\s+${FIT_AP}\s*$$ -> Record
   ^\s*Number\s+of\s+PQs\s+in\s+T-CONT\s+\d+\s*:\s+\d+\s*$$
   ^\s*The\s+total\s+of\s+online\s+ONTs\s+are\s*:\s+\d+\s*$$
-  ^. -> Error

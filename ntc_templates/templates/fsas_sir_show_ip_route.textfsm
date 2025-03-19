@@ -12,4 +12,3 @@ Start
   ^---\s+
   ^(\s+|${FLAG})${PROTOCOL}\s+${NETWORK}\/${PREFIX_LENGTH}\s+${GATEWAY}\s+${DISTANCE}\s+${UPTIME}\s+${INTERFACE}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

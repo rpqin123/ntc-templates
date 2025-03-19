@@ -27,8 +27,7 @@ Start
   ^\s*Routing\s+entry\s+for\s+${NETWORK}/${PREFIX_LENGTH} -> ROUTE_ENTRY
   ^\s+Route\s+metric\s+is\s+\d+
   ^\s+\S+,\s+from\s+\S+,\s+via\s+\S+
-  ^\s+No\s+advertising\s+protos
-  ^. -> Error "LINE NOT FOUND"
+  ^\s+No\s+advertising\s+protos "LINE NOT FOUND"
 
 ROUTE_ENTRY
   ^\s+Known\s+via\s+\"${PROTOCOL}\",\s+distance\s+${DISTANCE},\s+metric\s+${METRIC},\s+candidate\s+default\s+path
@@ -37,4 +36,4 @@ ROUTE_ENTRY
   ^\s+Routing\s+Descriptor\s+Blocks
   ^\s+${NEXT_HOP},\s+from\s+\S+,\s+${TYPE}\s+${INTERFACE} -> Record Start
   ^\s+${NEXT_HOP}$$ -> Record Start
-  ^. -> Error ROUTE_ENTRY
+  ^. -> EOF ROUTE_ENTRY

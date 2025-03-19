@@ -32,4 +32,3 @@ Start
   ^transmit\s+packets\s+dropped
   ^multicast\s+packets\s+received
   ^\s*$$
-  ^. -> Error

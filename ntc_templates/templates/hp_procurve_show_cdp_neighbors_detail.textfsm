@@ -18,4 +18,3 @@ Start
   ^\s*Version\s*:\s*${NEIGHBOR_DESCRIPTION}\s*$$ -> Record
   ^\s*$$
   ^\s*----
-  ^. -> Error

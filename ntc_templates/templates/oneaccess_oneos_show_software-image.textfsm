@@ -11,4 +11,3 @@ Start
   ^Header\schecksum\s+:\s${CHECKSUM}
   ^Installation\sstatus.*
   ^\s*$$
-  ^. -> Error

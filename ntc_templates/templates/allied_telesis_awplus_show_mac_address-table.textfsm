@@ -6,4 +6,3 @@ Value FWD (\S+)
 Start
   ^VLAN\s+port
   ^${VLAN_ID}\s+${DESTINATION_PORT}\s+${DESTINATION_ADDRESS}\s+${FWD} -> Record
-  ^. -> Error

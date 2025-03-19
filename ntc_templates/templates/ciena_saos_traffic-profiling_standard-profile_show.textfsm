@@ -19,5 +19,4 @@ Start
   ^\|\s*${PORT}\s*\|\s*${ID}\s*\|\s*${PROFILE_NAME}\s*\|\s*${ROLE}\s*\|\s*${PARENT_CHILD}\s*\|\s*${CIR}\s*\|\s*${EIR}\s*\|\s*${CBS}\s*\|\s*${EBS}\s*\|\s*${CLASSIFIER_A}\s*\|\s*${CLASSIFIER_B}\s*\| -> Record
   ^\+-.*
   ^\s*$$
-  ^. -> Error
   

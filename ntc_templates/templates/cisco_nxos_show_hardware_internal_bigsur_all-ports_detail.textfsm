@@ -392,7 +392,6 @@ Start
   ^\s*Link\s*cntrs:\s*$$ -> LinkCntrs
   ^\s*Done.\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
 
 LinkCntrs
   ^\s*Link\s*up:\s*${LINK_UP_HEX}\s*\(${LINK_UP_DEC}\)\s*$$
@@ -415,7 +414,7 @@ PortClientConfig
   ^\s*class_flow_ctrl\s*msk\s*:\s*rx\s*${CLASS_FLOW_CTRL_MSK_RX},\s*tx\s*${CLASS_FLOW_CTRL_MSK_TX}\s*$$
   ^\s*Bigsur\s*port\s*\S+\s*port-oper\s*info:\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 
 Lane0
@@ -424,7 +423,7 @@ Lane0
   ^\s*<\d+\s*\S+>:DFE\s*B:\s*${DFE_TUNE_LANE_0_DFE_B}\s*$$
   ^\s*<\d+\s*\S+>\s*DFE\s*Tune\s*\[\S+\]:\s*${DFE_TUNE_LANE_0_DFE_TUNE}\s*$$ -> Lane1
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 
 Lane1
@@ -433,7 +432,7 @@ Lane1
   ^\s*<\d+\s*\S+>:DFE\s*B:\s*${DFE_TUNE_LANE_1_DFE_B}\s*$$
   ^\s*<\d+\s*\S+>\s*DFE\s*Tune\s*\[\S+\]:\s*${DFE_TUNE_LANE_1_DFE_TUNE}\s*$$ -> Lane2
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 
 Lane2
@@ -442,7 +441,7 @@ Lane2
   ^\s*<\d+\s*\S+>:DFE\s*B:\s*${DFE_TUNE_LANE_2_DFE_B}\s*$$
   ^\s*<\d+\s*\S+>\s*DFE\s*Tune\s*\[\S+\]:\s*${DFE_TUNE_LANE_2_DFE_TUNE}\s*$$ -> Lane3
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 
 Lane3
@@ -451,7 +450,7 @@ Lane3
   ^\s*<\d+\s*\S+>:DFE\s*B:\s*${DFE_TUNE_LANE_3_DFE_B}\s*$$
   ^\s*<\d+\s*\S+>\s*DFE\s*Tune\s*\[\S+\]:\s*${DFE_TUNE_LANE_3_DFE_TUNE}\s*$$ -> Start
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 
 EOF

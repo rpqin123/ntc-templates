@@ -15,4 +15,3 @@ Start
   ^\s*(?:Vlan${VLAN_ID}|BD-${BRIDGE_DOMAIN_ID})\s+${MAC_ADDRESS}\s+${MAC_FLAG}\s+${AGE}\s+${LOGICAL_INTERFACE}\s*\S*\s*\S* -> Record
   ^\s*$$
   ^{master:\d+}
-  ^. -> Error

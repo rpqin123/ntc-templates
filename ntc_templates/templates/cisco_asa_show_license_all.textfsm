@@ -50,7 +50,6 @@ Start
   ^Transport:\s*$$ -> TRANSPORT
   ^No\s+licenses\s+in\s+use\s*$$
   ^=+\s*$$
-  ^. -> Error
 
 REGISTRATION
   ^\s*$$
@@ -70,7 +69,7 @@ REGISTRATION
   ^Smart\s+Licensing\s+is\s+${SMART_STATUS}\s*$$
   ^Registration:\s*$$ -> REGISTRATION
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 AUTHORIZATION
   ^\s*$$
@@ -89,7 +88,7 @@ AUTHORIZATION
   ^Utility:\s*$$ -> UTILITY
   ^Export\s+Authorization\s+Key:\s*$$ -> EXPORT_AUTHORIZATION_KEY
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 LICENSE_USAGE
   ^\s*$$
@@ -107,7 +106,7 @@ LICENSE_USAGE
   ^License\s+Usage\s*$$ -> LICENSE_USAGE
   ^No\s+licenses\s+in\s+use\s*$$
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 PRODUCT_INFORMATION
   ^\s*$$
@@ -119,7 +118,7 @@ PRODUCT_INFORMATION
   ^License\s+Usage\s*$$ -> LICENSE_USAGE
   ^Product\s+Information\s*$$ -> PRODUCT_INFORMATION
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 AGENT_VERSION
   ^\s*$$
@@ -132,20 +131,20 @@ AGENT_VERSION
   ^Agent\s+Version\s*$$ -> AGENT_VERSION
   ^Reservation\s+Info\s*$$ -> RESERVATION_INFO
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 RESERVATION_INFO
   ^\s*$$
   ^\s*License\s+reservation:\s+${LICENSE_RESERVATION}\s*$$
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 UTILITY
   ^\s*$$
   ^\s+Status:\s+${UTILITY_STATUS}\s*$$
   ^Data\s+Privacy:\s*$$ -> PRIVACY
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 PRIVACY
   ^\s*$$
@@ -155,14 +154,14 @@ PRIVACY
   ^\s+Version\s+privacy:\s+${PRIVACY_VERSION_PRIVACY}\s*$$
   ^Transport:\s*$$ -> TRANSPORT
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TRANSPORT
   ^\s*$$
   ^\s+Type:\s+${TRANSPORT_TYPE}\s*$$
   ^License\s+Usage\s*$$ -> LICENSE_USAGE
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 EXPORT_AUTHORIZATION_KEY
   ^\s*$$
@@ -176,4 +175,4 @@ EXPORT_AUTHORIZATION_KEY
   ^License\s+Authorization:\s*$$ -> AUTHORIZATION
   ^Utility:\s*$$ -> UTILITY
   ^=+\s*$$
-  ^. -> Error
+  ^. -> EOF

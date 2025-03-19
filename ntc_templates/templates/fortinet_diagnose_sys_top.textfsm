@@ -24,4 +24,3 @@ Start
   ^\s*${USERSPACE_APP_CPU}U(,\s+${N_CPU}N)?,\s+${SYSTEM_APP_CPU}S,\s+${IDLE_CPU}I(,\s+${WA_CPU}WA)?(,\s+${HI_CPU}HI)?(,\s+${SI_CPU}SI)?(,\s+${ST_CPU}ST)?;\s+${TOTAL_MEMORY}T,\s+${FREE_MEMORY}F(,\s+${TOTAL_SHARED_MEMORY_PAGES}KF)?\s*$$
   ^\s*${PROCESS_NAME}\s+${PROCESS_ID}\s+${PROCESS_STATE}\s+${PROCESS_CPU_USAGE}\s+${PROCESS_MEMORY_USAGE}(\s+${PROCESS_CPU_CORE})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

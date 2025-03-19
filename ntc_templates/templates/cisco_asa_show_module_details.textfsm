@@ -12,7 +12,6 @@ ModDetails
   ^\s*${MODULE}\s+${MAC_ADDRESS}\s+${MOD_HW}\s+${MOD_FW}(\s+${MOD_SW})?\s*$$ -> Record
 #  ^\s*${MODULE}\s+${MAC_ADDRESS}\s+${MOD_HW}\s+${MOD_FW}\s*$$ -> Record
   ^\s*Mod\s+SSM\s+Application\s+Name\s+Status\s+SSM\s+Application\s+Version -> End
-  ^\s*$$
-  ^. -> Error ModDetails
+  ^\s*$$ ModDetails
 
 End

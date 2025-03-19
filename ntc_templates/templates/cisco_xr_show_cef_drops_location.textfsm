@@ -34,5 +34,4 @@ Start
   ^\s+LISP\s+encap\s+err\s+drops\s+packets\s+:\s+${LISP_ENCAP_ERR_DROPS}
   ^\s+LISP\s+decap\s+err\s+drops\s+packets\s+:\s+${LISP_DECAP_ERR_DROPS}
   ^CEF\s+Drop\s+Statistics\s*$$
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"

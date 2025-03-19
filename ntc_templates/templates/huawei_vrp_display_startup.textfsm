@@ -24,4 +24,3 @@ Start
   ^\s+Next\sstartup\s+patch\s+package:\s+${NEXT_STARTUP_PATCH_PACKAGE}\s*$$
   ^\s+Startup\s+voice-files:\s+${STARTUP_VOICE_FILES}\s*$$
   ^\s+Next\sstartup\s+voice-files:\s+${NEXT_STARTUP_VOICE_FILES}\s*$$
-  ^. -> Error

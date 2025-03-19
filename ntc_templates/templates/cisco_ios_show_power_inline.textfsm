@@ -14,7 +14,6 @@ Start
   ^-+
   ^\s+\(Watts\)
   ^\s*$$
-  ^. -> Error
 
 Interfaces
   ^\s*${INTERFACE}\s+${ADMIN_STATUS}\s+${OPERATIONAL_STATUS}\s+${POWER}\s+${DEVICE}\s+${CLASS}\s+${MAX}\s*$$ -> Record
@@ -22,4 +21,4 @@ Interfaces
   ^\s+\(Watts\)
   ^-+
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

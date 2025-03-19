@@ -17,4 +17,3 @@ Start
   ^\s*PID\s+Runtime\(ms\)\s+Invoked\s+uSecs\s+5Sec\s+1Min\s+5Min\s+TTY\s+Process\s*$$
   ^\s*${PROCESS_PID}\s+${PROCESS_RUNTIME}\s+${PROCESS_INVOKED}\s+${PROCESS_CPU_TIME_FOR_INVOCATION}\s+${PROCESS_CPU_USAGE_5_SEC}%\s+${PROCESS_CPU_USAGE_1_MIN}%\s+${PROCESS_CPU_USAGE_5_MIN}%\s+${PROCESS_TTY}\s+${PROCESS_NAME}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

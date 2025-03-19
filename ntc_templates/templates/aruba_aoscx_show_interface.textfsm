@@ -87,7 +87,6 @@ Start
   ^\s*Rx -> Rx
   ^\s*Rate\s+RX\s+TX\s+Total -> Rate
   ^\s*Statistic\s+RX\s+TX\s+Total -> Statistic
-  ^. -> Error
 
 Rx
   ^\s*${RX_TOTAL_PACKETS} total packets\s*${RX_TOTAL_BYTES} total bytes
@@ -97,7 +96,7 @@ Rx
   ^\s*${RX_ERRORS} errors\s*${RX_DROPPED} dropped
   ^\s*${RX_CRC_FCS} CRC/FCS
   ^\s*Tx -> Tx
-  ^. -> Error
+  ^. -> EOF
 
 Tx
   ^\s*${TX_TOTAL_PACKETS} total packets\s*${TX_TOTAL_BYTES} total bytes
@@ -108,7 +107,7 @@ Tx
   ^\s*${TX_CRC_FCS} CRC/FCS
   ^\s*${TX_COLLISION}\s*collision
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Rate
   ^\s*----
@@ -119,7 +118,7 @@ Rate
   ^\s+Broadcast
   ^\s+Utilization
   ^\s*$$ -> Statistic
-  ^. -> Error
+  ^. -> EOF
 
 Statistic
   ^\s*Statistic\s+RX\s+TX\s+Total
@@ -139,4 +138,4 @@ Statistic
   ^\s*Giants
   ^\s*L3\s+Packets
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

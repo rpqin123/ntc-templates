@@ -20,4 +20,3 @@ LogMessages
   # and then extract specific values
   ^\s*time=(${MONTH}/${DAY}(/${YEAR})?\s+)?${HOUR}:${MINUTE}:${SECOND}\s+topics=${TOPIC}\s+message=\"${MESSAGE}\"\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

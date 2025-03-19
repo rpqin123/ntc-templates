@@ -22,7 +22,6 @@ Start
   ^\s*OSPF\s+Router\s+with\s+ID\s+\(${ROUTER_ID}\)\s+\(Process\s+ID\s+${PROCESS_ID}\)
   ^\s+Router\s+Link\s+States\s+\(Area ${AREA}\) -> LSAInfo
   ^\s*$$
-  ^. -> Error
 
 LSAInfo
   ^\s+LS\s+age:\s+${LSA_AGE}
@@ -37,7 +36,7 @@ LSAInfo
   ^\s+${LSA_ASBR}$$
   ^\s+Number\s+of\s+Links:\s+${LSA_NUM_LINKS} -> LSAs
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 LSAs
   ^\s+Link\s+connected\s+to:\s+${LS_LINK_TYPE}$$
@@ -48,6 +47,6 @@ LSAs
   ^\s+LS\s+age:\s+${LSA_AGE} -> LSAInfo
   ^\s+Router\s+Link\s+States\s+\(Area ${AREA}\) -> LSAInfo
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 EOF

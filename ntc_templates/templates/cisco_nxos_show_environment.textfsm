@@ -40,7 +40,6 @@ Power
   ^Supply\s+Model\s+Output\s+Input\s+Capacity\s+Status
   ^\s+\(Watts\s\)\s+
   ^-+\s+-+
-  ^. -> Error
 
 Fan
   ^\s*Fan\s+Model\s+Hw\s+Status
@@ -55,7 +54,7 @@ Fan
   ^Fan\s+Zone\s+Speed\s*:
   ^Fan\sAir\sFilter\s:
   ^-+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Temperature
   ^Module\s+Sensor\s+MajorThresh\s+MinorThres\s+CurTemp\s+Status
@@ -63,4 +62,4 @@ Temperature
   ^\s*\(Celsius\)\s+\(Celsius\)
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

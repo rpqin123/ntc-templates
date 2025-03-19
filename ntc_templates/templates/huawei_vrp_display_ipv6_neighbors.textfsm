@@ -21,4 +21,3 @@ Start
   ^\s*(VPN\sname\s*:\s*${VPN_NAME}\s+)?Is\sRouter\s*:\s*${IS_ROUTER}\s*$$
   ^\s*Secure FLAG\s*:\s*${SECURE_FLAG}\s*(Nickname\s*:\s*${NICKNAME}\s*)?$$
   ^\s*Total:\s+\d+\s+Dynamic:\s+\d+\s+Static:\s+\d+\s*$$
-  ^. -> Error

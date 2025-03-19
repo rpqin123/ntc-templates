@@ -27,4 +27,3 @@ Start
   ^BGP\s+activity
   ^\d+\s+networks\s+peaked\s+at
   ^\s*$$
-  ^. -> Error

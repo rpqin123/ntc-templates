@@ -7,10 +7,9 @@ Start
   ^\s*FlexConnect\sGroup\s+Summary:\s*Count:\s+${FLEXCONNECT_GROUP_COUNT}
   ^\s*Group\s+Name\s+#\s+Aps -> Flexconnect
   ^\s*$$
-  ^. -> Error
 
 Flexconnect
   ^-+
   ^${FLEXCONNECT_GROUP_NAME}\s+${AP_COUNT} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

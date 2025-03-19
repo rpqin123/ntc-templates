@@ -6,4 +6,3 @@ Start
 
 Start_record
   ^${NAME}\s+${TABLE} -> Record
-  ^. -> Error

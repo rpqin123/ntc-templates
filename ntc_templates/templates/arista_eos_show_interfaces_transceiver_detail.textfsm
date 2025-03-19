@@ -15,8 +15,7 @@ Start
   ^\s+High\sAlarm\s+\S+
   ^\s+${TYPE}\s+Threshold\s+ -> Values
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
   
 Values
   ^Port\s+\S+
@@ -25,4 +24,4 @@ Values
   ^\s+High\sAlarm\s+High Warn\s+Low\sAlarm\s+Low\sWarn -> Start
   ^\s+$$
   ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"

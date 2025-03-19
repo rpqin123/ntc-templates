@@ -26,12 +26,11 @@ Start
   ^\s*\#\s*fully\s*supported\s*by\s*this\s*version\s*of\s*dmidecode\.\s*$$
   ^\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
 
 decisor
   ^\s*Physical\s*Memory\s*Array\s*$$ -> memory_array_info
   ^\s*Memory\s*Device\s*$$ -> memory_info
-  ^. -> Error
+  ^. -> EOF
 
 memory_array_info
   ^\s*Location:\s*\S.+\S\s*$$
@@ -41,7 +40,7 @@ memory_array_info
   ^\s*Error\s*Information\s*Handle:\s*\S.+\S\s*$$
   ^\s*Number\s*Of\s*Devices:\s*${RAM_TOTAL_SLOT}\s*$$
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF
 
 memory_info
   ^\s*Array\s*Handle:\s*\S+$$
@@ -79,4 +78,4 @@ memory_info
   ^\s*Logical\s*Size:\s*\S.+\S\s*$$
   ^\s*$$ -> Record
   ^\s*Handle\s*\S+,\s*DMI\s*type\s*\d+,\s*\d+\s*bytes$$ -> decisor
-  ^. -> Error
+  ^. -> EOF

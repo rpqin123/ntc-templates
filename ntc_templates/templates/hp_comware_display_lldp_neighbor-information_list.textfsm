@@ -9,14 +9,13 @@ Start
   ^.*Nearest\s+bridge\s+neighbor
   ^System\s+Name -> Format1
   ^Local\s+Interface -> Format2
-  ^. -> Error
 
 Format1
   ^\s*${NEIGHBOR_NAME}\s+${LOCAL_INTERFACE}\s+${CHASSIS_ID}\s+${NEIGHBOR_INTERFACE}\s*$$ -> Record Format1
   # Dropping long hostnames
   ^\s*\S+\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Format2
   ^\s*${LOCAL_INTERFACE}\s+${CHASSIS_ID}\s+${NEIGHBOR_INTERFACE}\s+${NEIGHBOR_NAME}\s*$$ -> Record Format2
-  ^. -> Error
+  ^. -> EOF

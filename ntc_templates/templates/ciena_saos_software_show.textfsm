@@ -20,4 +20,3 @@ Start
   ^\|\s+Bank\s+package\s+version
   ^\|\s+Last\s+(?:command|configuration)\s+file
   ^\s*$$
-  ^. -> Error

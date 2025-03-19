@@ -19,7 +19,6 @@ Start
   ^\s*Boot\s+revision\s+identification\s+:
   ^\s*SIM\s+Card\s+Information
   ^\s*$$
-  ^. -> Error
 
 Oneos5
   ^.*IMSI\s*:\s+${IMSI}
@@ -29,7 +28,7 @@ Oneos5
   ^\s*Active\s+SIM\s+slot\s+:
   ^\s*SIM\s+card\s+status\s+:
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Oneos6
   ^\s*SIM\scard\sslot\s2\s*:\s*SIM( card)?( is)?\s${SIM2_STATUS}
@@ -39,4 +38,4 @@ Oneos6
   ^\s*Active\s+SIM\s+slot\s+:
   ^\s*SIM\s+card\s+status\s+:
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

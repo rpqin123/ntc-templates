@@ -10,4 +10,3 @@ Start
   ^/ip\s+address\s*$$
   ^\s*add\s+address=${IP}/${MASK}(?:\s+comment="${COMMENT}")?\s+disabled=${DISABLED}\s+interface=${INTERFACE}\s+network=${NETWORK}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

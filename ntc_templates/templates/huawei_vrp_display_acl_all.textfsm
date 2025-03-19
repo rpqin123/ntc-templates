@@ -24,4 +24,3 @@ Start
   ^\s*rule\s${SN}\s${ACTION}(\s${PROTOCOL})?(\ssource\s${SOURCE})?(\ssource-port\s${SOURCE_PORT_MODIFIER}\s${SOURCE_PORT_RANGE})?(\sdestination\s${DESTINATION})?(\sdestination-port\s${DESTINATION_PORT_MODIFIER}\s${DESTINATION_PORT_RANGE})?(\s\(${MATCHES}\smatch(es)?\))?\s*$$
   ^\s*rule\s\d+\sdescription\s"${DESCRIPTION}"\s*$$
   ^\s*$$
-  ^. -> Error

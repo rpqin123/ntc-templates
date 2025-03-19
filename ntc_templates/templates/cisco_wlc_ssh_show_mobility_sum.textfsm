@@ -20,4 +20,3 @@ Start
 Mobility_Controllers
   ^\s+${MAC_ADDRESS}\s+${IP_ADDRESS}\s+${GROUP_NAME}\s+${MULTICAST_IP}\s+${STATUS}s*$$ -> Record
   ^\s*$$
-  ^. -> Error

@@ -13,6 +13,5 @@ Start
   ^\s*${TOTAL_USED}\s+bytes\s+used
   ^\s*${TOTAL_FREE}\s+bytes\s+free
   ^\s*${TOTAL_SIZE}\s+bytes\s+total
-  ^.+ -> Error
 
 EOF

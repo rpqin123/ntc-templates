@@ -17,7 +17,6 @@ Start
   ^next-hop\s+rewrite\s+info\s+interface\s+Origin\s+AS\s+Peer\s+AS\s+Neighbor -> EntriesDetail
   # Empty and unknowns lines
   ^\s*$$
-  ^. -> Error
 
 Entries
   # Ignore delimiter
@@ -28,7 +27,7 @@ Entries
   ^slot\s+${SLOT} -> Start
   # Empty and unknowns lines
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 EntriesDetail
   # Ignore delimiter
@@ -39,4 +38,4 @@ EntriesDetail
   ^slot\s+${SLOT} -> Start
   # Empty and unknowns lines
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

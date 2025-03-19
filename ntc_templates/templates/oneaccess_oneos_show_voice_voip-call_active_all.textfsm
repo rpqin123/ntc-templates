@@ -34,7 +34,6 @@ Start
   ^\s*\d+\/\d+\/\d+\s\d
   ^\s*${CALL_IDX}\s-\sCall\sfrom\s${CALLING_FROM},\sto\s${CALLING_TO}\scall-id:\s${CALL_ID}\s${CALL_STATUS} ->  NewCall
   ^\s*$$
-  ^. -> Error
 
 NewCall
   ^\s*calling\s*:\s*${CALLING_NUMBER},\s*called\s*:\s*${CALLED_NUMBER}
@@ -44,13 +43,13 @@ NewCall
   ^\s*call\spriority:\s${CALL_PRIORITY}
   ^\s*RTP\sSource\sip\s*:${RTP_SOURCE_IP}\srtp:${RTP_SOURCE_PORT}\s*\/\s*Dest\sip\s*:${RTP_DESTINATION_IP}\srtp:${RTP_DESTINATION_PORT} -> RTP
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 BChannels
   ^\s*B\schannel\s\(from\s\S+\)\s:\s${B_CHANNELS}
   ^\s*PDD\sduration:\s*${PDD_DURATION} -> NewCall
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 RTP
   ^\s*Play\stime\s\(voice\)\s*:\s*${RTP_PLAY_TIME}
@@ -62,4 +61,4 @@ RTP
   ^\s*ERL\s*:\s*${RTP_ERL_DB}
   ^\s*ACOM\s*:\s*${RTP_ACOM_DB}
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

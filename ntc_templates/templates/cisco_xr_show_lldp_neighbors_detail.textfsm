@@ -14,7 +14,6 @@ Start
   ^\S{3}\s+\S{3}\s+\d{1,2}\s+\d+:\d+:\d+
   ^Capability\s+codes\: -> CAPABILITY_CODES
   ^-------------- -> NEIGHBOR
-  ^.* -> Error
 
 NEIGHBOR
   ^$$
@@ -35,7 +34,7 @@ NEIGHBOR
   ^Peer\s+MAC\s+Address\:\s+${MAC_ADDRESS}
   ^Total\s+entries\s+displayed\:\s\d+ -> Start
   ^-------------- -> Record NEIGHBOR
-  ^.* -> Error Neighbor
+  ^.* -> EOF Neighbor
 
 DESCRIPTION
   ^${SYSTEM_DESCRIPTION} -> IgnoreRemainingDescription
@@ -43,9 +42,9 @@ DESCRIPTION
 IgnoreRemainingDescription
   ^\S+
   ^$$ -> NEIGHBOR
-  ^.* -> Error
+  ^.* -> EOF
 
 CAPABILITY_CODES
   ^$$ -> Start
   ^\s+\(.*\)\s+\S+\,\s+\(.*\)\s+\S+\,
-  ^.* -> Error CapabilityCodes
+  ^.* -> EOF CapabilityCodes

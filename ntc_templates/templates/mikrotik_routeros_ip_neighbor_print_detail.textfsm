@@ -41,4 +41,3 @@ Start
   ^.*\s+system-caps="?${SYSTEM_CAPS}"? -> Continue
   ^.*\s+system-caps-enabled="?${SYSTEM_CAPS_ENABLED}"?
   ^\s*$$
-  ^. -> Error

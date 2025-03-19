@@ -11,4 +11,3 @@ Start
   ^\s*${NETWORK_SERVICE}\s+${PORT}+\s-+ -> Record
   ^\s*${NETWORK_SERVICE}\s+-+\s+-+ -> Record
   ^\s*$$ -> EOF
-  ^. -> Error

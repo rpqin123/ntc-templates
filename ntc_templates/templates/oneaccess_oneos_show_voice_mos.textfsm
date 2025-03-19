@@ -23,7 +23,6 @@ Start
   ^\s*-+\sCurrent\shour\s-+ -> CurrentHour
   ^\s*$$
   ^\s*-*
-  ^. -> Error
 
 CurrentHour
   ^\s*Number\sof\sCall\s+:\s+${CURR_NBR_CALL}
@@ -38,7 +37,7 @@ CurrentHour
   ^\s*Average\sPdd\s+:\s+${CURR_AVG_PDD}
   ^\s*-+\sPrevious\shour\s-+ -> PreviousHour
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 PreviousHour
   ^\s*Number\sof\sCall\s+:\s+${PREV_NBR_CALL}
@@ -53,4 +52,4 @@ PreviousHour
   ^\s*Average\sPdd\s+:\s+${PREV_AVG_PDD}
   ^\s*-+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -22,7 +22,6 @@ Vrrp
   ^${INTERFACE}\s*$$
   ^\s*${GROUP}\s+${PRIORITY}\s+${TIME}\s+${OWN}\s+${PREEMPT}\s+${STATE}\s+${MASTER_IP_ADDRESS}\s+${VIRTUAL_IP_ADDRESS} -> Record
   ^\s*$$
-  ^. -> Error
 
 Vrrpv3
   # VRRP Unified (VRRPv3 for IPv4 and IPv6)
@@ -35,4 +34,4 @@ Vrrpv3
   ^\s*${INTERFACE}\s*$$
   ^\s*${GROUP}\s+${ADDR_FAMILY}\s+${PRIORITY}\s+${TIME}\s+${OWN}\s+${PREEMPT}\s+${STATE}\s+${MASTER_IP_ADDRESS}\s+${VIRTUAL_IP_ADDRESS} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

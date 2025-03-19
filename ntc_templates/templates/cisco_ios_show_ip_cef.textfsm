@@ -25,7 +25,6 @@ Start
   #
   # >>> Parse SPECIAL
   ^\s*$$
-  ^. -> Error
 
 Entries
   # >>> Parse CEF ENTRIES
@@ -40,4 +39,4 @@ Entries
   #
   # >>> Parse SPECIAL
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

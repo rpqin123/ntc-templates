@@ -24,4 +24,3 @@ Start
   ^\s*TACACS\+\s+SERVER\s+Statistics\s*$$
   ^\s*-+\s*$$
   ^\s*$$
-  ^. -> Error

@@ -12,4 +12,3 @@ Start
   ^\s*Access\s+Vendor\s+ONT\s+Model\s+Software\s+Online\s+Offline\s*$$
   ^\s*Type\s+ID\s+Version\s+Number\s+Number\s*$$
   ^\s*${ACCESS_TYPE}\s+${VENDOR_ID}\s+${ONT_MODEL}\s+${SOFTWARE_VERSION}\s+${ONLINE}\s+${OFFLINE}\s*$$ -> Record
-  ^. -> Error

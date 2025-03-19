@@ -27,5 +27,4 @@ Start
   ^\|\s*${NAME}\s*\|\s*${TYPE}\s*\|\s*${LINK}\s*\|\s*${DURATION}\|\s*${XCVR}\s*\|${STP}\|\s*${MODE}\s*\|\s*${AUTONEG}\s*\|\s*${ADMIN_LINK}\s*\|\s*${ADMIN_MODE}\s*\|\s*${ADMIN_AUTONEG}\s*\| -> Record
   ^\+-+
   ^\s*$$
-  ^. -> Error
   

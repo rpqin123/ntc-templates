@@ -13,4 +13,3 @@ Start
   ^NAME:\s+"${NAME}"\s+,\s*DESCR:\s+"${DESCRIPTION}"
   ^PID:\s+${PID},\s*VID:\s+${VID},\s*SN:\s+${SN} -> Record
   ^\s*$$
-  ^. -> Error

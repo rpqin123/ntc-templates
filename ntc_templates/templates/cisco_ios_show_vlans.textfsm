@@ -9,7 +9,6 @@ Start
   ^Virtual\s+LAN\s+ID\:\s+${VLAN_ID} -> Data
   ^No\s+Virtual\s+LANs\s+configured
   ^\s*$$
-  ^. -> Error
 
 Data
   ^Virtual\s+LAN\s+ID\:\s+\d.* -> Continue.Record
@@ -36,7 +35,7 @@ Data
   ^\s+Total\s\d+
   ^\s+\d+\s+packets,
   ^\s*$$
-  ^. -> Error Data
+  ^. -> EOF Data
 
 Interface
   ^\s*${INTERFACES}\s*$$
@@ -53,4 +52,4 @@ Interface
   ^Virtual\s+LAN\s+ID\:\s+${VLAN_ID}.* -> Data
   ^VLAN\s+ID:\s+\d+ -> Continue.Record
   ^VLAN\s+ID:\s+${VLAN_ID} -> Data
-  ^. -> Error Interface
+  ^. -> EOF Interface

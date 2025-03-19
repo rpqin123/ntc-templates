@@ -24,4 +24,3 @@ Start
   ^\s+Vlan-BD\s+:\s+${VLAN_BD}
   ^\s+SVI State\s+:\s+${SVI_STATE} -> Record
   ^VNI:\s+\d+ -> Start
-  ^.* -> Error

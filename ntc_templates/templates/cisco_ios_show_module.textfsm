@@ -12,8 +12,7 @@ Start
   ^Chassis\sType\s?:\s
   ^Power\sconsumed\sby\sbackplane\s:\s
   # #1083 C9200L-24T
-  ^Switch\s+Ports\s+Model\s+Serial\sNo\.\s+MAC\saddress\s+Hw\sVer\.\s+Sw\sVer\. -> SwitchStack
-  ^. -> Error NoMatchInStart
+  ^Switch\s+Ports\s+Model\s+Serial\sNo\.\s+MAC\saddress\s+Hw\sVer\.\s+Sw\sVer\. -> SwitchStack NoMatchInStart
 
 Status
   ^---+
@@ -24,13 +23,13 @@ Status
   ^Mod\s+Redundancy\s+Role\s+Operating\s+Mode\s+Configured\s+Mode\s+Redundancy\s+Status -> End
   ^Mod\s+Online\s+Diag\s+Status -> End
   ^\s*$$
-  ^. -> Error NoMatchInStatus
+  ^. -> EOF NoMatchInStatus
 
 SwitchStack
   ^---+
   # #1083 C9200L-24T
   ^\s*${MODULE}\s+${PORT}\s+${MODEL}\s+${SERIAL}\s+ -> Record
   ^\s*$$
-  ^. -> Error NoMatchInSwitch
+  ^. -> EOF NoMatchInSwitch
 
 End

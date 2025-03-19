@@ -44,4 +44,3 @@ Start
   ^(\*|=+\s+\S+) -> EOF
   # not capturing anything indented
   ^\s
-  ^. -> Error

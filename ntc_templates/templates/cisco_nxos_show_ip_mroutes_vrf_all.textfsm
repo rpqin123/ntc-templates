@@ -14,7 +14,6 @@ Start
   ^\s+Incoming\s+interface:\s+${INCOMING_INTERFACE},\s+RPF\s+nbr:\s+${RPF_NEIGHBOR}
   ^\s+Outgoing\s+interface\s+list:\s+\(count:\s+\d+\)
   ^\s+${OIF_LIST},\s+uptime:\s+${LAST_UPTIME},\s+\w+
-  ^. -> Error
 
 # nxos-2# show ip mroute vrf all
 # IP Multicast Routing Table for VRF "default"

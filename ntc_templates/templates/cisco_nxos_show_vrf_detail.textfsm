@@ -12,7 +12,6 @@ Value List TABLE_STATUS (\S+)
 
 Start
   ^VRF-Name:\s+${NAME},\s+VRF-ID:\s+${ID},\s+State:\s+${STATE} -> VRF
-  ^. -> Error
 
 VRF
   ^VRF-Name:\s+${NAME},\s+VRF-ID:\s+${ID},\s+State:\s+${STATE}
@@ -22,4 +21,4 @@ VRF
   ^\s+Table\-ID:\s+${TABLE_ID},\s+AF:\s+${ADDRESS_FAMILY},\s+Fwd-ID:\s+${FWD_ID},\s+State:\s+${TABLE_STATUS}
   ^\s*$$ -> Record
   ^$$ -> Record
-  ^. -> Error
+  ^. -> EOF

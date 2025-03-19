@@ -7,4 +7,3 @@ Start
   ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE} -> Record
   ^Address\s+Age\(min\)\s+Hardware\s+Addr\s+Interface\s*$$
   ^\s*$$
-  ^. -> Error

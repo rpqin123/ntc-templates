@@ -7,6 +7,5 @@ Start
   ^${PORT}\s+${IFMIB}\s+\(${IFINDEX_HEX}\s*\)\s*$$ -> Record
   ^-*$$
   ^\s*$$
-  ^. -> Error
 
 EOF

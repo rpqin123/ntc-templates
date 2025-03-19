@@ -21,7 +21,6 @@ Start
   ^.+to\s+\S+:(?:[0-9a-fA-F:\./]+\s+){2}${DESTINATION}\s*$$ -> Dest
   ^.*flags -> Record
   ^\s*$$
-  ^. -> Error
 
 Dest
   ^${DESTINATION} -> Continue
@@ -30,4 +29,4 @@ Dest
   ^(?:[0-9a-fA-F:\./]+,\s+){2}${DESTINATION}
   ^.*flags -> Record Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

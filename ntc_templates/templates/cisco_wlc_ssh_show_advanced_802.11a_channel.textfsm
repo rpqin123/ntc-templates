@@ -41,7 +41,6 @@ Start
   ^\s+\d+,?
   ^\s+DCA\sOutdoor\sAP\soption
   ^\s*$$
-  ^. -> Error
 
 Channels
   ^.*Allowed\sChannel\sList\.*\s${DCA_CHANNELS}s*$$

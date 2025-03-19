@@ -26,4 +26,3 @@ Start
   ^\s*\*+\s*$$
   ^\s+$$
   ^\s*success\!\s*$$
-  ^. -> Error

@@ -13,4 +13,3 @@ Begin
   ^${PORT}\s+${TYPE}\s+${SPEED}(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^${PORT}\s+(?:\s+${DESCRIPTION})?\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

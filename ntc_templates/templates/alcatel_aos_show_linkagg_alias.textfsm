@@ -13,4 +13,3 @@ Start
   ^\s*-+
   ^\s*${NUMBER}\s+${AGGREGATE}\s+${SIZE}\s+${ADMIN_STATE}\s+${OPERATIONAL_STATE}\s+${N_ATTACHED_PORTS}\s+${N_POSSIBLE_PORTS}\s+${NAME}\s*$$ -> Record
   ^\s*$$
-  ^.*$$ -> Error

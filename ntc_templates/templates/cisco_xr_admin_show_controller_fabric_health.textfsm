@@ -89,8 +89,7 @@ Start
   ^\s+F.+Ok
   ^\s+V.+Valid,\s+? -> Collaborator
   ^\s+$$
-  ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^$$ "LINE NOT FOUND"
   
 Collaborator
   ^Collaborator.+
@@ -103,7 +102,7 @@ Collaborator
   ^\s+\|SFE status\s+\|\s+${SFE_STATUS_FC0}\s+\|\s+${SFE_STATUS_FC1}\s+\|\s+${SFE_STATUS_FC2}\s+\|\s+${SFE_STATUS_FC3}\s+\|\s+${SFE_STATUS_FC4}\s+\|\s+${SFE_STATUS_FC5}\s+\| -> RouterHealth 
   ^\s+$$
   ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
 
 RouterHealth
   ^\s+\+.+\+?
@@ -123,7 +122,7 @@ RouterHealth
   ^\s+5\s+${PLANE_ID_5_ADMIN_STATE}\s+${PLANE_ID_5_PLANE_STATE}\s+${PLANE_ID_5_RACKS_IN_ISSUE}\s+${PLANE_ID_5_DATA_DROP_ERR}\s+? -> RackHealth
   ^\s+$$
   ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 RackHealth
   ^\s+-.+
@@ -144,6 +143,6 @@ RackHealth
   ^\s+-.+
   ^\s+$$
   ^$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"
   
 EOF

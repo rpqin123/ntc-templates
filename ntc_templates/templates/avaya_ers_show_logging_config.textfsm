@@ -19,4 +19,3 @@ Start
   ^Event Types To Log Remotely:\s+${REMOTE_TYPES}\s*$$
   ^Facility:\s+${FACILITY}\s*$$
   ^\s*$$
-  ^. -> Error

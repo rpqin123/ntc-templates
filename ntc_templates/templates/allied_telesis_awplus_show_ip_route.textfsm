@@ -17,7 +17,6 @@ Start
   ^\s{4,}E1\s-\sOSPF
   ^\s{4,}i\s-\sIS-IS
   ^\s{4,}\*\s-\scandidate -> Routes
-  ^. -> Error
 
 Routes
   ^\[VRF:\s${VRF}\]$$
@@ -26,4 +25,4 @@ Routes
   ^${PROTOCOL}(\s|\*)${TYPE}\s+${NETWORK}\/${MASK}\s\[${DISTANCE}/${METRIC}\]\svia\s${NEXTHOP_IP},\s${NEXTHOP_IF} -> Record
   # C       10.255.255.0/24 is directly connected, vlan795
   ^${PROTOCOL}(\s|\*)${TYPE}\s+${NETWORK}\/${MASK}\sis\sdirectly\sconnected,\s${NEXTHOP_IF} -> Record
-  ^. -> Error
+  ^. -> EOF

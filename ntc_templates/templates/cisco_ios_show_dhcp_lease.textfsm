@@ -27,4 +27,3 @@ Start
   ^\s*Retry\s+count:\s+${RETRY_COUNT}\s+Client-ID:\s+${CLIENT_ID}
   ^\s*Hostname: ${HOSTNAME} -> Record
   ^\s*$$
-  ^. -> Error

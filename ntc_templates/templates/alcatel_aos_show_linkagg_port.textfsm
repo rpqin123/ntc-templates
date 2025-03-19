@@ -12,4 +12,3 @@ Start
   ^\s*-+
   ^\s*${INTERFACE}\s*${AGGREGATE_TYPE}\s*${SNMP_ID}\s*${STATUS}\s*${AGGREGATE}\s*${OPERATIONAL_STATUS}\s*${LINK_STATUS}\s*${PRIMARY}\s*$$ -> Record
   ^\s*$$
-  ^.*$$ -> Error

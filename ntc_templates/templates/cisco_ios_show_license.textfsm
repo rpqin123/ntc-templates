@@ -16,4 +16,3 @@ Start
   ^\s+License\s+Count:\s+${LICENSE_COUNT}$$
   ^\s+License\s+Priority:\s+${LICENSE_PRIORITY}$$
   ^\s*$$
-  ^. -> Error

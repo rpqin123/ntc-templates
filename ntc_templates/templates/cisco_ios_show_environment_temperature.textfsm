@@ -14,8 +14,7 @@ Start
   ^Switch\s+${SWITCH}:\s+SYSTEM\s+TEMPERATURE\s+is\s+${SWITCH_TEMPERATURE}\s*$$
   ^Inlet\s+Temperature\s+Value:\s+${INLET_TEMPERATURE_VALUE}\s+Degree\s+Celsius\s*$$ -> Inlet
   ^Hotspot\s+Temperature\s+Value:\s+${HOTSPOT_TEMPERATURE_VALUE}\s+Degree\s+Celsius\s*$$ -> Hotspot
-  ^\s*$$
-  ^. -> Error 
+  ^\s*$$ 
  
 Inlet
   ^Temperature\s+State:\s+${INLET_TEMPERATURE_STATE}\s*$$
@@ -25,7 +24,7 @@ Inlet
   ^Switch\s+\d -> Continue.Record
   ^Switch\s+${SWITCH}:\s+SYSTEM\s+TEMPERATURE\s+is\s+${SWITCH_TEMPERATURE}\s*$$ -> Start
   ^\s*$$
-  ^. -> Error 
+  ^. -> EOF 
  
 Hotspot
   ^Temperature\s+State:\s+${HOTSPOT_TEMPERATURE_STATE}\s*$$
@@ -35,5 +34,5 @@ Hotspot
   ^Switch\s+${SWITCH}:\s+SYSTEM\s+TEMPERATURE\s+is\s+${SWITCH_TEMPERATURE}\s*$$ -> Start
   ^Inlet\s+Temperature\s+Value:\s+${INLET_TEMPERATURE_VALUE}\s+Degree\s+Celsius\s*$$ -> Inlet
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 

@@ -69,7 +69,6 @@ Value REDIRECT_URL (.*?)
 Start
   ^Session\s+Type:\s+${SESSION_TYPE}\s+Detailed\s*$$ -> Connection
   ^\s*$$
-  ^. -> Error
 
 Connection
   ^\s*Connection\s*:(\s+${CONNECTION})?\s*$$
@@ -96,7 +95,7 @@ Connection
   ^Session\s+Type -> Continue.Clearall
   ^Session\s+Type:\s+${SESSION_TYPE}\s+Detailed\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 IKE
   ^\s*(Session|Tunnel)\s+ID\s*:\s+(?:\d+\.|)${SESSION_ID}\s*$$
@@ -122,7 +121,7 @@ IKE
   ^Session\s+Type -> Continue.Clearall
   ^Session\s+Type:\s+${SESSION_TYPE}\s+Detailed\s*$$ -> Connection
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 IPSec
   ^\s*(Session|Tunnel)\s+ID\s*:\s+(?:\d+\.|)${SESSION_ID}\s*$$
@@ -146,7 +145,7 @@ IPSec
   ^Session\s+Type -> Continue.Clearall
   ^Session\s+Type:\s+${SESSION_TYPE}\s+Detailed\s*$$ -> Connection
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 NAC
   ^\s*Reval\s+Int\s+\(\w\)\s*:\s+${REVAL_TIMEOUT}\s+${REVAL_TIMOUT_UNIT}\s+Reval\s+Left\s*\(\w\)\s*:\s+${REVAL_TIMEOUT_REMAINING}\s+${REVAL_TIMEOUT_REMAINING_UNIT}\s*$$
@@ -164,5 +163,5 @@ NAC
   ^Session\s+Type -> Continue.Clearall
   ^Session\s+Type:\s+${SESSION_TYPE}\s+Detailed\s*$$ -> Connection
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
   

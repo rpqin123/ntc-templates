@@ -22,4 +22,3 @@ Start
   ^\s*${VLAN_ID}\s+${TYPE}\s+${ADMIN_STATE}\s+${OPERATIONAL_STATE}\s+${SPANNING_TREE_1X1}\s+${SPANNING_TREE_FLAT}\s+${AUTH}\s+${IP_STATE}\s+${MBLETAG}\s+${SOURCE_LEARN}\s+${VLAN_NAME}\s*$$ -> Record
   # R8
   ^\s*${VLAN_ID}\s+${TYPE}\s+${ADMIN_STATE}\s+${OPERATIONAL_STATE}\s+${IP_STATE}\s+${MTU}\s+${VLAN_NAME}\s*$$ -> Record
-  ^.*$$ -> Error

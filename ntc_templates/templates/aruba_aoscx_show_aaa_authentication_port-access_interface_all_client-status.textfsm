@@ -11,7 +11,6 @@ Start
   ^\s+Authentication\s+Details -> Authentication
   ^\s+Authorization\s+Details -> Authorization
   ^\s*$$
-  ^. -> Error
 
 Session
   ^\s+-+
@@ -20,18 +19,18 @@ Session
   ^\s+IPv4.*$$
   ^\s+IPv6.*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Authentication
   ^\s+-+
   ^\s+Status.*$$
   ^\s+Auth\s*Precedence.*$$ -> Start
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 Authorization
   ^\s*-+
   ^\s+Role\s+:\s+${ROLE} 
   ^\s+Status.*$$
   ^\s*$$ -> Record Start
-  ^. -> Error
+  ^. -> EOF

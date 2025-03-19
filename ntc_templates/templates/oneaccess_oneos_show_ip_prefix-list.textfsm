@@ -13,4 +13,3 @@ Start
   ^\s+Description:\s${DESCRIPTION}
   ^\s+seq\s+${SEQUENCE}\s+${ACTION}\s+${NETWORK}(/${NETMASK}|)(?:\s+ge\s+${GE}|)(?:\s+le\s+${LE}|)\s*$$ -> Record
   ^\s*$$
-  ^.+ -> Error

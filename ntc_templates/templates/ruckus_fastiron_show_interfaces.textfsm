@@ -18,4 +18,3 @@ Start
   ^\s+Internet\s+address\s+is\s+${IP_ADDRESS}\/${PREFIX_LENGTH}
   ^.*MTU\s+${MTU}\.* -> Record
   ^\s+
-  ^\. -> Error

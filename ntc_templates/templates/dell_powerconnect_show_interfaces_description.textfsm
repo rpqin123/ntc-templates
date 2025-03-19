@@ -9,4 +9,3 @@ Begin
   ^Ch\s+Description -> End
   ^${INTERFACE}\s*${DESCRIPTION}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

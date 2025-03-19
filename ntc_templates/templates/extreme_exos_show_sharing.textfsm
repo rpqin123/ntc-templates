@@ -11,7 +11,6 @@ Start
   ^\s*Load\s+Sharing\s+Monitor\s*$$
   ^\s*Config\s+Current\s+Agg\s+Ld\s+Share\s+Ld\s+Share\s+Agg\s+Link\s+Link\s+Up\s*$$ -> SharingTable
   ^\s*$$
-  ^. -> Error
 
 SharingTable
   ^\s*Master\s+Master\s+Control\s+Algorithm\s+Group\s+Mbr\s+State\s+Transitions\s*$$
@@ -26,4 +25,4 @@ SharingTable
   ^\s*Custom\s+Algorithm\s+Configuration:\s+.*\s*$$
   ^\s*Number\s+of\s+load\s+sharing\s+trunks:\s+\d+\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

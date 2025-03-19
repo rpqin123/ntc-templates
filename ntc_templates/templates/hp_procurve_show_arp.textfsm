@@ -7,11 +7,10 @@ Start
   ^.*IP ARP table
   ^.*IP Address -> ARP
   ^\s*$$
-  ^. -> Error
 
 ARP
   ^\s+${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${TYPE}\s+${PORT} -> Record
   ^\s+${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${TYPE} -> Record
   ^\s*------
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

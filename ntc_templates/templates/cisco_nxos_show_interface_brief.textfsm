@@ -25,54 +25,53 @@ Start
   ^Port\s+Status\s+Reason\s+MTU\s*$$ -> NVE
   ^Interface\s+Status\s+IP\s+Address\s+Encap\s+type\s+MTU -> TUNNEL
   ^Interface\s+Status\s+Peer\s+IP\s+Address\s+VC\s+ID -> PSEUDOWIRE
-  ^---+$$
-  ^. -> Error Start
+  ^---+$$ Start
 
 Management
   ^${INTERFACE}\s+${VRF}\s+${STATUS}\s+${IP_ADDRESS}\s+${SPEED}\s+${MTU} -> Record
   ^Ethernet\s+VLAN\s+Type\s+Mode\s+Status\s+Reason\s+Speed\s+Port -> Start
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error Management
+  ^. -> EOF Management
 
 Ethernet
   ^Interface\s+Ch\s+#\s*$$
   ^${INTERFACE}\s+${VLAN_ID}\s+${TYPE}\s+${MODE}\s+${STATUS}\s+${REASON}\s+${SPEED}\s+${PORTCH} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error Etherenet
+  ^. -> EOF Etherenet
 
 Loopback
   ^${INTERFACE}\s+${STATUS}\s+${DESCRIPTION} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error Loopback
+  ^. -> EOF Loopback
 
 VLAN
   ^${INTERFACE}\s+${TYPE}\s+${STATUS}\s+${REASON} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error VLAN
+  ^. -> EOF VLAN
 
 PORTCHANNEL
   ^Interface\s*$$
   ^${INTERFACE}\s+${VLAN_ID}\s+${TYPE}\s+${MODE}\s+${STATUS}\s+${REASON}\s+${SPEED}\s+${PROTOCOL} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error PORTCHANNEL
+  ^. -> EOF PORTCHANNEL
 
 TUNNEL
   ^${INTERFACE}\s+${STATUS}\s+${IP_ADDRESS}\s+${TYPE}\s+${MTU} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error TUNNEL
+  ^. -> EOF TUNNEL
 
 NVE
   ^${INTERFACE}\s+${STATUS}\s+${REASON}\s+${MTU}\s+${VRF} -> Record
   ^${INTERFACE}\s+${STATUS}\s+${REASON}\s+${MTU} -> Record
   ^---+$$
   ^\s*$$ -> Start
-  ^. -> Error NVE
+  ^. -> EOF NVE
 
 PSEUDOWIRE
   ^${INTERFACE}\s+${STATUS}\s+${PEER_IP_ADDRESS}\s+${VCID}

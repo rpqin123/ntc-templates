@@ -22,7 +22,6 @@ Start
   ^[Cc]isco\s+\S+\s+\d+RU.*$$
   ^hfr-doc -> CRS
   ^\s*$$
-  ^. -> Error
 
 # A VARIATION OF THE OUTPUT, EX. NCS PLATFORM
 Build_Info
@@ -34,7 +33,7 @@ Build_Info
   ^\s+Location\s+:\s${LOCATION}
   ^\s+Label\s+:\s${LABEL}
   ^\s*$$ -> Start
-  ^.* -> Error
+  ^.* -> EOF
 
 CRS
   ^.

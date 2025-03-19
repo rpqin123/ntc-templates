@@ -9,4 +9,3 @@ Start
 Start_record
   ^${INTERFACE}\s+${NAME}\s+${ID}\s+${ORIGIN} -> Record
   ^\s*$$
-  ^. -> Error

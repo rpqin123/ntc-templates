@@ -59,7 +59,6 @@ Start
   ^\s*Rx\s*:\s*$$ -> RX_Table
   ^\s*Tx\s*:\s*$$ -> TX_Table
   ^\s*$$
-  ^.+ -> Error
 
 RX_Table
   ^\s*Bytes\s+Received\s*:\s+${RX_BYTES_RECEIVED},\s+Unicast\s+Frames\s*:\s+${RX_UNICAST_FRAMES},\s*$$
@@ -68,7 +67,7 @@ RX_Table
   ^\s*Lost\s+Frames\s*:\s+${RX_LOST_FRAMES},\s+Error\s+Frames\s*:\s+${RX_ERROR_FRAMES},\s*$$
   ^\s*CRC\s+Error\s+Frames\s*:\s+${RX_CRC_ERROR_FRAMES},\s+Alignments\s+Err\s*:\s+${RX_ALIGNMENT_ERRORS},\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TX_Table
   ^\s*Bytes\s+Xmitted\s*:\s+${TX_BYTES_TRANSMITTED},\s+Unicast\s+Frames\s*:\s+${TX_UNICAST_FRAMES},\s*$$
@@ -79,4 +78,4 @@ TX_Table
   ^\s*Error\s+Frames\s*:\s+${TX_ERROR_FRAMES}(?:,\s+Collisions\s*:\s+${TX_COLLISIONS},)?\s*$$
   ^\s*Late\s+collisions\s*:\s+${TX_LATE_COLLISIONS},\s+Exc-Collisions\s*:\s+${TX_EXCESSIVE_COLLISIONS}\s*$$ -> Record Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -11,7 +11,6 @@ Value SA (\d+)
 Start
   # Value's address , start of block
   ^crypto\smap\s${MAP}\s${SEQ}\smatch\saddress\s${MATCHED_ADDRESS}\s*$$ -> ReadBlockLines
-  ^. -> Error
 
 ReadBlockLines
   # Fake start, block "match address" to trigger recording of current block
@@ -29,4 +28,4 @@ ReadBlockLines
   # Ignore rest
   ^crypto\s+map\s+\S+\s+interface\s+\S+\s*$$
   ^crypto\s+map\s+\S+\s+\d+\sipsec-isakmp\s+dynamic\s+SYSTEM_DEFAULT_CRYPTO_MAP\s*$$
-  ^. -> Error
+  ^. -> EOF

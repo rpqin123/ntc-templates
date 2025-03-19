@@ -28,4 +28,3 @@ Start
   #
   ^\s*F[A-Z]\s+-\s+Forced
   ^\s*$$
-  ^.*$$ -> Error

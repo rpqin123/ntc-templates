@@ -14,7 +14,6 @@ Start
   # Skips over the definitions for the codes
   ^\s{6,}\S*\s-\s\S.*
   ^Gateway -> ROUTES
-  ^. -> Error
 
 ROUTES
   # Match regular routes with all data in same line
@@ -40,6 +39,6 @@ ROUTES
   #^${TYPE} -> Continue.Record
   #^${TYPE}\s+${NETWORK}\s+${NETMASK}\s+\[\d+\/\d+\]\s+via\s+${GATEWAY}\,\s+${UPTIME},\s+${INTFC}\s*$$ -> Record
   #^\s+\[\d+\/\d+\]\s+via\s+${GATEWAY}\,\s+${UPTIME},\s+${INTFC}\s*$$ -> Record
-  ^. -> Error
+  ^. -> EOF
 
 EOF

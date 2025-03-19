@@ -37,4 +37,3 @@ Start
   ^\s{8,}(?:\d+\s+){10}${TRUNKING_VLANS} -> Continue
   ^\s{8,}
   ^\s*Dynamic\s+Vlans
-  ^. -> Error

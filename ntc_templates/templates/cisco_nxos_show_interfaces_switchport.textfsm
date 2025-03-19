@@ -22,4 +22,3 @@ Start
   ^\s*Trunking\s+VLANs\s+Allowed:\s+${TRUNKING_VLANS}
   ^\s*Voice\s+VLAN:\s+${VOICE_VLAN}
   ^.+$$
-  ^. -> Error

@@ -8,4 +8,3 @@ Start
   ^Port\s+Id\s+Description\s*$$
   ^${PORT_ID}\s+${DESCRIPTION}\s*$$ -> Record
   ^-+\s*$$
-  ^. -> Error

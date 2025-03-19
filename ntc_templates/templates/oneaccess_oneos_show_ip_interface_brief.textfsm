@@ -9,4 +9,3 @@ Start
   ^Interface\s+IP[-\s]Address\s+OK\?\s+Status\s+Protocol\s+Description\s*$$
   ^${INTERFACE}\s+${IP_ADDRESS}\s+${OK}\s+${STATUS}\s+${PROTOCOL}\s+${DESCRIPTION}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

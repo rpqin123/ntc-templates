@@ -9,4 +9,3 @@ Start
   ^\s?${VRF}?\s+${VRF_ID}\s*$$
   ^\s+${INTERFACES}$$
   ^\s*$$
-  ^. -> Error

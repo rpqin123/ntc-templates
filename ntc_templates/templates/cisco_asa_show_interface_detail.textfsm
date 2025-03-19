@@ -121,7 +121,6 @@ Start
   ^Interface\s+${INTERFACE}\s+"${INTERFACE_NAME}",\s+is\s+${LINK_STATUS},\s+line\s+protocol\s+is\s+${PROTOCOL_STATUS}
   ^\s+Topology\s+Information: -> Topology
   ^\s*$$
-  ^. -> Error
 
 ControlPoint
   ^\s+Interface\s+number\s+is\s+${CONTROL_INTERFACE_NUMBER}
@@ -143,7 +142,7 @@ RXRingBlocks
   ^Interface -> Continue.Record
   ^Interface\s+${INTERFACE}\s+"${INTERFACE_NAME}",\s+is\s+${LINK_STATUS},\s+line\s+protocol\s+is\s+${PROTOCOL_STATUS} -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TXRingBlocks
   ^\s+TX\[${TXRING_NUMBER}\]:\s+${TXRING_PACKETS}\s+packets,\s+${TXRING_BYTES}\s+bytes,\s+${TXRING_UNDERRUN}\s+underruns
@@ -155,7 +154,7 @@ TXRingBlocks
   ^Interface -> Continue.Record
   ^Interface\s+${INTERFACE}\s+"${INTERFACE_NAME}",\s+is\s+${LINK_STATUS},\s+line\s+protocol\s+is\s+${PROTOCOL_STATUS} -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Topology
   ^\s{4,}\S+
@@ -165,4 +164,4 @@ Topology
   ^\s+RX\[${RXRING_NUMBER}\]:\s+${RXRING_PACKETS}\s+packets,\s+${RXRING_BYTES}\s+bytes,\s+${RXRING_OVERRUN}\s+overrun -> RXRingBlocks
   ^\s+TX\[${TXRING_NUMBER}\]:\s+${TXRING_PACKETS}\s+packets,\s+${TXRING_BYTES}\s+bytes,\s+${TXRING_UNDERRUN}\s+underruns -> TXRingBlocks
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

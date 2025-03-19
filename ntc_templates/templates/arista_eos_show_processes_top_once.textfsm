@@ -86,4 +86,3 @@ Start
   ^\s*PID\s+USER\s+PR\s+NI\s+VIRT\s+RES\s+SHR\s+S\s+.CPU\s+.MEM\s+TIME.\s+COMMAND\s*$$
   # Process line items in table
   ^\s*${PID}\s+${USER}\s*${PRIORITY}\s*${NICE}\s+${VIRTUAL_MEMORY_SIZE}\s+${RESIDENT_MEMORY_SIZE}\s+${SHARED_MEMORY_SIZE}\s+${PROCESS_STATUS}\s+${PERCENT_CPU}\s+${PERCENT_MEMORY}\s+${CPU_TIME}\s+${COMMAND}\s*$$ -> Record
-  ^. -> Error

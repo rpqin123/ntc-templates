@@ -9,8 +9,7 @@ Start
   ^Location\s+FRU\s+Type.+FAN_\d
   ^\s+FAN_.+$$
   ^-+ -> FM
-  ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^\s*$$ "LINE NOT FOUND"
   
 FM
   ^${MODULE}\s+${TYPE}\s+${FAN_SPEED}\s*$$ -> Record
@@ -36,4 +35,4 @@ FM
   ^(?:\s+\d+\s+){4}${FAN_SPEED} -> Continue
   ^(?:\s+\d+\s+){5}${FAN_SPEED} -> Record
   ^\s*$$
-  ^.* -> Error "LINE NOT FOUND"
+  ^.* -> EOF "LINE NOT FOUND"

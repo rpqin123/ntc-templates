@@ -55,4 +55,3 @@ Start
   ^\s+E_1519_MaxB
   ^\s+StreamCounters
   ^\s*$$
-  ^. -> Error

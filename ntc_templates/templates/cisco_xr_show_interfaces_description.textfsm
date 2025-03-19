@@ -9,4 +9,3 @@ Start
   ^Interface\s+Status\s+Protocol\s+Description\s*$$
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error

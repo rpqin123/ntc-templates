@@ -14,4 +14,3 @@ Start
   ^\s*${IP_ADDRESS}\s+(${MAC_ADDRESS}\s+)?(${EXPIRE}\s+)?${TYPE}\s+${INTERFACE}(\s+${VLAN_ID})?(\s+${PVC})?\s*$$
   ^\s*${VLAN_ID}(\s+${PVC})?\s*$$
   ^Total:.+$$ -> Next
-  ^.*$$ -> Error

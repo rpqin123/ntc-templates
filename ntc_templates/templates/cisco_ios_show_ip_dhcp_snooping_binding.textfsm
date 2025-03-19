@@ -11,4 +11,3 @@ Start
   ^\s*${MAC_ADDRESS}\s+${IP_ADDRESS}\s+${LEASE}\s+${TYPE}\s+${VLAN}\s+${INTERFACE} -> Record
   ^\s*Total\s+number\s+of\s+bindings
   ^\s*$$
-  ^. -> Error

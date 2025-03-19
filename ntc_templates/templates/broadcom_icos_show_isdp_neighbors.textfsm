@@ -15,4 +15,3 @@ Start
   ^-+
   ^\s*${NEIGHBOR_NAME}\s+${LOCAL_INTERFACE}\s+${HOLDTIME}\s+${CAPABILITIES}\s+${PLATFORM}\s+${NEIGHBOR_INTERFACE} -> Record
   ^\s*$$
-  ^. -> Error

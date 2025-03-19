@@ -27,4 +27,3 @@ Start
   ^\s*Wlan-bss\sinterface\s+:\s${WLAN_BSS_INTERFACE}\s*$$
   ^\s*Igmp\smode\s+:\s${IGMP_MODE}\s*$$
   ^\s*Forward\smode\s+:\s${FORWARD_MODE}\s*$$
-  ^.*$$ -> Error

@@ -16,4 +16,3 @@ Start
   ^\|\s*##\s*\|\s*Description\s*\|\s*Link\s*\|\s*Duration\s*\|\s*XCVR\s*\|\s*STP\s*\|\s*Duplex\s*\|\s*Size\s*\|\s*Ctrl\s*\|\s*$$
   ^\|${NAME}\s*\|${DESCRIPTION}\s*\|\s*${LINK}\s*\|\s*${DURATION}\s*\|\s*(${TRANSCEIVER}|\s+)\s*\|\s*${STP}\s*\|\s*(${SPEED_DUPLEX}|\s+)\s*\|\s*${MTU}\s*\|\s*(${FLOW_CONTROL}|\s+)\s*\| -> Record
   ^\s*$$
-  ^. -> Error

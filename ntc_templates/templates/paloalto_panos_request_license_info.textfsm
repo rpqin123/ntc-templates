@@ -19,4 +19,3 @@ Start
   ^Base\s+[Ll]icense:\s+${BASE_LICENSE}\s*$$
   ^\s*Current\s+\S+\s+[Dd]ate
   ^\s*$$
-  ^. -> Error

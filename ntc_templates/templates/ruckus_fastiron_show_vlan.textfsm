@@ -40,7 +40,6 @@ Start
   ^\s+Mac-Vlan\s+Ports:\s+
   ^\s+Monitoring:\s+
   ^\s*$$
-  ^.+ -> Error
 
 Done
   ^.*

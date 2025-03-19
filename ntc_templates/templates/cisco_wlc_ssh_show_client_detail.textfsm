@@ -38,4 +38,3 @@ Start
   ^Allowed\s+\(URL\)IP\s+Addresses
   ^-+
   ^\s*$$
-  ^. -> Error

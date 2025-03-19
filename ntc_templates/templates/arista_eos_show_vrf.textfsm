@@ -6,7 +6,6 @@ Start
   ^\s+V[rR][fF]\s+RD\s+Protocols\s+State\s+Interfaces -> VRF
   ^Maximum
   ^\s*$$
-  ^. -> Error
 
 VRF
   # match a vrf with interfaces

@@ -81,4 +81,3 @@ Start
   ^\s*IPv6\s+address\s+valid\s+time\s*:\s+(-|${IPV6_ADDRESS_VALID_TIME})\s*$$
   ^\s*DS-Lite\s+Mode\s*:\s+(-|${DS_LITE_MODE})\s*$$
   ^\s*DS-Lite\s+peer\s+address\s*:\s+(-|${DS_LITE_PEER_ADDRESS})\s*$$ -> Record
-  ^. -> Error

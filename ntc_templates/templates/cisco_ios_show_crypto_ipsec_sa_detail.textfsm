@@ -102,7 +102,6 @@ Start
   # Capture time-stamp if vty line has command time-stamping turned on
   ^Load\s+for\s+
   ^Time\s+source\s+is
-  ^. -> Error
 
 SAs
   ^\s*${SA_ORIENTATION}\s+${SA_TYPE}\s+sas:\s*$$
@@ -116,4 +115,4 @@ SAs
   ^\s*Status:\s+${SA_STATUS}\s*$$ -> Record
   ^\s*interface:\s+${INTERFACE}\s*$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

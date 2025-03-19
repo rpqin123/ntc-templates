@@ -18,4 +18,3 @@ Start
   ^\|\s+Key\s+\|\s+Value\s+\|\s*$$
   ^\|\s+(mac\d+|Manufacturing\s+(File\s+Reference|Location)|Mreturn\d+|(Model|PCB|HW)\s+[Rr]evision|Last\s+Testing\s+Date|Sales\s+Code|Mib-\d+\s+system\s+\S+|Software\s+compatibility\s+code|SCAid)\s+\|
   ^\s*$$
-  ^. -> Error

@@ -17,4 +17,3 @@ EntriesTable
   ^\s*${INDEX}\s(${FLAGS})?\s{,4}(${IP_ADDRESS})?\s+${MAC_ADDRESS}\s+(${RATE_LIMIT})?\s+${STATUS}\s+${LAST_SEEN}\s*$$ -> Record
   ^\s*${INDEX}\s(${FLAGS})?\s{,4}(${IP_ADDRESS})?\s+(${MAC_ADDRESS}|\s{17})\s(${HOSTNAME})?\s+(${SERVER})?\s+(${RATE_LIMIT})?\s+${STATUS}\s+${LAST_SEEN}\s*$$ -> Record
   ^\s*(?:\d{2}:){2}\d{2}\s+echo:\s*.*$$ -> Next
-  ^. -> Error

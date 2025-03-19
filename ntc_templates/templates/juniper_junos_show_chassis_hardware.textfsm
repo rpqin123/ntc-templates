@@ -92,6 +92,5 @@ Start
   ^\s*(Pseudo|AFEB|TFEB|CPU|QXM|Fan\s+Tray).*
   ^{master:\d+}
   ^\s*$$ 
-  ^. -> Error
 
 EOF

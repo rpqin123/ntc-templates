@@ -22,4 +22,3 @@ Start
   ^\s+translate-to\s+"${TRANSLATE_TO}";$$
   ^\s+terminal\s+${TERMINAL};$$
   ^}$$ -> Record
-  ^. -> Error

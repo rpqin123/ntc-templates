@@ -26,4 +26,3 @@ Start
   ^\s+Priority\s${PRIORITY}
   ^\s+Master\srouter\sis\s${MASTER_IP}\s\(${MASTER_STATE}\),\spriority\sis\s${MASTER_PRIORITY}
   ^\s*$$
-  ^. -> Error

@@ -43,7 +43,6 @@ Start
   ^traffic\sstatistics: -> TrafficStats
   ^output\squeuing\sstatistics: -> OutputQueuingStats
   ^\s*$$
-  ^. -> Error
 
 TrafficStats
   ^\s{2}Class\s'${CLASS_PARENT}':
@@ -55,7 +54,7 @@ TrafficStats
   ^\s+cir\s+\d+\s+kbits/s,\s+cbs\s\d+\s+bytes
   ^\s+(conformed|exceeded)\s+\d+\s+packets,\s+\d+\s+bytes;\s+action:
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
 
 OutputQueuingStats
   ^\s+Class\s'${CLASS_PARENT}':\s${CLASS_PARENT_PRIORITY}
@@ -75,7 +74,7 @@ OutputQueuingStats
   ^\s+Service-policy\s+\S+\s*:
   ^\s+Interface\stotal: -> StatsInterfaceTotal
   ^\*$$
-  ^. -> Error
+  ^. -> EOF
 
 StatsInterfaceTotal
   ^\s+bandwidth\s${TOTAL_BW_KBS}\skb/s,\squeue\slength\s${TOTAL_QUEUE_LENGTH}
@@ -84,4 +83,4 @@ StatsInterfaceTotal
   ^\s+bytes\soutput\s${TOTAL_OUTPUT_BYTES},\sbytes\sdropped\s${TOTAL_OUTPUT_BYTES_DROPPED}\s\(${TOTAL_OUTPUT_BYTES_DROPPED_PERCENT}%\)
   ^\s+bandwidth\s+\d+\s+kb/s
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

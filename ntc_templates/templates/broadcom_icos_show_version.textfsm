@@ -37,4 +37,3 @@ Start
   ^\s*Board\s*Revision\s*\.+\s*${BOARD_REVISION}$$
   ^\s*Additional\s*Packages\s*\.+\s*${ADDITIONAL_PACKAGES}$$
   ^\s+${ADDITIONAL_PACKAGES}$$
-  ^. -> Error

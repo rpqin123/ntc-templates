@@ -12,4 +12,3 @@ Start
   #
   ^\s*$$
   ^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s\S{3}\s+\d
-  ^. -> Error

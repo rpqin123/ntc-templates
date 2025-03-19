@@ -6,7 +6,6 @@ Value INTERFACE (\S+(\s+\S+)*)
 
 Start
   ^MAC\s+VLAN\s+Name\s*\(\s*Tag\s*\)\s+Age\s+Flags\s+Port\s+\/\s+Virtual\s+Port\s+List -> Start_record
-  ^. -> Error
 
 Start_record
   ^\s*-+\s*$$
@@ -20,4 +19,3 @@ Start_record
   ^\s*Total:
   ^\s*FDB\s+Aging\s+time:
   ^\s*$$
-  ^. -> Error

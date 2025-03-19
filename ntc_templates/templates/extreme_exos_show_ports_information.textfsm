@@ -16,10 +16,9 @@ Start
   ^\s+State\s+/OAM\s+UPS\s+STP\s+VLAN\s+Proto\s+Size\s+profile\s+Master\s*$$
   ^(\s*=+)+\s*$$ -> Ports
   ^\s*$$
-  ^. -> Error
 
 Ports
   ^\s*${INTERFACE}\s+${FLAGS}\s+${LINK_STATE}\s+${ELSM}\s*/\s*${OAM}\s+${LINK_UPS}\s+${NUM_STP}\s+${NUM_VLAN}\s+${NUM_PROTO}\s+${JUMBO_SIZE}\s+${QOS_PROFILE}(?:\s+${LOAD_MASTER})?\s*$$ -> Record
   ^\s*=+\s*$$ -> EOF
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

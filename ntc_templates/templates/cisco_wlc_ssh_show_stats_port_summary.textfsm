@@ -20,11 +20,10 @@ Start
   # Port Statistics (after the dashed line)
   #^\s*[-\s]+$$ -> Port_Stats
   ^\s*$$
-  ^. -> Error
 
 Port_Stats
   ^-+
   ^\s*${PORT}\s+${LINK_STATUS}\s+${PACKETS_IN}\s+${PACKETS_OUT}\s+${BROADCAST_IN}\s+${ERRORS_IN}\s+${ERRORS_OUT}\s+${COLLISIONS}\s*$$ -> Record
   ^\s*Total\s+${TOTAL_PACKETS_IN}\s+${TOTAL_PACKETS_OUT}\s+${TOTAL_BROADCAST_IN}\s+${TOTAL_ERRORS_IN}\s+${TOTAL_ERRORS_OUT}\s+${TOTAL_COLLISIONS}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

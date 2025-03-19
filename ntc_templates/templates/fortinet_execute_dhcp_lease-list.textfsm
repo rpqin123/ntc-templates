@@ -12,18 +12,17 @@ Start
   ^\s*IP\s+MAC-Address\s+Hostname\s+VCI\s+SSID\s+AP\s+Expiry\s*$$ -> SevenColumns
   ^\s*IP\s+MAC-Address\s+Hostname\s+VCI\s+Expiry\s*$$ -> FiveColumns
   ^\s*$$
-  ^. -> Error
 
 SevenColumns
   ^\s*IP\s+MAC-Address\s+Hostname\s+VCI\s+SSID\s+AP\s+Expiry\s*$$
   ^\s*${INTERFACE}\s*$$
   ^\s*${IP}\s+${MAC_ADDRESS}\s+${HOSTNAME}(\s+${VCI})?(\s+${SSID})?(\s+${AP})?\s+${EXPIRY}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 FiveColumns
   ^\s*IP\s+MAC-Address\s+Hostname\s+VCI\s+Expiry\s*$$
   ^\s*${INTERFACE}\s*$$
   ^\s*${IP}\s+${MAC_ADDRESS}\s+${HOSTNAME}(\s+${VCI})?\s+${EXPIRY}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

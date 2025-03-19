@@ -14,4 +14,3 @@ IP
   ^${CODE}\s+${IPV6_ADDRESS}/${PREFIX_LENGTH}\s\[${DISTANCE}/${METRIC}\]\svia\s${NEXTHOP_IP},\s${INTERFACE},\s${UPTIME}\s* -> Record
   ^${CODE}\s+${IPV6_ADDRESS}/${PREFIX_LENGTH}\svia\s${NEXTHOP_IP},\s${INTERFACE},\s${UPTIME}\s* -> Record
   ^\s*$$
-  ^. -> Error

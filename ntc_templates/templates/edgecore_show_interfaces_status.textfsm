@@ -34,14 +34,13 @@ Start
   ^\s*M(ac|AC)\s+Address:\s*${ADDRESS}\s*$$
   ^\s*Basic\s+Information:\s*$$ -> BasicInfo
   ^\s*$$
-  ^. -> Error
 
 BasicInfo
   ^\s*Port\s+Type:\s*${PORT_TYPE}\s*$$
   ^\s*M(ac|AC)\s+Address:\s*${ADDRESS}\s*$$
   ^\s*Configuration:\s*$$ -> Configuration
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Configuration
   ^\s*Name:\s*${NAME}\s*$$
@@ -65,7 +64,7 @@ Configuration
   ^\s*Giga\s+PHY\s+mode:\s*${GIGA_PHY_MODE}\s*$$
   ^\s*Current Status:\s*$$ -> CurrentStatus
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 CurrentStatus
   ^\s*Link\s+Status:\s*${LINK_STATUS}\s*$$
@@ -75,4 +74,4 @@ CurrentStatus
   ^\s*Port\s+Uptime:\s*${PORT_UPTIME}\s*$$
   ^\s*Flow\s+Control\s+Type:\s*${FLOW_CONTROL_TYPE}\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF

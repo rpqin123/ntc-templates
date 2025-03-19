@@ -110,7 +110,6 @@ Start
   ^\s*Modem\spassthrough\s*$$ -> MODEM
   ^\s*T38\sFAX\sCalls\s*$$ -> FAX
   ^\s*$$
-  ^. -> Error
 
 OutgoingCalls
   ^\s*Outgoing\sCalls\s+${OUTGOING_CALLS}
@@ -139,7 +138,7 @@ OutgoingCalls
   ^\s*Not\sspecified\s+${OUTGOING_FAILURES_NOT_SPECIFIED}
   ^\s*Incoming\sCalls\s*$$ -> IncomingCalls
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 IncomingCalls
   ^\s*Incoming\scalls\s+${INCOMING_CALLS}
@@ -160,13 +159,13 @@ IncomingCalls
   ^\s*Voice\s.\sFax\sstatistics\s*$$ -> VoiceFax
   ^\s*RTP\sstatistics\s*$$ -> RTP
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 VoiceFax
   ^\s*Number\sof\sreal\sdsp\sswitching\s+${VOICE_FAX_REAL_DSP_SWITCHING}
   ^\s*RTP\sstatistics\s*$$ -> RTP
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 RTP
   ^\s*Number\sof\stransmitted\spackets\s+${RTP_PACKETS_TRANSMITTED}
@@ -178,20 +177,20 @@ RTP
   ^\s*Number\sof\sinvalid\spackets\s+${RTP_PACKETS_INVALID}
   ^\s*Number\sof\scalls\swith\sframe\serror\srate\s*$$ -> CallsWithFrameError
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 CallsWithFrameError
   ^\s*total
   ^\s*${FRAME_ERROR_RATE_TOTAL}\s*${FRAME_ERROR_RATE_LT_0_01}\s*${FRAME_ERROR_RATE_LT_0_1}\s*${FRAME_ERROR_RATE_LT_0_5}\s*${FRAME_ERROR_RATE_LT_1}\s*${FRAME_ERROR_RATE_LT_5}\s*${FRAME_ERROR_RATE_GE_5}\s*
   ^\s*Modem\spassthrough\s*$$ -> MODEM
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 MODEM
   ^\s*Number\sof\sswitching\sto\smodem\smode\s+${MODEM_SWITCHES}
   ^\s*T38\sFAX\sCalls\s*$$ -> FAX
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 FAX
   ^\s*Number\sof\soutgoing\sfax\s+${FAX_OUTGOING}
@@ -206,4 +205,4 @@ FAX
   ^\s*Number\sof\sreceived\sbytes\s+${FAX_BYTES_RECEIVED}
   ^\s*Number\sof\slost\spackets\s+${FAX_PACKETS_LOST}
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

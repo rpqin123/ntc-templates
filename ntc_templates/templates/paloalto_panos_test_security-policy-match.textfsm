@@ -33,4 +33,3 @@ Start
   ^\s+terminal\s+${TERMINAL};
   ^} -> Record
   ^\s*$$
-  ^. -> Error

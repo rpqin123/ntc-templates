@@ -20,4 +20,3 @@ Start
   ^Trap\sDestination\s*:\s*${TRAP_DEST}
   ^Command Successful.
   ^\s*$$
-  ^. -> Error

@@ -25,7 +25,6 @@ Start
   ^\s*\#\s+fully\s+supported\s+by\s+this\s+version\s+of\s+dmidecode\.\s*$$
   ^\s*$$
   ^\s*Handle\s+\S+,\s+DMI\s+type\s+\d+,\s+\d+\s+bytes$$ -> processor_info
-  ^. -> Error
 
 processor_info
   ^\s*Processor\s+Information\s*$$
@@ -56,4 +55,4 @@ processor_info
   ^\s*Characteristics:\s*$$
   ^\s*${CPU_CHARACTERISTICS}\s*$$
   ^\s*$$ -> Record
-  ^. -> Error
+  ^. -> EOF

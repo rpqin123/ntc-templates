@@ -54,4 +54,3 @@ Start
   ^\s+\d+\.\d+\.\d+\.\d+$$
   # Record data when empty line is found
   ^\s*$$ -> Record
-  ^. -> Error

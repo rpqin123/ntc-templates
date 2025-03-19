@@ -28,7 +28,6 @@ Start
   ^\s*Number\s+of\s+LSA\s+received.*$$
   ^\s*Number\s+of\s+areas\s+attached\s+to\s+this\s+router\:\s+${ATTACHED_AREAS_NUMBER}\s*$$ -> Areas
   ^\s*$$
-  ^. -> Error
 
 Areas
   ^\s*Routing\s+Process\s+\".*\".* -> Continue.Record

@@ -96,10 +96,9 @@ Start
   #
   # >>> Parse SPECIAL
   ^\s*$$
-  ^. -> Error
 
 Recursive
   # Extract interface for recursive entries
   ^\s+attached\s+to\s+${INTERFACE} -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

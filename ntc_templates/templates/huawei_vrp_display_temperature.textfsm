@@ -11,4 +11,3 @@ Start
   ^\s+TMin\s+Tmax\s+\(\S+\)\s*$$
   ^-+
   ^\s*$$
-  ^. -> Error

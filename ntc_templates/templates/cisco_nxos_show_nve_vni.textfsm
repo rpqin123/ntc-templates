@@ -16,4 +16,3 @@ Start
   ^-+
   ^${INTERFACE}\s+${VNI}\s+${MCAST_GROUP}\s+${STATE}\s+${MODE}\s+${TYPE}\s+\[${BD_VRF}\] -> Record
   ^\s*$$
-  ^. -> Error

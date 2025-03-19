@@ -16,4 +16,3 @@ Mobility_Anchor
   ^\s*GLAN ID\s+IP Address\s+Status\s*$$
   ^\s+[-\s]+$$
   ^\s*$$
-  ^. -> Error

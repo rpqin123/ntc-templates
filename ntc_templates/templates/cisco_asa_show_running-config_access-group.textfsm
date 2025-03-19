@@ -2,5 +2,4 @@ Value ACCESS_LIST (\S+)
 Value INTERFACE (\S+)
 
 Start
-  ^access-group\s+${ACCESS_LIST}\s+in\s+interface\s+${INTERFACE}\s*$$ -> Record
-  ^. -> Error "Did not match any entries"
+  ^access-group\s+${ACCESS_LIST}\s+in\s+interface\s+${INTERFACE}\s*$$ -> Record "Did not match any entries"

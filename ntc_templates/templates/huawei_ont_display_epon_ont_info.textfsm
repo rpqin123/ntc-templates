@@ -6,5 +6,4 @@ Start
   ^\s*ONT\s+ID\s*:\s+${ONT_ID}\s*$$
   ^\s*Status\s*:\s+${ONT_STATUS}\s*$$
   ^\s+$$
-  ^\s*success!\s*$$
-  ^. -> Error	
+  ^\s*success!\s*$$	

@@ -33,4 +33,3 @@ Start
   # Drop lines we are not interested in
   ^\s+statistics per-entry
   ^\s*$$
-  ^. -> Error

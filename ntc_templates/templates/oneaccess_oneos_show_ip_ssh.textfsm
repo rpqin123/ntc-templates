@@ -22,10 +22,9 @@ Start
   ^none
   ^Key\sfingerprint -> FINGERPRINT
   ^\s*$$
-  ^. -> Error
  
 FINGERPRINT
   ^${ENCRYPTION}\s${BITS}\s${FINGERPRINT}\s*$$ -> Start
   ^${BITS}\sMD5:${FINGERPRINT}.*\s\(${ENCRYPTION}\)$$ -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

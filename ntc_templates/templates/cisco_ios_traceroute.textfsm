@@ -24,7 +24,6 @@ Start
   ^VRF\s+info: -> Entries
   ^\s*$$
   ^\s*$$
-  ^. -> Error
 
 Entries
   ^\s+${HOP_NUM}\s+ -> Continue

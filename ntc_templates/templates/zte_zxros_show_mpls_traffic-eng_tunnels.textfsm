@@ -93,14 +93,13 @@ Start
   ^\s
   ^\s+History: -> Logs
   ^\s*$$
-  ^. -> Error
 
 IgnoreRouting
   ^\s+(Exclude|Record)\s+Route:
   ^\s+(\d+\.){3}\d+(?:\s*\(\d+\))?
   ^\s+(F|T)spec -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 Logs
   # Log data is unpredictable, and we can be confident important data has been captured by this point

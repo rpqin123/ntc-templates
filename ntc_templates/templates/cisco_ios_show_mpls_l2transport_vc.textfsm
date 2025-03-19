@@ -7,10 +7,9 @@ Value STATUS (.*)
 Start
   ^\s*Local\s+intf\s+Local\s+circuit\s+Dest\s+address\s+VC\s+ID\s+Status\s*$$ -> L2transportTable
   ^\s*$$
-  ^. -> Error
 
 L2transportTable
   ^\s*-+(\s+-+)*\s*$$
   ^\s*${INTERFACE}\s+${LOCAL_CIRCUIT}\s+${DEST_ADDRESS}\s+${VC_ID}\s+${STATUS}\s*$$ -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

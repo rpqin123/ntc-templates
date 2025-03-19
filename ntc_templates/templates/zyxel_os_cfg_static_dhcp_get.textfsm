@@ -6,10 +6,9 @@ Value IP_ADDRESS ((\d+\.){3}\d+)
 Start
   ^Index\s+Status\s+Mac\sAddress\s+IP\sAddress\s*$$ -> DHCPTable
   ^\s*$$
-  ^. -> Error
 
 DHCPTable
   ^${INDEX}\s+${STATUS}\s+${MAC_ADDRESS}\s+${IP_ADDRESS}\s*$$ -> Record
   ^Command\sSuccessful.\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

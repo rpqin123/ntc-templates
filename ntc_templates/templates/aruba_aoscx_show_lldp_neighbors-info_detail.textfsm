@@ -32,5 +32,4 @@ Start
   ^Aggregation\s+port
   ^Total\.*
   ^=+
-  ^. -> Error
 

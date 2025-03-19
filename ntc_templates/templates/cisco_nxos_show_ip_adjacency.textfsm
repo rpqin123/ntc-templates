@@ -17,11 +17,10 @@ Start
   ^Address\s+MAC\s+Address\s+Pref\s+Source\s+Interface -> Entries
   # Process empty and unknown lines
   ^\s*$$
-  ^. -> Error
 
 Entries
   # Entry with optional flags
   ^${IP_ADDRESS}\s+${MAC_ADDRESS}\s+${PREF}\s+${SOURCE}\s+${INTERFACE}\s*${FLAGS}$$ -> Record
   # Process empty and unknown lines
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

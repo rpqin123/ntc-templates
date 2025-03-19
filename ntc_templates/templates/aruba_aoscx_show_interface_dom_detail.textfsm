@@ -55,7 +55,6 @@ Start
   ^\s+% No DOM information available -> Next.Clear
   ^\s+Temperature:\s+${TEMPERATURE} -> Common
   ^\s+Channel\s+${CHANNEL}: -> Common
-  ^\. -> Error
 
 Common
   ^\s+Temperature high alarm: ${TEMP_HIGH_ALARM_TRIG}
@@ -77,7 +76,7 @@ Common
   ^\s+Voltage low warning threshold: ${VOLT_LOW_WARN_THRESHOLD}
   ^\s+Tx Bias: ${TX_BIAS} -> Details
   ^\s*$$ -> Start
-  ^\. -> Error
+  ^\. -> EOF
 
 Details
   ^\s+Channel\s+${CHANNEL}:
@@ -111,4 +110,4 @@ Details
   ^\s*$$
   ^Transceiver -> Continue.Record
   ^Transceiver\s+in\s+${INTERFACE} -> Start
-  ^\. -> Error
+  ^\. -> EOF

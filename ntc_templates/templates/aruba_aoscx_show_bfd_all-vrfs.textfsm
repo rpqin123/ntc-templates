@@ -18,6 +18,5 @@ Start
   ^Session\s+Interface\s+VRF\s+Source\s+IP\s+Destination\s+IP\s+Echo\s+State\s+Protocol
   ^\s*-+
   ^${SESSION}\s+${INTERFACE}\s+${VRF}\s+${SOURCE_IP}\s+${DESTINATION_IP}\s+${ECHO}\s+${STATE}\s+${APPLICATION} -> Record
-  ^. -> Error
 
 EOF

@@ -90,4 +90,3 @@ Start
   ^.*\d+\s+switch\s+(ingress|egress)\s+policy\s+drops
   ^.*\d+\s+rate\s+limit\s+drops
   ^\s*$$
-  ^. -> Error

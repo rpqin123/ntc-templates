@@ -115,15 +115,14 @@ Start
   ^\s+Keepalive
   ^\s+\d+\s+bad\s+checksum,
   ^\s*$$
-  ^. -> Error
 
 IN
   ^\s+${INPUT_BROADCASTS}\sbroadcasts,\s*${INPUT_MULTICASTS}\smulticasts,\s*${INPUT_ERRORS}\serrors,\s*${INPUT_DISCARDS}\sdiscards(,\s*${INPUT_MAC_ACL_DISCARDS}\smac\sacl\sdiscards)?
   ^\s+${INPUT_UNKNOWN_PROTOCOLS}\sunknown\sprotocols -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 OUT
   ^\s+${OUTPUT_BROADCASTS}\sbroadcasts,\s*${OUTPUT_MULTICASTS}\smulticasts,\s*${OUTPUT_ERRORS}\serrors,\s*${OUTPUT_DISCARDS}\sdiscards -> Start
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

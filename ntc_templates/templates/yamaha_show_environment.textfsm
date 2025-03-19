@@ -33,4 +33,3 @@ Start
   ^Security\sClass:\s+${SECURITY_CLASS},\s+FORGET:\s+${FORGET},\s+TELNET:\s+${TELNET}
   ^Inside\sTemperature\(C\.\):\s+${INSIDE_TEMPERATURE}
   ^\s*$$
-  ^. -> Error

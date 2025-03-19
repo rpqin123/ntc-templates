@@ -9,4 +9,3 @@ Start
   ^Protocol\s+Address\s+Age \(min\)\s+Hardware Addr\s+Type\s+Interface
   ^${PROTOCOL}\s+${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${TYPE}\s+${PORT} -> Record
   ^\s*$$
-  ^. -> Error

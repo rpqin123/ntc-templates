@@ -74,4 +74,3 @@ Start
   ^\s*vga:\s*${VGA}\s*$$
   ^\s*virtio0:\s*${VIRTIO0}\s*$$
   ^\s*vmgenid:\s*${VMGENID}\s*$$
-  ^. -> Error

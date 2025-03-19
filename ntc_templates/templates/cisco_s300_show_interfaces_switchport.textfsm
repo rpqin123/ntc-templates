@@ -22,7 +22,6 @@ Start
   ^\s*Ingress\s+UnTagged\s+VLAN\s*\(\s*NATIVE\s*\)\s*:\s*${NATIVE_VLAN}\s*$$
   ^\s*Port\s+is\s+member\s+in:\s*$$ -> PartOfVlan
   ^\s*$$
-  ^. -> Error
 
 PartOfVlan
   ^\s*Vlan\s+Name\s+Egress\s+rule\s+Port\s+Membership\s+Type\s*$$
@@ -30,7 +29,7 @@ PartOfVlan
   ^\s*${VLAN}\s+${NAME}\s+${EGRESS_RULE}\s+${INTERFACE_MEMBERSHIP_TYPE}\s*$$
   ^\s*Forbidden\s+VLANS:\s*$$ -> ForbiddenVlans
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 ForbiddenVlans
   ^\s*Vlan\s+Name\s*$$
@@ -38,16 +37,16 @@ ForbiddenVlans
   ^\s*${FORBIDDEN_VLAN}\s+${FORBIDDEN_VLAN_NAME}\s*$$
   ^\s*Classification\s+rules:\s*$$ -> ClassificationRules
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 ClassificationRules
   ^\s*Mac\s+based\s+VLANs:\s*$$ -> MacBasedVlans
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 MacBasedVlans
   ^\s*Group\s+ID\s+Vlan\s+ID\s*$$
   ^(\s*-*)*\s*$$
   ^\s*${FORBIDDEN_VLAN}\s+${FORBIDDEN_VLAN_NAME}\s*$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

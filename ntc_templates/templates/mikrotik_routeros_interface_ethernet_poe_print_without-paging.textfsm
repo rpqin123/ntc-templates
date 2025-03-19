@@ -13,4 +13,3 @@ Start
   ^\s*${INDEX}\s+${INTERFACE}\s+(${POE_OUT}\s+)?(${POE_VOLTAGE}\s+)?(${POE_PRIORITY}\s+)?(${POWER_CYCLE_PING_ENABLED}\s+)?(${POWER_CYCLE_INTERVAL})?\s*$$ -> Record
   ^\s*bad\s+command\s+name\s+po(e)?\s+\(line\s+\d+\s+column\s+\d+\)\s*$$
   ^\s*$$
-  ^. -> Error

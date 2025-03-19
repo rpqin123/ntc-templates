@@ -6,4 +6,3 @@ Value IMAGE_STATUS ((?:\(\S+\))\s*(?:\(\S+\))?)
 Start
   ^${IMAGE_TYPE}\.+\s+${IMAGE_VERSION}\s*(${IMAGE_STATUS})?$$ -> Record
   ^\s*$$
-  ^. -> Error

@@ -8,7 +8,6 @@ Start
   ^\S+\s*-
   ^\s*Port\s+Device\s+ID\s+Port\s+ID\s+System\s+Name\s+Capabilities\s+TTL -> Begin
   ^\s*$$
-  ^. -> Error
 
 Begin
   ^\S+ -> Continue.Record
@@ -18,4 +17,4 @@ Begin
   ^\s{28}${NEIGHBOR_INTERFACE}\s+${NEIGHBOR_NAME}\s*$$
   ^-+
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

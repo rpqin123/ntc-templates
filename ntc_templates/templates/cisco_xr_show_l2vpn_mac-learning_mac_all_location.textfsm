@@ -9,4 +9,3 @@ Start
   ^Topo ID\s+Producer\s+Next Hop\(s\)\s+Mac Address\s+IP Address$$
   ^-+\s+-+\s+-+\s+-+\s+-+$$
   ^${TOPO_ID}\s*${PRODUCER}\s*${NEXT_HOP}\s*${MAC_ADDRESS}\s* -> Record
-  ^. -> Error

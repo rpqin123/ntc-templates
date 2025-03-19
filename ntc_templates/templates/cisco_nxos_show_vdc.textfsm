@@ -11,4 +11,3 @@ Start
   ^-+
   ^\s*${VDC_ID}\s+${VDC_NAME}\s+${STATE}\s+${MAC_ADDRESS}\s+${TYPE}\s+${LC} -> Record
   ^\s*$$
-  ^. -> Error

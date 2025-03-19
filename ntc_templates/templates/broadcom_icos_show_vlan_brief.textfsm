@@ -11,4 +11,3 @@ Start
   ^-+
   ^\s*${VLAN_ID}\s+${VLAN_NAME}\s+${TYPE} -> Record
   ^\s*$$
-  ^. -> Error

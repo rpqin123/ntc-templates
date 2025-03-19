@@ -13,9 +13,8 @@ Start
   ^\s*Name\s+Mode
   ^\s*-+ -> Power
   ^\s*$$
-  ^. -> Error
 
 Power
   ^\s*${POWER_STACK_NAME}\s+${STACK_MODE}\s+${STACK_TOPOLOGY}\s+${TOTAL_POWER}\s+${RESERVED_POWER}\s+${ALLOCATED_POWER}\s+${SWITCH_AVAILABLE_POWER}\s+${STACK_NUMBER}\s+${POWER_SUPPLY_NUMBERS} -> Record
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -25,4 +25,3 @@ Start
   ^\s+cisco\s+product\s+id\sis(\s+${PRODUCT_ID})?
   ^\s+cisco\s+version\s+id
   ^\s+cisco\s+vendor\s+id
-  ^. -> Error

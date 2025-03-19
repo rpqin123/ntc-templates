@@ -16,4 +16,3 @@ Start
   ^\s+Client\s+RSSI\.*\s+${BAND_SELECT_CLIENT_RSSI}s*$$
   ^\s+Client\s+Mid\s+RSSI\.*\s+${BAND_SELECT_CLIENT_MID_RSSI}s*$$
   ^\s*$$
-  ^. -> Error

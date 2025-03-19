@@ -8,4 +8,3 @@ Start
   ^-+
   ^${INTERFACE_GROUP_NAME}\s+${TOTAL_INTERFACES}\s+${TOTAL_WLANS}\s+${TOTAL_AP_GROUPS} -> Record
   ^\s*$$
-  ^. -> Error

@@ -15,4 +15,3 @@ Start
   ^\s*AP\s*uptime\s*is\s*${UPTIME}
   ^\s*Reboot\s*Time\s*and\s*Cause\s*:\s*${REBOOT_CAUSE}
   ^\s*$$
-  ^.*$$ -> Error

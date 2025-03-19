@@ -17,4 +17,3 @@ Start
   ^\s*(Legend:\s+)?Mac\s+Address:
   ^\s*ID\s+=\s+ISID\/Vnid\/vplsid\s*$$
   ^\s*$$
-  ^.*$$ -> Error

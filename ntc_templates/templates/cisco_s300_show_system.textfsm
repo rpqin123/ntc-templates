@@ -18,4 +18,3 @@ Start
   ^\s*System\s+Location:\s*${LOCATION}\s*$$
   ^\s*$$
   ^\s*${LOCATION}\s*$$
-  ^. -> Error

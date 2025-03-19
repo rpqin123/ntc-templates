@@ -48,7 +48,6 @@ NumberLogs
   ^(\*)?${TIME}:\s+${FACILITY}-${MNEMONIC}:\s+${MESSAGE}$$ -> TimeLogs
   ^${MESSAGE}$$
   ^\s*$$
-  ^. -> Error
 
 DateLogs
   ^(\*)?(\D\D\D)\s+(\d{1,2})\s+((\d+:\d+:\d+\.\d+)|(\d+:\d+:\d+)) -> Continue.Record
@@ -72,7 +71,7 @@ DateLogs
   ^(\*)?${TIME}:\s+${FACILITY}-${MNEMONIC}:\s+${MESSAGE}$$ -> TimeLogs
   ^${MESSAGE}$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF
 
 TimeLogs
   ^(\*)?\d{1,2}:\d{1,2}: -> Continue.Record
@@ -96,4 +95,4 @@ TimeLogs
   ^(\*)?${NUMBER}:\s+${MONTH}\s+${DAY}\s+${TIME}:\s+${FACILITY}-${MNEMONIC}:\s+${MESSAGE}$$ -> NumberLogs
   ^${MESSAGE}$$
   ^\s*$$
-  ^. -> Error
+  ^. -> EOF

@@ -11,4 +11,3 @@ Start
 NeighborsTable
   ^\s*${INDEX}\s*(${FLAGS}\s+)?address=${IPV6_ADDRESS}\s+interface=${INTERFACE}\s+(mac-address=${MAC_ADDRESS}\s+)?status="${STATUS}"\s*$$ -> Record
   ^\s*$$
-  ^. -> Error

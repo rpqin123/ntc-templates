@@ -12,4 +12,3 @@ Start_record
   ^\s*---
   ^${INTERFACE}\s+${IP_ADDRESS}\s+\(*${MAC_ADDRESS}\)*\s+${PORT}\s+${STATUS}\s+${TTL} -> Record
   ^\s*$$
-  ^. -> Error

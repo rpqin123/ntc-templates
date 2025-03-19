@@ -12,4 +12,3 @@ Start
   ^SystemId\s+Interface\s+L\s+MT\s+Stat\s+Hold\s+SNPA\s+Uptime
   ^${SYSTEM_ID}\s+${INTERFACE}\s+${L}\s+${MT}\s+${STAT}\s+${HOLD}\s+${SNPA}\s+${UPTIME} -> Record
   ^Total\s+IS-IS\s+Adjacenc\S+:\s+\d+
-  ^. -> Error

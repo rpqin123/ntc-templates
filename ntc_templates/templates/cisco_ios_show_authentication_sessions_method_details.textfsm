@@ -51,13 +51,11 @@ Start
   ^Resultant\s+Policies: -> RESULTANT_POLICIES
   ^-+\s*$$
   ^\s*$$
-  ^. -> Error
 
 LOCAL_POLICIES
   ^\s*$$
   ^Server Policies: -> SERVER_POLICIES
   ^Resultant\s+Policies: -> RESULTANT_POLICIES
-  ^. -> Error LocalPolicy
 
 SERVER_POLICIES
   ^\s*Vlan\s+Group:\s+Vlan:\s+${SERVER_POLICY_VLAN_GROUP}
@@ -69,7 +67,6 @@ SERVER_POLICIES
   ^\s*Interface\s+Template:\s+${SERVER_TEMPLATE}
   ^-+\s*$$ -> Start
   ^\s*$$
-  ^. -> Error ServerPolicy
 
 RESULTANT_POLICIES
   ^\s*Vlan\s+Group:\s+Vlan:\s+${RESULTANT_POLICY_VLAN_GROUP}
@@ -78,11 +75,9 @@ RESULTANT_POLICIES
   ^-+\s*$$ -> Start
   ^\s*Method\s+status\s+list: -> METHOD_STATUS
   ^\s*$$
-  ^. -> Error ResultantPolicy
 
 METHOD_STATUS
   ^\s+Method\s+State
   ^\s+${METHOD_TYPE_LIST}\s+${METHOD_STATE_LIST}\s*$$
   ^-+\s*$$ -> Start
   ^\s*$$
-  ^. -> Error MethodStatus

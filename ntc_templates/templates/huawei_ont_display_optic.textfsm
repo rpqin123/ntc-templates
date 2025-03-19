@@ -28,4 +28,3 @@ Start
   ^\s*DateCode\s+:\s+(?:${DATE_CODE})?\s*$$
   ^\s+$$
   ^\s*success!\s*$$
-  ^. -> Error

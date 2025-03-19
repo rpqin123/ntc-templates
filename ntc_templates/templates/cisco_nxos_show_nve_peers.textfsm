@@ -9,4 +9,3 @@ Start
   ^-+
   ^${INTERFACE}\s+${PEER}\s+${STATE}\s+${TYPE}\s+\S+\s+${MAC_ADDRESS}\s+ -> Record
   ^\s*$$
-  ^. -> Error

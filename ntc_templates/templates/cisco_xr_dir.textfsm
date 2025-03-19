@@ -15,6 +15,5 @@ Start
   ^Directory\s+of\s+${FILE_SYSTEM}
   ^${PERMISSIONS}\.\s+\d+\s+${SIZE}\s+${DATE_MONTH}\s+${DATE_DAY}\s+(${DATE_TIME}|${DATE_YEAR})\s+${NAME} -> Record
   ^${TOTAL_SIZE}\s+kbytes\s+total\s+\(${TOTAL_FREE}\s+kbytes\s+free\)
-  ^.* -> Error
 
 EOF

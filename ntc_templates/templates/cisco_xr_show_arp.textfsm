@@ -14,4 +14,3 @@ Start
   ^${CPU}
   ^\s*$$
   ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${STATE}\s+${TYPE}\s+${INTERFACE}\s*$$ -> Record
-  ^. -> Error

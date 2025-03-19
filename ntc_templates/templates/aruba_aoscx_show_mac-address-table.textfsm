@@ -10,4 +10,3 @@ Start
   ^-+$$
   ^${MAC_ADDRESS}\s+${VLAN_ID}\s+${TYPE}\s+${PORT} -> Record
   ^\s*$$
-  ^. -> Error

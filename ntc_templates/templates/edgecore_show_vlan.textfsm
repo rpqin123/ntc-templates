@@ -34,4 +34,3 @@ Start
   ^\s*(\S+\s*\d+\s*/\s*\d+\s*\(\w+\)\s*){9}${PORTS}\s*\(\w+\).*$$ -> Continue
   ^\s*(\S+\s*\d+\s*/\s*\d+\s*\(\w+\)\s*)*$$
   ^\s*$$
-  ^. -> Error

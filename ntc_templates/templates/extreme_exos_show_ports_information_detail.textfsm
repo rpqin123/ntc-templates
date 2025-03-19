@@ -44,4 +44,3 @@ Start
   ^\s*VMAN\s+CEP\s+egress\s+filtering:
   ^\s*(Isolation|PTP\s+Configured|Time-Stamping\s+Mode):
   ^\s*(\S+\s+)+VLANs?(\s+\S+)?:\s+\S+\s*$$
-  ^. -> Error

@@ -94,7 +94,6 @@ Start
   ^-{6}
   ^PortName -> Trunk
   ^\s+
-  ^. -> Error
 
 Trunk
   ^-{6}
@@ -102,4 +101,4 @@ Trunk
   ^The\s+Number\s+of\s+Ports\s+in\s+Trunk\s*:\s*\d+\s*$$
   ^The\s+Number\s+of\s+UP\s+Ports\s+in\s+Trunk\s*:\s*\d+\s*$$
   ^\s*$$ -> Start
-  ^. -> Error
+  ^. -> EOF
